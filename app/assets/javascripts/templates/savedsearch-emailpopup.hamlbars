@@ -1,0 +1,14 @@
+.header Email Search
+.form
+  %label
+    your email:
+    %input.your
+  %label
+    destination email:
+    %input.dest
+  %button.send send
+.orjust
+  or just copy this url
+  %a.what{ :href => '{{orjust}}' } {{orjust}}
+.sent sent!
+.notsent hm, something seems to have gone wrong... we're on the case!

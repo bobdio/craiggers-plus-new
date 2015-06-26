@@ -1,0 +1,19 @@
+<% content_for :javascripts do %>
+<% #migration-tag javascript_include_tag 'categories_lib', 'locations_lib', 'sources_lib', 'categories_list', 'locations_list', 'sources_list', 'taps_lib', 'posting_autocomplete' %>
+<% end %>
+
+<% content_for :title do %>
+  Post to Craigslist
+<% end %>
+
+<%= flash_notice %>
+<!--
+<%= error_messages_for :posting %>
+
+<div id="new_posting">
+  <%= render :partial => "postings/posting_form_new" %>
+</div>
+
+-->
+
+<iframe style="width:100%; height: 800px;" src="https://post.craigslist.org"></iframe>

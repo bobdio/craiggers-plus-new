@@ -1,0 +1,28 @@
+.signinout
+  .signin
+    -# TODO: move click handlers to js
+          
+    %span#sign_up_link.header-link{ :onclick => 'new Craiggers.Views.Dialog("sign_up");' } sign up
+    \|
+    %span#sign_in_link.header-link{ :onclick => 'new Craiggers.Views.Dialog("sign_in");' } sign in
+  .signedin
+    .photo
+      %img
+    .hoverable
+      .user
+        .name
+      .dropdown
+        .field.right
+          = link_to 'sign out', signout_path
+        -#.field.right
+          -#= link_to 'profile', {:controller => :profile, :action => :index}
+        -#.field.right.admin_settings
+          -#= link_to 'settings', {:controller => :settings, :action => :index}
+        -#.field
+          -#%label
+            -#%input.safe{ :type => 'checkbox', :checked => 'true' }
+            -#safe search
+        -#.field.right
+          -#= link_to 'help', '/help'
+
+

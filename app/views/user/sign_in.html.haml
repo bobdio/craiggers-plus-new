@@ -1,0 +1,24 @@
+.title
+  Oops! Need to sign up?
+  %span.link{ :onclick => 'new Craiggers.Views.Dialog("must_sign_up");' } Sign up here.
+= form_tag('/user/sign_in', { :id => 'sign_in_form' })
+%table
+  %tr
+    %td
+      %span.username username
+    %td{ :colspan => '2' }
+      %span.password password
+  %tr
+    %td
+      %input.textfield{ :name => 'name', :type => 'text' }
+    %td
+      %input.textfield{ :name => 'password', :type => 'password' }
+    %td
+      = submit_tag 'sign in', { :id => 'submit_sign_in_form' }
+  %tr
+    %td
+      %label
+        %input#remember.checkbox{:name => 'remember', :type => 'checkbox' } remember me
+    %td{ :colspan => '2' }
+      %a.link.forgot{ :href => 'javascript:void(null)', :onclick => 'new Craiggers.Views.Dialog("change_password_request");' } forgot it?
+#errors_holder

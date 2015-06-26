@@ -1,0 +1,8 @@
+.header Setup Notification
+.form
+  %label
+    your email:
+    %input.email
+  %button.setup setup
+.sent.left Thanks for signing up.  craiggers will send you two emails a day with links to up to 100 new matches found for your search.
+.notsent hm, something seems to have gone wrong... we're on the case!

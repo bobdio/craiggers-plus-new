@@ -1,0 +1,31 @@
+!!!
+%html
+  %head
+    %title= current_domain['title']
+    %meta{ :name => 'viewport', :content => 'width=480, initial-scale=0.5' }
+    = favicon_link_tag current_domain['icon']
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag    "application"
+    = csrf_meta_tag
+    = render :partial => 'layouts/analytics'
+  %body
+
+    .clear
+    .flash{:style=>"color:red"}
+      = flash_notice
+
+
+    %div{style: 'width: 100%; height: 38px; background-color:#999999'}
+      .mainnav
+        .navlink 
+          = link_to 'HOME', :root, style: 'color: #666666; text-decoration:none;'
+        .navlink.active
+          = link_to 'Saved Searches', admin_saved_searches_path, style: 'color: #cc3300; text-decoration:none;'
+
+    #content
+      = yield
+
+    .clear
+
+  - if current_domain['name'] != 'jeboom'
+    = javascript_include_tag "http://www.google.com/recaptcha/api/js/recaptcha_ajax.js", "application"

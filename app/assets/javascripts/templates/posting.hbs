@@ -1,0 +1,33 @@
+{{#if thumb}}
+<div class="thumb">
+    <img src="{{ thumb }}"/>
+</div>
+{{/if}}
+<div class="content">
+    {{#if price}}
+    <div class="price">${{ price }}</div>
+    {{/if}}
+    <div class="heading">{{{ heading }}}</div>
+    <div class="path"> {{#if parent_cat_name}} {{parent_cat_name}} > {{/if}}{{ category_name }}</div>
+    <div class="path location-path_"></div>
+    <div class="timestamp">{{#if timeago}}{{ timeago }}{{/if}}</div>
+    <div class="utc"> {{ timestamp }}</div>
+    {{#if favorited}}
+    <div class="favorite favorited">
+        <div class="dogear"></div>
+        <div class="clickable">
+            <div class="text">unfavorite</div>
+            <div class="star"></div>
+        </div>
+    </div>
+    {{else}}
+    <div class="favorite">
+        <div class="dogear"></div>
+        <div class="clickable">
+            <div class="text">favorite</div>
+            <div class="star"></div>
+        </div>
+    </div>
+    {{/if}}
+    <div class="postkey">{{ postKey }}</div>
+</div>

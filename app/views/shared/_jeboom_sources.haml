@@ -1,0 +1,9 @@
+#srces.wrapper
+  .source
+    .clickable all sources
+    .code all
+  - @sources.each do |source|
+    - if source.name != ''
+      .source
+        .clickable= source.name
+        .code= source.code

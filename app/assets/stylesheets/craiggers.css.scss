@@ -1,0 +1,163 @@
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background-color: #611b6e;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+#logo a {
+  background: url(image_path('logos/craiggers-small.png')); }
+
+#sublinks .active {
+  color: #611b6e; }
+
+.button {
+  background: #611b6e;
+  background-image: -moz-linear-gradient(top, #804580 0%, #772780 23%, #602060 80%, #501050 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #804580), color-stop(0.23, #772780), color-stop(0.8, #602060), color-stop(1, #501050));
+  background-image: linear-gradient(top, #804580 0%, #772780 23%, #602060 80%, #501050 100%); }
+
+.posting-image-viewer .minis .mini.selected {
+  border-color: #611b6e; }
+
+#popup-dialog .content {
+  border-color: #611b6e; }
+
+#notifysave {
+  border-color: #611b6e; }
+  #notifysave:before {
+    border-right-color: #611b6e; }
+
+.filter-bg {
+  background: url(image_path('purple-filter-bg.png')) no-repeat 0 0; }
+
+#root .tagline {
+  color: #611b6e; }
+
+.mainnav span.active {
+  color: #611b6e !important; }
+
+/*==================================================== */
+/* SEARCH BAR */
+/*==================================================== */
+.searchcontainer .input:focus {
+  border: 1px solid #611b6e; }
+.searchcontainer .geolocate {
+  color: #611b6e; }
+.searchcontainer .location .input {
+  display: inline; }
+.searchcontainer .location .jumbolist {
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 3px solid #dddddd;
+  background: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  position: absolute;
+  z-index: 5; }
+  .searchcontainer .location .jumbolist .container {
+    margin: 0 auto; }
+  .searchcontainer .location .jumbolist .grid_3, .searchcontainer .location .jumbolist .grid_4 {
+    text-transform: lowercase; }
+  .searchcontainer .location .jumbolist .primary {
+    background: #f4f4f4;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin-top: 4px;
+    padding: 3px 0;
+    text-align: center; }
+  .searchcontainer .location .jumbolist .selectable {
+    border-bottom: 1px solid #eaeaea;
+    color: #0000ee;
+    cursor: pointer;
+    margin-bottom: 2px;
+    /*margin-right: 16px */
+    padding-bottom: 1px; }
+    .searchcontainer .location .jumbolist .selectable:hover {
+      background: #eeeeee;
+      color: purple; }
+  .searchcontainer .location .jumbolist .selectable.primary {
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0px;
+    padding-bottom: 3px; }
+    .searchcontainer .location .jumbolist .selectable.primary:hover {
+      background: white;
+      color: purple; }
+
+#searchbar {
+  margin-top: 23px;
+  width: 750px; }
+  #searchbar .input:focus {
+    border: 1px solid #611b6e; }
+
+#drawer-button {
+  color: #611b6e; }
+
+/*==================================================== */
+/* END SEARCH BAR */
+/*==================================================== */
+@media screen and (max-width: 800px) {
+  #workspace {
+    width: 970px;
+    position: absolute;
+    top: 70px;
+    left: 30px; }
+
+  #root .root-wrapper {
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    position: static; }
+
+  #searchbar {
+    width: 240px; }
+    #searchbar .wrapper .input {
+      width: 180px; }
+    #searchbar .wrapper .jumbolist {
+      left: auto;
+      right: auto;
+      margin: auto;
+      width: 220px; }
+      #searchbar .wrapper .jumbolist .container {
+        width: auto; }
+      #searchbar .wrapper .jumbolist .grid_12 {
+        width: auto;
+        float: none; }
+    #searchbar .location {
+      display: none; }
+    #searchbar .search {
+      margin-right: 15px;
+      padding: 6px 90px; } }
+
+#detail .header .email {
+  color: #611b6e; }
+#detail .comment-buttons {
+  display: none; }
+
+#postings .posting .owner {
+  visibility: hidden; }
+#postings .newmatches {
+  color: #611b6e;
+  background: #a1a9d5; }
+
+.classic-craiggers-link {
+  display: none;
+  right: 140px;
+  margin-top: 14px;
+  margin-right: 50px;
+  position: absolute;
+  font-size: 10px; }
+
+#message-me {
+  display: none;
+  position: relative;
+  top: 5px;
+  margin-left: 45px; }

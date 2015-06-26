@@ -1,0 +1,35 @@
+%div{style: 'margin:10px 0px 0px 20px;'}
+  %table.saved_searches
+    %tr{style: 'padding-bottom: 3px'}
+      %td{style: 'width: 50px;'}
+        = sort_link 'User', :username
+      %td
+        = sort_link 'Name', :name
+      %td{style: 'width: 100px;'}
+        = sort_link 'UniqKey', :uniq_key
+      %td{style: 'width: 100px;'}
+        = sort_link 'Counter', :counter
+      %td{style: 'width: 100px;'}
+        = sort_link 'Notification (off/on)', :send_notifications
+      %td{style: 'width: 170px;'}
+        = sort_link 'Created', :created_at
+      %td{style: 'width: 70px;'}
+      - @saved_searches.each do |search|
+        %tr
+          %td
+            = search.username
+          %td
+            = search.name
+          %td
+            = link_to search.uniq_key, uniq_key_path(search.uniq_key)
+          %td
+            = search.counter
+          %td
+            = (search.send_notifications ? 'on' : 'off')
+          %td
+            = format_date search.created_at
+          %td
+            = link_to 'detail', admin_saved_search_path(search.id)
+
+  %hr
+  = will_paginate @saved_searches

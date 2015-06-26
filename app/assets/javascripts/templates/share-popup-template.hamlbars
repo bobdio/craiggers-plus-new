@@ -1,0 +1,18 @@
+.header
+  .text Share {{ type }}
+.options
+  %form.form
+    %label
+      your email
+      %input.your
+    %label
+      destination email:
+      %input.dest
+    %input.send{ :type => 'submit', :value => 'send' }
+    %img.loading{ :src => '/assets/loader.gif' }
+  .copy
+    or just copy this url
+    %input.url{ :value => '{{ url }}' }
+.messages
+  .sent sent!
+  .notsent hm, there was an error sending the email - we're on the case!

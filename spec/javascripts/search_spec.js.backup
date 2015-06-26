@@ -1,0 +1,87 @@
+describe("Craiggers Search", function() {
+
+  var Spies = {};
+
+  beforeEach(function() {
+    loadFixtures('search.html'); 
+    ich.refresh();
+  });
+
+  it("should have loaded icanhaz templates", function() {
+    // check a few of the templates
+    expect(ich['searching-popup']).toBeDefined();
+    expect(ich['posting']).toBeDefined();
+    expect(ich['posting-detail']).toBeDefined();
+  });
+
+  it("should load some postings to stub out search", function() {
+    Spies.onSuccess = spyOn(Craiggers.Search.on, 'success').andCallThrough();
+    runs(function() {
+      var postings = '#postings .posting';
+      Craiggers.Search.submit();
+      waitsFor(function() {
+        return $(postings).length > 0;
+      }, 'no postings are ever rendered', 30000);
+      runs(function() {
+        expect($(postings)).not.toBeEmpty();
+      });
+    });
+  });
+
+  describe("Search Result Postings", function() {
+    
+    beforeEach(function() {
+      var args = Spies.onSuccess.argsForCall[0];
+      Spies.submit = spyOn(Craiggers.Search, 'submit').andCallFake(function() {
+        console.log('==== search ====');
+        Craiggers.Search.on.success(args[0], args[1], args[2], args[3]);
+      });
+
+      Craiggers.Search.submit();
+      waitsFor(function() {
+        return $('#postings .posting').length > 0;
+      }, 'no postings rendered', 30000);
+    });
+
+    it("should have stubbed search so beforeEach always sets postings", function() {
+      expect($('#postings .posting')).not.toBeEmpty();
+    });
+
+    describe("last posting selected should stay hightlighted even if the detail is closed", function() {
+
+      it("should keep selected posting as mostrecent after detail view is closed", function() {
+        var posting = $('#postings .posting').first();
+        posting.click(); // to open detailview
+        expect(posting).toHaveClass('selected');
+        expect(posting).toHaveClass('mostrecent');
+
+        posting.click(); // to close detailview
+        expect(posting).toHaveClass('mostrecent');
+        expect(posting).not.toHaveClass('selected');
+      });
+
+      it("should only allow one .mostrecent posting at a time", function() {
+        var postings = [
+          $($('#postings .posting')[0]),
+          $($('#postings .posting')[1]),
+          $($('#postings .posting')[2])
+        ];
+        for(var i = 0, j = postings.length; i < j; i++) {
+          postings[i].click(); // open
+          expect($('#postings .posting.selected.mostrecent').length).toEqual(1);
+          postings[i].click(); // close
+          expect($('#postings .posting.selected').length).toEqual(0);
+          expect($('#postings .posting.mostrecent').length).toEqual(1);
+        }
+      });
+
+    });
+
+    describe("next 100 postings", function() {
+      it("should keep the most recently selected posting highlighted/selected", function() {
+      });
+    });
+
+  });
+
+});

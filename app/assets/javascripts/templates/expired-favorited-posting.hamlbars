@@ -1,0 +1,14 @@
+.content
+  {{#if price}}
+  .price ${{ price }}
+  {{/if}}
+  .heading {{{ heading }}}
+  .path {{ path }}
+  .timestamp (EXPIRED)
+  .utc {{ timestamp }}
+  .favorite.favorited
+    .dogear
+    .clickable
+      .text unfavorite
+      .star
+  .postkey {{ postKey }}

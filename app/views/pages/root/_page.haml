@@ -1,0 +1,15 @@
+.background
+  -#.messageline{ :style => "z-index:10;" }
+    -#= message_tag
+.root-wrapper
+  .banner_div
+    .messageline= message_tag
+  .search_form_div
+    .logo
+      .beta beta
+      = logo_tag
+    .tagline= slogan_teg
+    = render :partial => "components/jeboom_searchbar"
+
+= render :partial => 'shared/landing_page_footer'
+

@@ -1,0 +1,129 @@
+# src_files
+#
+# Return an array of filepaths relative to src_dir to include before jasmine specs.
+# Default: []
+#
+# EXAMPLE:
+#
+# src_files:
+#   - lib/source1.js
+#   - lib/source2.js
+#   - dist/**/*.js
+#
+src_files:
+  - public/javascripts/lib/jquery-1.6.1.min.js
+  - public/javascripts/lib/json2.js
+  - public/javascripts/lib/underscore-min.js
+  - public/javascripts/lib/backbone-min.js
+  - public/javascripts/lib/icanhaz-min.js
+
+  - public/javascripts/craiggers/definition.js
+  - public/javascripts/craiggers/utility.js
+
+  # - public/javascripts/lib/jquery.highlight.js
+  # - public/javascripts/lib/jquery.onImagesLoad.min.js
+  # - public/javascripts/lib/jquery.autocomplete.js
+  # - public/javascripts/fancybox/jquery.fancybox-1.3.4.pack.js
+  # - public/javascripts/lib/json2.jsjquery.ajaxmanager.js
+  # - public/javascripts/lib/ZeroClipboard.js
+  # - public/javascripts/lib/jquery-ui-1.8.7.custom.min.js
+  # - public/javascripts/fancybox/jquery.fancybox-1.3.4.pack.js
+  # - public/javascripts/jquery.form.js
+
+  # - public/javascripts/lib/jquery.ajaxmanager.js
+
+  # - public/javascripts/profile.js
+  # - public/javascripts/signin_dialog.js
+  # - public/javascripts/application.js
+  # - public/javascripts/threetaps/favorite/favorite_model.js
+  - public/javascripts/threetaps/search/search_model.js
+  # - public/javascripts/threetaps/favorite/favorites_collection.js
+  # - public/javascripts/threetaps/posting/posting_views.js
+  # - public/javascripts/threetaps/posting/posting_model.js
+  - public/javascripts/threetaps/search/search_views.js
+  # - public/javascripts/threetaps/favorite/favorite_views.js
+  # - public/javascripts/craiggers/controller.js
+  # - public/javascripts/craiggers/pages.js
+  # - public/javascripts/threetaps/user/user_model.js
+  # - public/javascripts/threetaps/user/users_collection.js
+  # - public/javascripts/lib/wTooltips.js
+  # - public/3taps-treevis/lib/d3/d3.js
+
+  #craiggers_search:
+  - public/javascripts/threetaps/search/craigslist_categories.js
+  - public/javascripts/threetaps/search/craigslist_locations.js
+  - public/javascripts/threetaps/search/craigslist_collections.js
+  - public/javascripts/threetaps/search/craigslist_categories_collections.js
+  - public/javascripts/threetaps/search/craigslist_locations_collections.js
+  # - public/javascripts/threetaps/posting/craigslist_posting_model.js
+  # - public/javascripts/threetaps/posting/postings_collection.js
+  - public/javascripts/threetaps/search/annotation_search_model.js
+  - public/javascripts/threetaps/search/annotation_search_views.js
+  # - public/javascripts/craiggers/craigslist_pages.js
+  # - public/javascripts/craiggers.js
+
+# stylesheets
+#
+# Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
+# Default: []
+#
+# EXAMPLE:
+#
+# stylesheets:
+#   - css/style.css
+#   - stylesheets/*.css
+#
+stylesheets:
+  - public/stylesheets/reset.css
+  - public/stylesheets/960.css
+  - public/stylesheets/fancybox/jquery.fancybox-1.3.4.css
+  - public/stylesheets/3taps.css
+  - public/stylesheets/jeboom.css
+
+# helpers
+#
+# Return an array of filepaths relative to spec_dir to include before jasmine specs.
+# Default: ["helpers/**/*.js"]
+#
+# EXAMPLE:
+#
+# helpers:
+#   - helpers/**/*.js
+#
+helpers:
+  - helpers/**/*.js
+
+# spec_files
+#
+# Return an array of filepaths relative to spec_dir to include.
+# Default: ["**/*[sS]pec.js"]
+#
+# EXAMPLE:
+#
+# spec_files:
+#   - **/*[sS]pec.js
+#
+spec_files:
+  - **/*[sS]pec.js
+
+# src_dir
+#
+# Source directory path. Your src_files must be returned relative to this path. Will use root if left blank.
+# Default: project root
+#
+# EXAMPLE:
+#
+# src_dir: public
+#
+src_dir:
+
+# spec_dir
+#
+# Spec directory path. Your spec_files must be returned relative to this path.
+# Default: spec/javascripts
+#
+# EXAMPLE:
+#
+# spec_dir: spec/javascripts
+#
+spec_dir: spec/javascripts

@@ -1,0 +1,52 @@
+%script#comment-popup{ :type => 'text/html' }
+  #comment-posting
+    %form.comment-form{ :action => '/posting/comment' }
+      %h2
+        {{ title }}:
+        %span.heading {{{ subtitle }}}
+      %div
+        %select#flag_code{ :class => '{{ type }}', :name => 'flag[code]' }
+          %option Pick a reason
+          %option{ :value => 1 } Miscategorized
+          %option{ :value => 3 } Deceptive Offering
+          %option{ :value => 4 } Obscene Offering
+          %option{ :value => 5 } Illegal Offering
+          %option{ :value => 6 } Stolen Goods
+          -#%option{ :value => 2 } Not my posting //TODO: hiding until claiming is available
+          -#%option{ :value => 7 } Posting attached to the wrong or unauthorized identity
+          %option{ :value => 8 } Other
+      %div
+      %div
+        %textarea{ :id => '{{ type }}_comment', :name => 'comment[text]' }
+        %input{:type => 'hidden', :value => '{{ heading }}', :name => 'heading'}
+        %input{:type => 'submit', :value => 'Submit'}
+
+-#%script#root-comment-view{ :type => 'text/html' }
+-#  {{#comments}}
+-#  .comment-view{:id => 'comment-view-{{id}}'}
+-#    %strong.details-popup-holder{ 'data-uid' => '{{ commenterID }}' } {{credit}}
+-#    commented {{timestamp}} ago:
+-#    %br
+-#    .comment-text {{text}}
+-#    .link{ :id => '{{ id }}'} reply
+-#  {{/comments}}
+
+-#%script#reply-comment-view{ :type => 'text/html' }
+-#  {{#comments}}
+-#  .comment-view.reply{:id => 'comment-view-{{id}}'}
+-#    %strong.details-popup-holder{ 'data-uid' => '{{ commenterID }}' } {{credit}}
+-#    replied {{timestamp}} ago:
+-#    %br
+-#    .comment-text {{text}}
+-#  {{/comments}}
+
+-#%script#root-flag-comment-view{ :type => 'text/html' }
+-#  {{#comments}}
+-#  .comment-view.flagged-comment{:id => 'comment-view-{{id}}', :flagged => 'yes'}
+-#    .flagged
+-#    %strong.details-popup-holder{ 'data-uid' => '{{ commenterID }}' } {{credit}}
+-#    flagged this posting with "{{flag}}" {{timestamp}} ago:
+-#    %br
+-#    .comment-text {{text}}
+-#    .link{ :id => '{{ id }}'} reply
+-#  {{/comments}}

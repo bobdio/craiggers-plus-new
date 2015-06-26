@@ -1,0 +1,1079 @@
+[
+  {
+    "community": [
+      {
+        "activities": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "artists": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "childcare": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "general": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "groups": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "pets": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "events": {
+          "date range": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "lost+found": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "musicians": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "local news": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "politics": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "rideshare": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "volunteers": {
+          "date range": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "classes": {
+          "date range": true,
+          "locality": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "personals": [
+      {
+        "strictly platonic": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "women seek women": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "women seeking men": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "men seeking women": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "men seeking men": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "misc romance": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "casual encounters": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "missed connections": {
+          "locality": true,
+          "age": true,
+          "image": true,
+          "flavor": true
+        }
+      },
+      {
+        "rants and raves": {
+          "locality": true,
+          "age": false,
+          "image": true,
+          "flavor": false
+        }
+      }
+    ]
+  },
+  {
+    "housing": [
+      {
+        "apts / housing": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": true,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "rooms / shared": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": false,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "sublets / temporary": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": true,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "housing wanted": {
+          "price": true,
+          "sqft": false,
+          "category": true,
+          "bedrooms": false,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "housing swap": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": true,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "vacation rentals": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": true,
+          "dogs": true,
+          "cats": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "parking / storage": {
+          "price": true,
+          "sqft": false,
+          "category": false,
+          "bedrooms": false,
+          "dogs": false,
+          "cats": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "office / commercial": {
+          "price": true,
+          "sqft": true,
+          "category": false,
+          "bedrooms": false,
+          "dogs": false,
+          "cats": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "real estate for sale": {
+          "price": true,
+          "sqft": false,
+          "category": true,
+          "bedrooms": true,
+          "dogs": false,
+          "cats": false,
+          "locality": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "for-sale": [
+      {
+        "appliances": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "antiques": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "barter": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "bikes": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "boats": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "books": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "business": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "computer": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "free": {
+          "price": false,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "furniture": {
+          "price": true,
+          "category": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "general": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "jewelry": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "materials": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "rvs": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "sporting": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "tickets": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "tools": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "wanted": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "arts+crafts": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "auto parts": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "baby+kids": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "beauty+hlth": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "cars+trucks": {
+          "price": true,
+          "category": true,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "cds/dvd/vhs": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "cell phones": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "clothes+acc": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "collectibles": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "electronics": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "farm+garden": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "garage sale": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "household": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "motorcycles": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "music instr": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "photo+video": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "toys+games": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "video gaming": {
+          "price": true,
+          "category": false,
+          "locality": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "services": [
+      {
+        "beauty": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "creative": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "computer": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "cycle": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "event": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "financial": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "legal": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "lessons": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "marine": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "pet": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "automotive": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "farm+garden": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "household": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "labor/move": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "skill'd trade": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "real estate": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "sm biz ads": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "therapeutic": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "travel/vac": {
+          "locality": true,
+          "image": true
+        }
+      },
+      {
+        "write/ed/tr8": {
+          "locality": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "jobs": [
+      {
+        "accounting+finance": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "admin / office": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "arch / engineering": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "art / media / design": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "biotech / science": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "business / mgmt": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "customer service": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "education": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "food / bev / hosp": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "general labor": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "government": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "human resources": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "internet engineers": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "legal / paralegal": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "manufacturing": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "marketing / pr / ad": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "medical / health": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "nonprofit sector": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "real estate": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "retail / wholesale": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "sales / biz dev": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "salon / spa / fitness": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "security": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "skilled trade / craft": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "software / qa / dba": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "systems / network": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "technical support": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "transport": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "tv / film / video": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "web / info design": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "writing / editing": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "[ETC]": {
+          "category": false,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      },
+      {
+        "[ part-time ]": {
+          "category": true,
+          "locality": true,
+          "compensation": true,
+          "status": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "gigs": [
+      {
+        "crew": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "event": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "labor": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "talent": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "computer": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "creative": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "domestic": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      },
+      {
+        "writing": {
+          "locality": true,
+          "compensation": true,
+          "image": true
+        }
+      }
+    ]
+  },
+  {
+    "resumes": [
+      {
+        "resumes": {
+          "category": true,
+          "locality": true
+        }
+      }
+    ]
+  }
+]

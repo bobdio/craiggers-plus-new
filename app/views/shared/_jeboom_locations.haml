@@ -1,0 +1,19 @@
+#states
+  .country
+    .clickable all locations
+    .code all
+  - @locations.each do |location|
+    .country
+      .clickable= location.short_name
+      .code= location.code
+      - if (states = location.children).present?
+        .states
+          - location.children.each do |state|
+            .state
+              .clickable= (state.short_name || " ")
+              .code= state.code
+              .cities
+                - state.children.each do |city|
+                  .city
+                    .clickable= (city.short_name || " ")
+                    .code= city.code

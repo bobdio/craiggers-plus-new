@@ -1,0 +1,48 @@
+-# .grid_12
+-#   .primary.selectable all locations
+-# 
+-# .grid_4
+-#   - @locations.each_index do |i|
+-#     - if i < 8
+-#       .primary.selectable= @locations[i].country
+-#       - if Location.states_of(@locations[i].country).count != 0
+-#         - Location.states_of(@locations[i].country).each do |state|
+-#           .selectable.state= (state.stateName || " ")
+-#           - Location.cities_of(@locations[i].country,state.stateName).each do |city|
+-#             .selectable= (city.city || " ")
+-#       - else
+-#         - Location.cities_of(@locations[i].country,nil).each do |city|
+-#           .selectable= city.city
+-#   .clear
+-# .grid_4
+-#   - @locations.each_index do |i|
+-#     - if i >= 8 && i < 93
+-#       .primary.selectable= @locations[i].country
+-#       - if Location.states_of(@locations[i].country).count != 0
+-#         - Location.states_of(@locations[i].country).each do |state|
+-#           .selectable.state= (state.stateName || " ")
+-#           - Location.cities_of(@locations[i].country,state.stateName).each do |city|
+-#             .selectable= (city.city || " ")
+-#       - else
+-#         - Location.cities_of(@locations[i].country,nil).each do |city|
+-#           .selectable= city.city
+-#   .clear
+-# .grid_4
+-#   - @locations.each_index do |i|
+-#     - if i >= 93
+-#       .country
+-#         .primary.selectable= @locations[i].country
+-#         - if Location.states_of(@locations[i].country).count != 0
+-#           .states
+-#             - Location.states_of(@locations[i].country).each do |state|
+-#               .state
+-#                 .selectable.state= (state.stateName || " ")
+-#                 .cities
+-#                   - Location.cities_of(@locations[i].country,state.stateName).each do |city|
+-#                     .city
+-#                       .selectable= (city.city || " ")
+-#         - else
+-#           .cities
+-#             - Location.cities_of(@locations[i].country,nil).each do |city|
+-#               .city
+-#                 .selectable= city.city

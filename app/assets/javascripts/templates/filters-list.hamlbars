@@ -1,0 +1,16 @@
+{{#if items}}
+{{#each items}}
+{{#with this}}
+.result
+  .selector
+    {{#if selected}}
+    %input{ :type => 'checkbox', :name => '{{name}}', :class => '{{code}}', :value => '{{code}}', :checked => true }
+    {{else}}
+    %input{ :type => 'checkbox', :name => '{{name}}', :class => '{{code}}', :value => '{{code}}' }
+    {{/if}}
+  .name {{name}}
+  .count{ :class => '{{code}}' } {{count}}
+  .code {{code}}
+{{/with}}
+{{/each}}
+{{/if}}

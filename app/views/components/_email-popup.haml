@@ -1,0 +1,27 @@
+#emailpopup-wrapper
+  #emailpopup
+    .header 
+      .email
+        Email 
+        .type
+        to a Friend
+      .share
+        Share
+        .type
+    .form
+      %label
+        your email
+        %input.your{ :type => 'text' }
+      %label
+        destination email
+        %input.dest{ :type => 'text' }
+      %input.send{ :type => 'button', :value => 'send' }
+    .orjust
+      or just copy this url
+      %a.what
+    .sent sent!
+    .notsent Hmm, there was an error sending the email. Please try again.
+
+    .share
+      .fb
+      .twitter

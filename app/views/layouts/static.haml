@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %title= current_domain['title']
+    = favicon_link_tag current_domain['icon']
+    = yield :javascript
+
+    = stylesheet_link_tag 'for_static'
+    = yield :stylesheets
+
+    = csrf_meta_tag
+
+    = render :partial => 'layouts/analytics'
+
+    %body
+
+      #container
+        #header
+          .container_16
+            .logo
+              -#%a{ :href => 'javascript:void(null)', :onclick=>"$.get('search/previous').complete(function(){ window.location = '/' });" }= image_tag current_domain['logo']['small']
+              %a{ :href => 'javascript:void(null)', :onclick=>"window.location = '/';" }= image_tag current_domain['logo']['small']
+            -#.signinout
+              = render :partial => 'shared/signinout-basic'
+
+        %h1#title
+          .container_16
+            = yield :title
+
+        #content
+          .container_16
+            = yield
+        .push
+
+      #footer
+        - if current_domain['name'] != 'jeboom'
+          = render :partial => 'shared/footer_links'
+
+      = render :partial => 'layouts/feedback'
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+      :javascript
+        $(function() {
+          var inout = $('#header .signinout');
+          $.ajax({
+            url: '/user/signedin?' + new Date().getTime(),
+            dataType: 'json',
+            success: function(data) {
+              inout.find('.signin').hide();
+              inout.find('.signedin .user').text(data.displayName);
+              inout.find('.signedin .photo').html('<img src="' + data.photo + '" />');
+              inout.find('.signedin').show();
+            },
+            error: function() {
+              inout.find('.signedin').hide();
+              inout.find('.signin').show();
+            }
+          });
+        });
+      = yield :javascripts
+
+= javascript_include_tag 'for_static'

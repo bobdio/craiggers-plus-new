@@ -1,0 +1,13 @@
+#cats.wrapper
+  .cat
+    .clickable all categories
+    .code all
+  - @cats.each do |cat|
+    .cat
+      .clickable= cat.group
+      .code= cat.code
+      .subcats
+        - cat.subcats.asc.each do |subcat|
+          .subcat
+            .clickable= subcat.name
+            .code= subcat.code

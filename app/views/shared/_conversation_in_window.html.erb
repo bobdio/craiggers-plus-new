@@ -1,0 +1,306 @@
+<html><head>
+    <style type="text/css"  >
+      body{margin:0;height:100%;width:100%;overflow:hidden}body.xE{background-color:#fff;background-image:none}
+      #conversations {
+        width: 100%;
+        z-index: 7; }
+      #conversations .conversation {
+        z-index: 7;
+        width: 100%;}
+      #conversations .conversation #header-conversation {
+        height: 26px;
+        width: 100%;
+        background-color: #75a8ff;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        position: absolute;}
+      #conversations .conversation #header-conversation .title {
+        width: 86%;
+        height: 16px;
+        margin: 2px 2px;
+        float: left;
+        overflow: visible;
+        cursor: default;
+        color: white;
+        margin-right: 3px;
+        word-wrap: break-word;
+        font-size: 11px;
+        text-transform: lowercase;}
+      #conversations .conversation #header-conversation .normal {
+        height: 16px;
+        width: 16px;
+        background-image: url(/images/from-window.png);
+        float: right;
+        margin: 5px 0px;
+        cursor: pointer; }
+      #conversations .conversation #header-conversation .normal:hover {
+        background-color: #0000c9; }
+      #conversations .conversation #header-conversation .close-conversation {
+          height: 16px;
+          width: 16px;
+          background-image: url(/images/conversation_close.png);
+          float: right;
+          margin: 5px 0px;
+          cursor: pointer;
+      }
+       #conversations .conversation #header-conversation .close-conversation:hover{
+          background-color: #0000c9;}
+      #conversations .conversation #conversation-message-box {
+        width: 100%;
+        background: white;
+        text-align: center;
+        position: absolute;
+        top: 26px;
+        bottom: 50px;}
+      #conversations .conversation #conversation-message-box #align-div #conversation-chat-box {
+        height: 100%;
+        overflow-y: scroll;
+        margin: 5px 2px;
+        border: 2px solid black;
+        padding: 3px;
+        border-radius: 3px; }
+      #conversations .conversation #conversation-message-box #conversation-input-box {
+        width: 100%;
+        height: 28px;
+        position: absolute;
+        bottom: -45px;}
+      #conversations .conversation #conversation-message-box #conversation-input-box #text_conversation {
+        width: 98%;
+        height: 28px;
+        resize: none;
+        border-radius: 5px;
+        font-style: normal;
+        font-size: 90%; }
+      </style>
+      <title><%= @name %></title>
+    </head><body  onload="javascript:fff();">
+      <div id='templates'>
+      <script id='conversation' type='text/html'>
+        <div id='header-conversation'>
+          <div class='title'  style='font-family:sans-serif; line-height:1; font-weight: bold'>
+            {{heading}}
+          </div>
+          <div class='close-conversation'></div>
+          <div class='normal'></div>
+        </div>
+        <div id='conversation-message-box'>
+          <div id='align-div'>
+            <div id='conversation-chat-box'>
+              <div class='conversation-id conversation-id-{{id}}'>
+                <div id='utterances'>
+                  <div class='utterances'>
+                    <table style='border:0'></table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id='conversation-input-box'>
+            <textarea class='conversation-textarea' id='text_conversation'></textarea>
+          </div>
+        </div>
+      </script>
+      <script id='utterance' type='text/html'>
+        <tr>
+          <td style='font-family:sans-serif; font-size:12px; line-height:1'>
+            <b style='color:black'>
+              {{display_author_name}}
+            </b>
+            <span style='color:grey'>
+              {{#created_at}}
+              {{created_at}}
+              <br/>
+              {{/created_at}}
+            </span>
+          </td>
+        </tr>
+      </script>
+    </div>
+    <div>
+      <div id='conversations' class='ttt'></div>
+    </div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js' type='text/javascript'></script>
+    <script src='/javascripts/lib/underscore-min.js?1308557138' type='text/javascript'></script>
+    <script src='/javascripts/lib/backbone-min.js?1308557138' type='text/javascript'></script>
+    <script src='/javascripts/lib/icanhaz-min.js?1308557138' type='text/javascript'></script>
+
+    <script type="text/javascript">
+      var colorBlue = '#75A8FF';
+      var colorGold = '#FFD700';
+      var intervalUpdateChat = 65000;
+      Craiggers.Views.Utterances = Backbone.View.extend({
+
+        model: Craiggers.Models.Utterance,
+
+        el: $('#utterances'),
+
+        initialize: function() {
+        },
+
+        render: function() {
+            if (this.collection.models.length > 0){
+              $('.conversation .conversation-id-' + this.collection.models[0].get('conversation_id') + ' #utterances .utterances table').html('');
+            }
+            this.collection.each(function(utterance) {
+              new Craiggers.Views.Utterance({model: utterance}).render();
+            });
+        }
+      });
+
+      Craiggers.Views.Utterance = Backbone.View.extend({
+
+        el: $('.utterance'),
+
+        render: function() {
+            $('.conversation-id-' + this.model.get('conversation_id') + ' #utterances .utterances table').append(ich.utterance(this.model.toJSON()));
+            $('#conversations .conversation-id-' + this.model.get('conversation_id') + ' #utterances .utterances table tr td b').last().after("<span>"+ this.model.get('text')+ "</span><br/>");
+            $('.conversation-id-' + this.model.get('conversation_id')).parent().scrollTop(1000000);
+        }
+      });
+
+      Craiggers.Views.Conversation = Backbone.View.extend({
+
+        className: 'conversation',
+
+        events: {
+          'click .close-conversation': 'close',
+          'click .to-conversation': 'conversation',
+          'click .minimize-conversation': 'minimize',
+          'click .maximize-conversation': 'maximize',
+          'click .normal': 'to_normal',
+          'keyup .conversation-textarea': 'send'
+        },
+
+        initialize: function() {
+          var current_conversation = this;
+          //this.model.get('my_utterances').unbind('add');
+          this.model.get('my_utterances').bind('add', function(new_utterance){
+            current_conversation.model.get('my_utterances').processTimestamps();
+            new Craiggers.Views.Utterance({model: new_utterance}).render();
+          });
+        },
+
+        to_normal: function() {
+          conv.set({
+            'window_status': 'true',
+            'js_status': ''
+          });
+          $.ajax({
+            url: '/conversation/start?postKey=' + conv.get('post_key')
+          });
+          self.close();
+        },
+
+        render: function(render_option) {
+          this.model.get('my_utterances').processTimestamps();
+          $(this.el).html(ich.conversation(this.model.toJSON()));
+          var self = $(this.el);
+          $('#conversations').prepend(this.el);
+          var current_conversation = this;
+          current_conversation.renderUtterances();
+          current_conversation.delayRender(render_option);
+          current_conversation.model.get('my_utterances').bind('add', function() {
+            current_conversation.delayRender(render_option);
+          });
+        },
+
+        delayRender: function(render_option){
+          var current_conversation = this;
+          current_conversation.checkStatusChat();
+          setTimeout(function() {
+            current_conversation.renderUtterances(render_option);
+          }, intervalUpdateChat);
+        },
+
+        renderUtterances: function(render_option) {
+          var current_conversation = this;
+          var self = $(this.el);
+          current_conversation.model.get('my_utterances').processTimestamps();
+          new Craiggers.Views.Utterances({
+            collection:   current_conversation.model.get('my_utterances')
+          }).render(render_option);
+          $('#text_conversation', self).bind('scroll',function(event){
+            event.preventDefault();
+            var cur_height = $(current_conversation).height();
+            if (cur_height < 70) {
+              $('#conversation-message-box', self).height($('#conversation-message-box', self).height()+14);
+              $(current_conversation).height(cur_height+14);
+            }
+          });
+        },
+
+        checkStatusChat: function() {
+          var self = $(this.el);
+          if (this.model.get("last_answered") == "true"){
+            $('#header-conversation', self).css('background-color', colorGold);
+          } else {
+            $('#header-conversation', self).css('background-color', colorBlue);
+          }
+        },
+
+        close: function() {
+          this.model.set({
+            'window_status': false,
+            'js_status': ''
+          });
+          $.ajax({
+            url: '/conversation/close?conversation_id=' + this.model.get('id'),
+            dataType: 'json'
+          });
+          self.close();
+        },
+
+        send: function(e) {
+          if(e.keyCode === 13) {
+            var self = $(this.el);
+            var utterance = $('.conversation-textarea', self).val();
+            var current_conversation = this;
+            $('.conversation-textarea', self).unbind('scroll');
+            $('.conversation-textarea', self).val('');
+            $('.conversation-textarea', self).height(28);
+            $('#conversation-message-box', self).css({
+              bottom: function(index, value) {
+                return 50;
+              }
+            });
+            if (current_conversation.model.get('user_is_blocked') == 'false') {
+              if (current_conversation.model.get('partner_is_blocked') == 'false') {
+                $.ajax({
+                  url: '/conversation/add?conversation_id=' + current_conversation.model.get('id') + '&text=' + utterance + '&postKey=' + current_conversation.model.get('post_key') + '&heading=' + current_conversation.model.get('heading'),
+                  dataType: 'json'
+                });
+              }
+              else {
+                $('.conversation-id-' + current_conversation.model.get('id') + ' #utterances .utterances table').append(ich.utterance);
+                $('#conversations .conversation-id-' + current_conversation.model.get('id') + ' #utterances .utterances table tr td b').last().after("<span style='color: red;'>" + "sorry, your message could not be delivered. " + current_conversation.model.get('other_party_name') + " are not available to chat" + "</span><br/>");
+                $('.conversation-id-' + current_conversation.model.get('id')).parent().scrollTop(1000000);
+              }
+            }
+            else {
+              $('.conversation-id-' + current_conversation.model.get('id') + ' #utterances .utterances table').append(ich.utterance);
+              $('#conversations .conversation-id-' + current_conversation.model.get('id') + ' #utterances .utterances table tr td b').last().after("<span style='color: red;'>" + "sorry, your message could not be delivered. You are not available to chat" + "</span><br/>");
+              $('.conversation-id-' + current_conversation.model.get('id')).parent().scrollTop(1000000);
+            }
+            $('#text_conversation', self).bind('scroll',function(event){
+              event.preventDefault();
+              var cur_height = $(this).height();
+              if (cur_height < 70) {
+                $('#conversation-message-box', self).css({
+                  bottom: function(index, value) {
+                    return parseFloat(value) + 14;
+                  }
+                });
+                $(this).height(cur_height+19);
+              }
+            });
+          }
+        }
+      });
+    </script>
+    <script type="text/javascript">
+      function fff(){
+        new Craiggers.Views.Conversation({model: conv}).render();
+      }
+      window.onbeforeunload = function(){ conv.set({'js_status':''});}
+    </script>
+  </body></html>

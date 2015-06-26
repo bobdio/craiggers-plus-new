@@ -1,0 +1,40 @@
+{{#if favorited}}
+<div class="favorite favorited"></div>
+{{else}}
+<div class="favorite"></div>
+{{/if}}
+<div class="heading">
+    {{{ heading }}}
+</div>
+<a class="origin_link" href='{{ external_url }}' target='_blank'> {{ external_url }}</a>
+<div class="data hr">
+    <div class="timestamp">{{ clienttime }}</div>
+    <div class="contact">
+        reply to:
+        {{#if source_account}}
+        <a href='mailto:{{ source_account }}'>{{ source_account }}</a>
+        {{else}}
+        see below
+        {{/if}}
+    </div>
+</div>
+<div class="annotations hr"></div>
+<div class="body hr"></div>
+<div class="view-comments"></div>
+<hr>
+<table class="publicdomain">
+    <tr>
+        <td>
+            <a href='http://creativecommons.org/publicdomain/mark/1.0/'>
+                <div class="image">
+                    <img src='/assets/publicdomain.png' height="40"/>
+                </div>
+            </a>
+        </td>
+        <td class="disclaimer">
+            This work ({{{ heading }}} by {{ accountName }}),
+            identified by craigslist, is free of known copyright restrictions.
+        </td>
+    <div class="poweredby3taps"></div>
+    <a href='http://3taps.com' target='_blank'><img src='/assets/poweredby3taps.png'></a>
+

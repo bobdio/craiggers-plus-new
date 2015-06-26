@@ -1,0 +1,7 @@
+%script#root-location-autocomplete{ :type => 'text/html' }
+  .ac_results_loc{:style=>"width: 200px;"}
+    %ul{:style => "max-height: 180px; overflow-x: auto; overflow-y: auto;"}
+      {{#locations}}
+      %li.selectable {{.}}
+      .code{:style=>"display: none"}
+      {{/locations}}

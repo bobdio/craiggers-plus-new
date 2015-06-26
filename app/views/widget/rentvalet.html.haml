@@ -1,0 +1,28 @@
+%html
+  %head
+    %title
+    %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", :type=>"text/javascript"}
+  %body
+    .rentvalet_values
+      %div.rentvalet_property_id= @rentvaletProperty[:id]
+      %div.rentvalet_property_contact= @rentvaletProperty[:contact]
+      %div.rentvalet_property_contact_type= @rentvaletProperty[:contact_type]
+      %div.rentvalet_property_address= @rentvaletProperty[:address]
+      %div.rentvalet_property_rent= @rentvaletProperty[:rent]
+      %div.rentvalet_property_url= @rentvaletProperty[:url]
+
+    :javascript
+      $('.rentvalet_values').hide();
+      var rentvaletILS = 2;
+      var rentvaletProperty = {};
+      rentvaletProperty.temp_rand = Math.random();
+      // START insert block //
+      rentvaletProperty.id = $('div.rentvalet_property_id').text();
+      rentvaletProperty.contact = $('div.rentvalet_property_contact').text();
+      rentvaletProperty.contact_type = $('div.rentvalet_property_contact_type').text();
+      rentvaletProperty.address = $('div.rentvalet_property_address').text();
+      rentvaletProperty.rent = '$' + $('div.rentvalet_property_rent').text();
+      rentvaletProperty.url = $('div.rentvalet_property_url').text();
+
+      // END insert block //
+      document.write('<scri'+'pt src="https://rentvalet.us/ils/button/show/7pA8SGnKKVGBXdNbtvFyhj7qe33kbtjJ/?ILSID='+rentvaletILS+'&RVID='+rentvaletProperty.temp_rand+'"></scr'+'ipt>');

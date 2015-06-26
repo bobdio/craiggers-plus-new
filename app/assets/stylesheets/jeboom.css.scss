@@ -1,0 +1,204 @@
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background-color: #cc3300;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+#logo a {
+  float: left;
+  background: url(image_path('logos/jeboom-small.png')); }
+
+.beta {
+  color: #CC6600;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+#logo .beta {
+  float: left;
+  font-size: 9px;
+  margin-top: 8px;
+}
+
+#version {
+  color: #666666;
+  float: left;
+  margin-top: 23px;
+  font-size: 9px;
+}
+
+#popup-dialog .content {
+  border-color: #cc3300; }
+
+#notifysave {
+  border-color: #cc3300; }
+  #notifysave:before {
+    border-right-color: #cc3300; }
+
+#treemap-link {
+  display: none; }
+
+#categories, #locations, #sources {
+  display: none; }
+
+#root .tagline {
+  color: #cc3300; }
+
+.mainnav .navlink.active {
+  color: #cc3300 !important; }
+
+#sublinks .active {
+  color: #cc3300; }
+
+#searchcolumn .form .location .autocomplete {
+  display: none; }
+#searchcolumn .form .location .geolocate {
+  cursor: pointer;
+  height: 14px;
+  right: 8px;
+  position: absolute;
+  top: 10px;
+  width: 14px; }
+
+.button {
+  background-color: #cc3300;
+  background-image: -moz-linear-gradient(top, #ee7711 0%, #dd5500 13%, #cc3300 80%, #bb2211 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ee7711), color-stop(0.13, #dd5500), color-stop(0.8, #cc3300), color-stop(1, #bb2211));
+  background-image: linear-gradient(top, #ee7711 0%, #dd5500 13%, #cc3300 80%, #bb2211 100%); }
+
+.posting-image-viewer .minis .mini.selected {
+  border-color: #cc3300; }
+
+/*==================================================== */
+/* SEARCH BAR */
+/*==================================================== */
+#searchbar {
+  margin-top: 57px;
+  width: 420px; }
+  #searchbar .query .input {
+    width: 320px; }
+  #searchbar .query .searchglass {
+    background: url(image_path('glass.png')) no-repeat;
+    cursor: pointer;
+    height: 14px;
+    right: 8px;
+    position: absolute;
+    top: 8px;
+    width: 14px; }
+
+.searchcontainer .input:focus {
+  border: 1px solid #cc3300; }
+.searchcontainer .geolocate {
+  color: #cc3300; }
+.searchcontainer .location .geolocate {
+  cursor: pointer;
+  height: 14px;
+  right: 8px;
+  position: absolute;
+  top: 10px;
+  width: 14px; }
+.searchcontainer .location .input {
+  display: inline; }
+.searchcontainer .location .jumbolist {
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 3px solid #dddddd;
+  background: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  position: absolute;
+  z-index: 5; }
+  .searchcontainer .location .jumbolist .container {
+    margin: 0 auto; }
+  .searchcontainer .location .jumbolist .grid_3, .searchcontainer .location .jumbolist .grid_4 {
+    text-transform: lowercase; }
+  .searchcontainer .location .jumbolist .primary {
+    background: #f4f4f4;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin-top: 4px;
+    padding: 3px 0;
+    text-align: center; }
+  .searchcontainer .location .jumbolist .selectable {
+    border-bottom: 1px solid #eaeaea;
+    color: #0000ee;
+    cursor: pointer;
+    margin-bottom: 2px;
+    /*margin-right: 16px */
+    padding-bottom: 1px; }
+    .searchcontainer .location .jumbolist .selectable:hover {
+      background: #eeeeee;
+      color: purple; }
+  .searchcontainer .location .jumbolist .selectable.primary {
+    border-bottom: 1px solid #cccccc;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 0px;
+    padding-bottom: 3px; }
+    .searchcontainer .location .jumbolist .selectable.primary:hover {
+      background: white;
+      color: purple; }
+.searchcontainer .location-path {
+  color: #cc3300; }
+  .searchcontainer .location-path .context-link {
+    margin-left: 10px;
+    font-size: 11px; }
+  .searchcontainer .location-path .context-text {
+    font-size: 11px;
+    align: left;
+    display: none; }
+    .searchcontainer .location-path .context-text .context-close {
+      font-size: 11px;
+      padding: 3px; }
+    .searchcontainer .location-path .context-text .city, .searchcontainer .location-path .context-text .county, .searchcontainer .location-path .context-text .region, .searchcontainer .location-path .context-text .metro, .searchcontainer .location-path .context-text .state, .searchcontainer .location-path .context-text .country, .searchcontainer .location-path .context-text .locality {
+      text-align: left;
+      background: #eeeeee;
+      padding: 3px;
+      cursor: pointer; }
+      .searchcontainer .location-path .context-text .city:hover, .searchcontainer .location-path .context-text .county:hover, .searchcontainer .location-path .context-text .region:hover, .searchcontainer .location-path .context-text .metro:hover, .searchcontainer .location-path .context-text .state:hover, .searchcontainer .location-path .context-text .country:hover, .searchcontainer .location-path .context-text .locality:hover {
+        background: #ffffaa; }
+    .searchcontainer .location-path .context-text .city-code, .searchcontainer .location-path .context-text .county-code, .searchcontainer .location-path .context-text .region-code, .searchcontainer .location-path .context-text .metro-code, .searchcontainer .location-path .context-text .state-code, .searchcontainer .location-path .context-text .country-code, .searchcontainer .location-path .context-text .locality-code {
+      display: none; }
+    .searchcontainer .location-path .context-text .current-search-level {
+      background: lightBlue; }
+
+/* 2011-11-15 12:20 Author: Igor Novak
+ * enlarge priority of the rule
+ * TODO: use classes */
+#searchcolumn .form .location .viewlist, .searchcontainer .location .viewlist{
+  background: url(image_path('crosshair-purple.png')) no-repeat 3px 2px !important; }
+
+#drawer-button {
+  color: #cc3300; }
+
+/*==================================================== */
+/* END SEARCH BAR */
+/*==================================================== */
+#postings .posting .owner {
+  visibility: hidden; }
+#postings .newmatches {
+  color: #cc3300;
+  background: #ff794c; }
+
+#locationfilter .body .allnone {
+  height: 20px;
+  padding-top: 5px; }
+#locationfilter .body .results .result {
+  margin-left: 20px; }
+  #locationfilter .body .results .result:first-child {
+    margin-left: 0; }
+#locationfilter .body .spliter {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 4px;
+  margin-bottom: 4px; }
+
+#detail .header .email {
+  color: #cc3300; }

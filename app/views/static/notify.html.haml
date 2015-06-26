@@ -1,0 +1,62 @@
+- content_for :title do 
+  Notify
+
+= include_stylesheets :notify
+
+#notify
+
+  = render :partial => "shared/#{current_domain["name"]}_locations"
+  = render :partial => "shared/#{current_domain["name"]}_categories"
+
+  #notify-instructions
+    sign up for notifications when the following criteria are met:
+    .space 
+    when postings have...
+    %br
+    %br
+  #notify-param-form
+
+    .label all of these words: 
+    %input{:type => "text", :name => "all-words", :id => "all-words", :class => "notify-params"}
+    %br{:class => "clear"}
+
+    .label the category is:
+    %select{:name => "category", :id => "notify-category-select", :class => "chzn-select notify-params"}
+    %br{:class => "clear"}
+
+    .label the location is:
+    %select{:name => "location", :id => "notify-location-select", :class => "chzn-select notify-params"}
+      %option{:value => "all"}all locations
+    %br{:class => "clear"}
+
+    .advanced
+      %a{:href => "#"}advanced
+
+    #postings-per-day-container
+      %img{:src => "images/loader.gif", :id => "loading"}
+      #postings-per-day
+
+    #contact-container
+      .short-label
+        %input{:type => "checkbox", :name => "via-email", :id => "via-email"} via email: 
+      %input{:type => "text", :name => "email", :id => "email"}
+      %br
+
+      .short-label
+        %input{:type => "checkbox", :name => "via-sms", :id => "via-phone"} via sms: 
+      %input{:type => "text", :name => "sms", :id => "number"}
+      %br
+      .space
+
+      :javascript
+        var RecaptchaOptions = {
+          theme : 'clean'
+        }
+                  
+     
+      = recaptcha_tags :ajax => true, :display => {:theme => 'clean'}
+
+      .space
+
+      %input{:type => "submit", :value => "save", :id => "submit"}
+

@@ -1,0 +1,8 @@
+<%= @new %> new postings match your saved search criteria named '<%= @name %>'.  Click here to view the latest results for your search:  <%= uniq_key_url(@search.uniq_key) %>
+
+New postings:
+<%- @headings.each do |h| -%>
+<%= h %>
+<%- end -%>
+
+To stop receiving these notifications, click here: <%= unsubscribe_search_url(@search.secret_key) %>

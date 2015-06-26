@@ -1,0 +1,14 @@
+.delete
+  %img{:src => '/assets/pencil_medium.png', :style => 'width: 20px;'}
+.name
+  .text {{name}}
+.annos
+  %div
+    {{#if parent_cat}}{{parent_cat}} > {{/if}}
+    {{#if cat}}{{cat}}{{/if}}
+  {{#if parent_locations}}{{#each parent_locations}}{{#with this}} {{name}} > {{/with}}{{/each}}{{/if}}
+  {{#if location}}{{location}}{{/if}}
+.extras
+  -#.email email search
+  .notification
+    %img{:src => "/assets/notification-email.png"}

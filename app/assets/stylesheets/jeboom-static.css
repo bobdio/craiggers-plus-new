@@ -1,0 +1,12 @@
+.ui-widget-header {
+  border: 1px solid #e78f08;
+  background-color: #cc3300;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif; }
+
+#title {
+  background: #cc3300; }
+
+#content #leftcol .sidebar .selected {
+  background-color: #cc3300; }

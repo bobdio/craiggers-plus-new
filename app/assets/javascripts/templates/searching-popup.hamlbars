@@ -1,0 +1,4 @@
+#searching
+  searching...
+  %img{:src => '/assets/searching.gif'}
+#cancel-running-search.link cancel

@@ -1,0 +1,89 @@
+%h1 Map
+
+#map{:style=>"width:800px; height:500px"}
+
+= javascript_include_tag "http://maps.google.com/maps/api/js?sensor=false"
+= javascript_include_tag "markerclusterer"
+
+:javascript
+  (function($){
+
+    var center = new google.maps.LatLng(37.4419, -102.1419);
+    var options = {
+      'zoom': 4,
+      'center': center,
+      'mapTypeId': google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("map"), options);
+
+    var ts_to = Date.now() / 1000 | 0
+    var ts_from = ts_to - 900 // 10 h ;600 minutes
+    var postingsAPI = "http://api.3taps.com/api/latest/search/";
+
+    var markers = [];
+
+    var next_run = true;
+    var i = 0;
+
+    var total;
+
+    $.getJSON(postingsAPI, {
+      retvals: 'location',
+      async: false,
+      page: 0,
+      rpp: 1,
+      timestamp: ts_from+".."+ts_to
+    })
+    .done(function( data ){
+      if(!data.success)
+        return;
+
+      if(! data.num_matches > 0)
+        return;
+
+      total = data.num_matches;
+
+      var count = Math.round(parseInt(total) / 100);
+      console.log(count);
+      for (i = 0; i < count; i++){
+        $.getJSON(postingsAPI, {
+          retvals: 'location',
+          async: false,
+          page: i,
+          rpp: 100,
+          timestamp: ts_from+".."+ts_to
+        })
+        .done(function( data ){
+          if(!data.success)
+            return;
+
+          if(! data.num_matches > 0)
+            return;
+
+          _.each(data.postings, function(posting){
+            var latLng = new google.maps.LatLng(posting.location.latitude, posting.location.longitude);
+            var marker = new google.maps.Marker({'position': latLng});
+            markers.push(marker);
+          });
+
+          //console.log(markers);
+          var markerCluster = new MarkerClusterer(map, markers);
+
+        })
+        .fail(function( jqxhr, textStatus, error ){
+          alert(textStatus + ': ' + error);
+        });
+
+      }
+
+      var markerCluster = new MarkerClusterer(map, markers);
+
+    })
+    .fail(function( jqxhr, textStatus, error ){
+      alert(textStatus + ': ' + error);
+    });
+
+  })(jQuery);
+
+  // var response = JSON.parse("#{j @response_json}")
+

@@ -1,0 +1,29 @@
+#searchbar.searchcontainer
+  %form.form{ :style => "z-index:200;" }
+    .query.wrapper
+      .holder
+        %label{ :for => 'searchbar_query_input' } keywords
+      %input#searchbar_query_input.input
+    .category.wrapper
+      .holder
+        %label{ :for => 'searchbar_category_input' } all categories
+      .viewlist.closed
+      %input#searchbar_category_input.input
+      .autocomplete
+      .jumbolist
+        .container
+          = render :partial => "shared/jeboom_jumbocategories"
+    .location.wrapper
+      .holder
+        %label{ :for => 'searchbar_location_input' } all locations
+      .viewlist.closed
+      %input#searchbar_location_input.input
+      .autocomplete
+      .geolocate
+        = image_tag 'crosshair-purple.png', :title => 'find your location'
+        .text find your location
+      .jumbolist
+        .container
+          = render :partial => "shared/jeboom_jumbolocations"
+      -#.hoverable find your location
+    %input.search.button{ :type => 'submit', :value => 'search', :name => 'searchbar_button'}

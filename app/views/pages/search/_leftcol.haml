@@ -1,0 +1,154 @@
+- if current_domain['name'] == 'jeboom'
+  #locations
+    = render :partial => "shared/jeboom_locations"
+  #categories
+    = render :partial => "shared/jeboom_categories"
+  #sources
+    = render :partial => "shared/jeboom_sources"
+
+#currentsearch
+  #searchcolumn.searchcontainer
+    %form.form
+      .query.wrapper
+        .holder
+          %label{ :for => 'query_input' } keywords
+        %input#query_input.input
+      .category.wrapper.column
+        .holder
+          %label{ :for => 'category_input' } all categories
+        .viewlist.closed
+        %input#category_input.input
+        .autocomplete
+        .jumbolist
+          .container
+            = render :partial => "shared/jeboom_jumbocategories"
+      .location.wrapper.column
+        .holder
+          %label{ :for => 'location_input' } all locations
+        .viewlist.closed
+        %input#location_input.input{ :autocomplete => 'off' }
+        .location.autocomplete
+        .location-path
+        -#.geolocate
+          = image_tag 'crosshair-purple.png', :title => 'find your location'
+          .text find your location
+        .jumbolist
+          .container
+            = render :partial => "shared/jeboom_jumbolocations"
+        -#.hoverable find your location
+
+      - if current_domain['name'] == 'craiggers'
+        = render :partial => 'pages/search/search_filters'
+
+      .buttons
+        %input.search.button{ :type => 'submit', :value => 'search', :name => 'searchcolumn_button' }
+        %input.savesearch.button{ :type=> 'button', :value => 'save / notify' }
+        #notifysave
+          #notifysaveclose.popup-close
+          %p
+            save this search as:
+            %input#search-name{:type => 'text', :name => 'search-name'}
+          %p
+            subscribe to notifications?
+            .notification-setting
+              %input#notify-email{:type => 'checkbox', :name => 'notify-email'}
+              %img{:src => image_path('notification-email.png')}
+              %input.notify-address#notify-email-address{:type => 'text', :name => 'notify-email-address'}
+            .notification-setting.sms
+              %input#notify-sms{:type => 'checkbox', :name => 'notify-sms'}
+              %img{:src => image_path('notification-sms.png')}
+              %input.notify-address#notify-sms-address{:type => 'text', :name => 'notify-sms-address'}
+            #sms-error.notification-setting.error
+          %p
+            %input#save-notification{:type => 'submit', :value => 'save'}
+      .clear
+
+  #price-range
+    .text
+      price range:
+    %label
+      $
+      %input.min#min-price-range
+    to
+    %label
+      $
+      %input.max#max-price-range
+    %span.reset.link clear
+    .static
+      - has_price
+  -# #categoryspecfilters.filters
+  -#   = render :partial => 'pages/search/filters'
+  = render :partial => 'pages/search/search_filters'
+  -##sourcesfilter.filter-dropdown
+  -#  .header
+  -#    .text sources
+  -#  .body
+  -#    .allnone
+  -#      .all select all
+  -#      .none clear
+  -#    .allcount
+  -#      %span.allcountname all sources
+  -#      %span.count.allcountnumber
+  -#    .results
+  -#    .seemore see more...
+  -##categoryfilter.filter-dropdown
+  -#  .header
+  -#    .text categories
+  -#  .body
+  -#    .allnone
+  -#      .all select all
+  -#      .none clear
+  -#    .allcount
+  -#      %span.allcountname all categories
+  -#      %span.count.allcountnumber
+  -#    .results
+  -#    .seemore see more...
+  -##locationfilter.filter-dropdown
+  -#  .header
+  -#    .text locations
+  -#  .body
+  -#    .results-title
+  -#    .allnone
+  -#      .all select all
+  -#      .none clear
+  -#    .allcount
+  -#      %span.allcountname all locations
+  -#      %span.count.allcountnumber
+  -#    .results
+  -#    .seemore see less...
+  -#    .spliter
+  -#    .neighbors-title
+  -#    .neighbors-allnone.allnone
+  -#      .all-neighbors select all
+  -#      .none-neighbors clear
+  -#    .results-neighbors
+  -#    .seemore see less...
+  -#- if current_domain['name'] == 'craiggers'
+  -#  #neighborfilter.filter-dropdown
+  -#    .header
+  -#      .text neighborhoods
+  -#    .body
+  -#      .allnone
+  -#        .all select all
+  -#        .none clear
+  -#      .allcount
+  -#        %span.allcountname all neighborhoods
+  -#        %span.count.allcountnumber
+  -#      .results
+  -#      .seemore see less...
+  -#
+  #radiusfilter.filter-dropdown
+    .header
+      .text distance
+    .body
+      %input.distance{style: 'float:left; margin: 1px; width:75px;'}
+      %select.dimension
+        %option{value: 'ft'} feet.
+        %option{value: 'm'} meters.
+        %option{value: 'mi'} miles.
+        %option{selected: 'selected', value: 'km'}kilometers.
+  -#
+  -#= render :partial => 'pages/search/status_filter'
+  -#- if current_domain['name'] == 'craiggers'
+  -#  = render :partial => 'pages/search/status_filter'
+

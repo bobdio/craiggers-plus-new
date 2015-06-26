@@ -1,0 +1,185 @@
+-#%script#posting{ :type => 'text/html' }
+  -#{{#thumb}}
+  -#.thumb
+  -#  %img{ :src => '{{ thumb }}' }
+  -#{{/thumb}}
+  -#.content
+  -#  {{#price}}
+  -#  .price ${{ price }}
+  -#  {{/price}}
+  -#  .heading {{{ heading }}}
+  -#  .path {{#parent_cat_name}} {{parent_cat_name}} > {{/parent_cat_name}}{{ category_name }}
+  -#  .path.location-path_
+  -#  .timestamp {{#timeago}}{{ timeago }}{{/timeago}}
+  -#  -#- if current_domain["name"] == "jeboom"
+  -#  -#  .numcomments {{ commentCount }}
+  -#  .utc {{ timestamp }}
+  -#  {{#favorited}}
+  -#  .favorite.favorited
+  -#    .dogear
+  -#    .clickable
+  -#      .text unfavorite
+  -#      .star
+  -#  {{/favorited}}
+  -#  {{^favorited}}
+  -#  .favorite
+  -#    .dogear
+  -#    .clickable
+  -#      .text favorite
+  -#      .star
+  -#  {{/favorited}}
+  -#  .postkey {{ postKey }}
+
+-#%script#posting-detail{ :type => 'text/html' }
+  -#{{#favorited}}
+  -#.favorite{ :class => 'favorited' }
+  -#{{/favorited}}
+  -#{{^favorited}}
+  -#.favorite
+  -#{{/favorited}}
+  -#.heading {{{ heading }}}
+  -#%a.origin_link{ :href => '{{ external_url }}', :target => '_blank' } {{ external_url }}
+  -#.data.hr
+  -#  .timestamp {{ clienttime }}
+  -#  .contact
+  -#    reply to: ...
+  -#.annotations.hr
+  -#.body.hr
+  -#.view-comments
+  -#%hr
+  -#%table.publicdomain
+  -#  %tr
+  -#    %td
+  -#      %a{ :href => 'http://creativecommons.org/publicdomain/mark/1.0/' }
+  -#        .image= image_tag 'publicdomain.png', :height => 40
+  -#    %td.disclaimer
+  -#      This work ({{{ heading }}} by {{ accountName }}),
+  -#      identified by craigslist, is free of known copyright restrictions.
+  -#.poweredby3taps
+  -#  = link_to image_tag('poweredby3taps.png'), 'http://3taps.com', :target => '_blank'
+
+-#%script#posting-detail-complete{ :type => 'text/html' }
+-#  {{#favorited}}
+-#  .favorite{ :class => 'favorited' }
+-#  {{/favorited}}
+-#  {{^favorited}}
+-#  .favorite
+-#  {{/favorited}}
+-#  .heading {{{ heading }}}
+-#  %a.origin_link{ :href => '{{ external_url }}', :target => '_blank' } {{ external_url }}
+-#  .data.hr
+-#    .timestamp {{ clienttime }}
+-#    .contact
+-#      reply to:
+-#      {{#source_account}}
+-#      %a{ 'href' => 'mailto:{{ source_account }}' }{{ source_account }}
+-#      {{/source_account}}
+-#      {{^source_account}}
+-#      see below
+-#      {{/source_account}}
+-#    .share
+-#      -#%a#message-me{ :href => '#', :target => '_blank' }
+-#      -#  %img{ :src => 'http://cdn.anoni.com/images/messageme.png' }
+-#      .share-link.twitter
+-#        %div
+-#          %a.twitter-share-button{ :href => '{{ twitter }}' }
+-#            = image_tag 'twitter-share-icon.png'
+-#      .share-link.facebook
+-#        %a{ :href => '{{ facebook }}', :target => '_blank' }
+-#          = image_tag 'facebook-share-icon.gif'
+-#      %a.share-link.email{ :href => '#emailpopup' } email
+-#  .annotations.hr
+-#    %table.annotations_table
+-#      %tr
+-#        %td
+-#          {{>annotations}}
+-#        %td
+-#          .price {{#format_price}}${{ format_price }}{{/format_price}}
+-#          %br
+-#          %br
+-#          {{#has_apts_housing}}
+-#          %iframe{:id => "rentvalet_iframe", :name => "rentvalet_iframe", :src => "/widget/rentvalet?contact={{accountName}}&address={{location_path}}&rent={{price}}&url={{url}}", :width => "98", :height=>"84", :align=>"top", :scrolling => "no"} Browser doesn't support iframes
+-#          {{/has_apts_housing}}
+-#  .images.hr
+-#  .body.hr {{{ body }}}
+-#  {{#has_original_map_links}}
+-#  .original_map_links
+-#    .map_link
+-#      {{#original_map_google}}
+-#      %a{ :href => '{{ original_map_google }}', :target => '_blank' } google map
+-#      {{/original_map_google}}
+-#    .map_link
+-#      {{#original_map_yahoo}}
+-#      %a{ :href => '{{ original_map_yahoo }}', :target => '_blank' } yahoo map
+-#      {{/original_map_yahoo}}
+-#  {{/has_original_map_links}}
+-#  -#.comment-buttons.hr
+-#  -#  %input.button.comment{ :type => 'button', :value => 'add new comment' }
+-#  -#  %input.button.flag{ :type => 'button', :value => 'flag this posting' }
+-#  -#  %br
+-#  -#  %br
+-#  .view-comments
+-#  %hr
+-#  %table.publicdomain
+-#    %tr
+-#      %td
+-#        %a{ :href => 'http://creativecommons.org/publicdomain/mark/1.0/' }
+-#          .image= image_tag 'publicdomain.png', :height => 40
+-#      %td.disclaimer
+-#        This work ({{{ heading }}} by {{ accountName }}),
+-#        identified by craigslist, is free of known copyright restrictions.
+-#  .poweredby3taps
+-#    = link_to image_tag('poweredby3taps.png'), 'http://3taps.com', :target => '_blank'
+
+-#%script#posting-image-viewer{ :type => 'text/html' }
+-#  .frame.static
+-#    %img.main
+-#  .minis
+
+-# NOT USED
+-#%script#user-details-popup{ :type => 'text/html' }
+-#  .user-details-popup
+-#    .general
+-#      %img{ :src => '{{ photo }}' }
+-#      %span.username {{ username }}
+-#    .verifications
+-#      .verifications-header Verifications
+-#      {{#identities}}
+-#      .provider{ :style => 'background-image: url(/images/{{ provider }}-icon.png)' }
+-#        {{ provider }} verified
+-#        {{#otherData}}
+-#        .other-data {{ otherData }}
+-#        {{/otherData}}
+-#      {{/identities}}
+-# /NOT USED
+
+-#%script#missing-favorites-popup-template{ :type => 'text/html' }
+-#  #missing Unfortunately, {{ count }} postings have expired
+
+-#%script#share-popup-template{ :type => 'text/html' }
+  -#.header
+  -#  .text Share {{ type }}
+  -#.options
+  -#  %form.form
+  -#    %label
+  -#      your email
+  -#      %input.your
+  -#    %label
+  -#      destination email:
+  -#      %input.dest
+  -#    %input.send{ :type => 'submit', :value => 'send' }
+  -#    %img.loading{ :src => image_path('loader.gif') }
+  -#  .copy
+  -#    or just copy this url
+  -#    %input.url{ :value => '{{ url }}' }
+  -#.messages
+  -#  .sent sent!
+  -#  .notsent hm, there was an error sending the email - we're on the case!
+
+-#%script#posting-detail-tooltip{ :type => 'text/html' }
+-#  .heading {{{ heading }}}
+-#  %a{ :href => '{{ externalURL }}', :target => '_blank' } {{ externalURL }}
+-#  .timestamp
+-#    {{ clienttime }}
+-#  .annotations
+-#    .price ${{ price }}

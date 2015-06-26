@@ -1,0 +1,32 @@
+- content_for :title do
+  Settings
+/ - content_for :javascripts do
+  / = javascript_include_tag 'settings'
+
+#content
+  .settings
+    .social_message
+      %h2
+        .username Social Message
+      .message=current_app_settings['social_message']
+      = form_tag '/settings/update' do
+        %br
+        .label
+          %label{ :for => 'social_message' } New message:
+          %input#social_message{ :type => 'text', :name => 'social_message' }
+        %br
+        %br
+        - if current_domain['enable_notifications']
+          = render :partial => 'notifications_section'
+        .notice
+          = flash[:notice]
+        %input{ :type => 'submit', :value => 'Update Settings' }
+
+%style
+  :sass
+    .container_16
+      width: 960px
+    #footer
+      display: none
+    td
+      vertical-align: bottom

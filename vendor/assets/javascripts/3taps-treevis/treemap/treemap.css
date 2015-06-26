@@ -1,0 +1,147 @@
+rect {
+  stroke: #000;
+  stroke-width: .5px;
+  fill: none;
+}
+
+g.cell {
+  cursor: pointer;
+}
+
+text {
+  font: 16px sans-serif;
+  fill: #fff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs a {
+  margin: .5em;
+}
+
+.breadcrumbs {
+  margin: .5em 0;
+  text-align: center;
+}
+
+.crumb:before {
+  content: '»';
+}
+.crumb:first-child:before {
+  content: '';
+}
+
+/* TODO: dirty */
+#treemap #wrapper {
+  width: 960px;
+}
+
+#wrapper p {
+  text-align: center;
+}
+
+#keywords {
+  font-size: 1.2em;
+  width: 400px;
+}
+
+div.tooltip {
+  position: absolute;
+  padding: 3px 8px;
+  font: 12px sans-serif;
+  pointer-events: none;
+  text-align: left;
+  background: #fff;
+  color: #000;
+  border: solid #ccc 1px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  max-width: 450px;
+  max-height: 476px;
+  overflow: hidden;
+}
+
+div.tooltip p {
+  margin: 0;
+}
+
+#left, #right {
+  float: left;
+  width: 460px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+}
+
+g.color text {
+  fill: #000;
+  font: 12px sans-serif;
+}
+
+g.color-key text {
+  fill: #000;
+  font: 12px sans-serif;
+}
+
+p.credits {
+  padding-top: 1em;
+  font-style: italic;
+}
+
+a.toggle-sublevels {
+  width: 20px;
+  height: 20px;
+  background: red;
+  display: block;
+  float: right;
+  margin: 3px;
+  text-decoration: none;
+}
+
+g.location {
+  stroke: #fff;
+  cursor: pointer;
+}
+
+g.location.NEIGHBOR {
+  stroke-width: 1.5px;
+}
+
+g.location.CHILD, g.location.CURRENT {
+  stroke-width: .5px;
+}
+
+g.bubbles circle {
+  stroke: #000;
+  stroke-width: .5;
+  fill: #fff;
+  fill-opacity: .5;
+}
+
+a.toggle-sublevels {
+  background-color: #ccc;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+a.toggle-sublevels.active {
+  background-color: #fc0;
+}
+
+a.toggle-sublevels:hover {
+  background-color: steelblue;
+}
+
+text.error {
+  fill: red;
+  font: 16px sans-serif;
+}

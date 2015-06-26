@@ -1,0 +1,4624 @@
+{
+  "US": {
+    "wyoming": {
+      "wyoming": {
+        "location_1": "wyoming",
+        "Display City State": "Wyoming WY",
+        "url": "wyoming.craigslist.org",
+        "loc_1": "wyoming",
+        "subs": [
+
+        ],
+        "Display State": "Wyoming"
+      }
+    },
+    "virginia": {
+      "winchester": {
+        "location_1": "winchester",
+        "Display City State": "Winchester VA",
+        "url": "winchester.craigslist.org",
+        "loc_1": "winchester",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "richmond": {
+        "location_1": "richmond",
+        "Display City State": "Richmond VA",
+        "url": "richmond.craigslist.org",
+        "loc_1": "richmond",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "roanoke": {
+        "location_1": "roanoke",
+        "Display City State": "Roanoke VA",
+        "url": "roanoke.craigslist.org",
+        "loc_1": "roanoke",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "fredericksburg": {
+        "location_1": "fredericksburg",
+        "Display City State": "Fredericksburg VA",
+        "url": "fredericksburg.craigslist.org",
+        "loc_1": "fredericksburg",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "charlottesville": {
+        "location_1": "charlottesville",
+        "Display City State": "Charlottesville VA",
+        "url": "charlottesville.craigslist.org",
+        "loc_1": "charlottesville",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "lynchburg": {
+        "location_1": "lynchburg",
+        "Display City State": "Lynchburg VA",
+        "url": "lynchburg.craigslist.org",
+        "loc_1": "lynchburg",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "danville": {
+        "location_1": "danville",
+        "Display City State": "Danville VA",
+        "url": "danville.craigslist.org",
+        "loc_1": "danville",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "southwest VA": {
+        "location_1": "southwest VA",
+        "Display City State": "Southwest VA",
+        "url": "swva.craigslist.org",
+        "loc_1": "swva",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "new river valley": {
+        "location_1": "new river valley",
+        "Display City State": "New River Valley VA",
+        "url": "blacksburg.craigslist.org",
+        "loc_1": "blacksburg",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "harrisonburg": {
+        "location_1": "harrisonburg",
+        "Display City State": "Harrisonburg VA",
+        "url": "harrisonburg.craigslist.org",
+        "loc_1": "harrisonburg",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "hampton roads": {
+        "location_1": "hampton roads",
+        "Display City State": "Hampton Roads VA",
+        "url": "norfolk.craigslist.org",
+        "loc_1": "norfolk",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      }
+    },
+    "tennessee": {
+      "nashville": {
+        "location_1": "nashville",
+        "Display City State": "Nashville TN",
+        "url": "nashville.craigslist.org",
+        "loc_1": "nashville",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "cookeville": {
+        "location_1": "cookeville",
+        "Display City State": "Cookeville TN",
+        "url": "cookeville.craigslist.org",
+        "loc_1": "cookeville",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "tri-cities": {
+        "location_1": "tri-cities",
+        "Display City State": "Tri-Cities TN",
+        "url": "tricities.craigslist.org",
+        "loc_1": "tricities",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "memphis": {
+        "location_1": "memphis",
+        "Display City State": "Memphis TN",
+        "url": "memphis.craigslist.org",
+        "loc_1": "memphis",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "clarksville": {
+        "location_1": "clarksville",
+        "Display City State": "Clarksville TN",
+        "url": "clarksville.craigslist.org",
+        "loc_1": "clarksville",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "chattanooga": {
+        "location_1": "chattanooga",
+        "Display City State": "Chattanooga TN",
+        "url": "chattanooga.craigslist.org",
+        "loc_1": "chattanooga",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "knoxville": {
+        "location_1": "knoxville",
+        "Display City State": "Knoxville TN",
+        "url": "knoxville.craigslist.org",
+        "loc_1": "knoxville",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      },
+      "jackson": {
+        "location_1": "jackson",
+        "Display City State": "Jackson TN",
+        "url": "jacksontn.craigslist.org",
+        "loc_1": "jacksontn",
+        "subs": [
+
+        ],
+        "Display State": "Tennessee"
+      }
+    },
+    "ohio": {
+      "toledo": {
+        "location_1": "toledo",
+        "Display City State": "Toledo OH",
+        "url": "toledo.craigslist.org",
+        "loc_1": "toledo",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "chillicothe": {
+        "location_1": "chillicothe",
+        "Display City State": "Chillicothe OH",
+        "url": "chillicothe.craigslist.org",
+        "loc_1": "chillicothe",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "ashtabula": {
+        "location_1": "ashtabula",
+        "Display City State": "Ashtabula OH",
+        "url": "ashtabula.craigslist.org",
+        "loc_1": "ashtabula",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "athens": {
+        "location_1": "athens",
+        "Display City State": "Athens OH",
+        "url": "athensohio.craigslist.org",
+        "loc_1": "athensohio",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "tuscarawas co": {
+        "location_1": "tuscarawas co",
+        "Display City State": "Tuscarawas Co OH",
+        "url": "tuscarawas.craigslist.org",
+        "loc_1": "tuscarawas",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "akron / canton": {
+        "location_1": "akron / canton",
+        "Display City State": "Akron/Canton OH",
+        "url": "akroncanton.craigslist.org",
+        "loc_1": "akroncanton",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "zanesville / cambridge": {
+        "location_1": "zanesville / cambridge",
+        "Display City State": "Zanesville/Cambridge OH",
+        "url": "zanesville.craigslist.org",
+        "loc_1": "zanesville",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "youngstown": {
+        "location_1": "youngstown",
+        "Display City State": "Youngstown OH",
+        "url": "youngstown.craigslist.org",
+        "loc_1": "youngstown",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "lima / findlay": {
+        "location_1": "lima / findlay",
+        "Display City State": "Lima/Findlay OH",
+        "url": "limaohio.craigslist.org",
+        "loc_1": "limaohio",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "cleveland": {
+        "location_1": "cleveland",
+        "Display City State": "Cleveland OH",
+        "url": "cleveland.craigslist.org",
+        "loc_1": "cleveland",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "mansfield": {
+        "location_1": "mansfield",
+        "Display City State": "Mansfield OH",
+        "url": "mansfield.craigslist.org",
+        "loc_1": "mansfield",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "sandusky": {
+        "location_1": "sandusky",
+        "Display City State": "Sandusky OH",
+        "url": "sandusky.craigslist.org",
+        "loc_1": "sandusky",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "dayton / springfield": {
+        "location_1": "dayton / springfield",
+        "Display City State": "Dayton/Springfield OH",
+        "url": "dayton.craigslist.org",
+        "loc_1": "dayton",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "columbus": {
+        "location_1": "columbus",
+        "Display City State": "Columbus OH",
+        "url": "columbus.craigslist.org",
+        "loc_1": "columbus",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "cincinnati": {
+        "location_1": "cincinnati",
+        "Display City State": "Cincinnati OH",
+        "url": "cincinnati.craigslist.org",
+        "loc_1": "cincinnati",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      }
+    },
+    "colorado": {
+      "high rockies": {
+        "location_1": "high rockies",
+        "Display City State": "High Rockies CO",
+        "url": "rockies.craigslist.org",
+        "loc_1": "rockies",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "denver": {
+        "location_1": "denver",
+        "Display City State": "Denver CO",
+        "url": "denver.craigslist.org",
+        "loc_1": "denver",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "fort collins / north CO": {
+        "location_1": "fort collins / north CO",
+        "Display City State": "Fort Collins/North CO",
+        "url": "fortcollins.craigslist.org",
+        "loc_1": "fortcollins",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "colorado springs": {
+        "location_1": "colorado springs",
+        "Display City State": "Colorado Springs CO",
+        "url": "cosprings.craigslist.org",
+        "loc_1": "cosprings",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "boulder": {
+        "location_1": "boulder",
+        "Display City State": "Boulder CO",
+        "url": "boulder.craigslist.org",
+        "loc_1": "boulder",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "pueblo": {
+        "location_1": "pueblo",
+        "Display City State": "Pueblo CO",
+        "url": "pueblo.craigslist.org",
+        "loc_1": "pueblo",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "western slope": {
+        "location_1": "western slope",
+        "Display City State": "Western Slope CO",
+        "url": "westslope.craigslist.org",
+        "loc_1": "westslope",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      },
+      "eastern CO": {
+        "location_1": "eastern CO",
+        "Display City State": "Eastern CO CO",
+        "url": "eastco.craigslist.org",
+        "loc_1": "eastco",
+        "subs": [
+
+        ],
+        "Display State": "Colorado"
+      }
+    },
+    "south dakota": {
+      "rapid city / west SD": {
+        "location_1": "rapid city / west SD",
+        "Display City State": "Rapid City/West SD",
+        "url": "rapidcity.craigslist.org",
+        "loc_1": "rapidcity",
+        "subs": [
+
+        ],
+        "Display State": "South Dakota"
+      },
+      "south dakota": {
+        "location_1": "south dakota",
+        "Display City State": "South Dakota SD",
+        "url": "sd.craigslist.org",
+        "loc_1": "sd",
+        "subs": [
+
+        ],
+        "Display State": "South Dakota"
+      },
+      "pierre / central SD": {
+        "location_1": "pierre / central SD",
+        "Display City State": "Pierre/Central SD",
+        "url": "csd.craigslist.org",
+        "loc_1": "csd",
+        "subs": [
+
+        ],
+        "Display State": "South Dakota"
+      },
+      "sioux falls / SE SD": {
+        "location_1": "sioux falls / SE SD",
+        "Display City State": "Sioux Falls/SE SD",
+        "url": "siouxfalls.craigslist.org",
+        "loc_1": "siouxfalls",
+        "subs": [
+
+        ],
+        "Display State": "South Dakota"
+      },
+      "northeast SD": {
+        "location_1": "northeast SD",
+        "Display City State": "Northeast SD",
+        "url": "nesd.craigslist.org",
+        "loc_1": "nesd",
+        "subs": [
+
+        ],
+        "Display State": "South Dakota"
+      }
+    },
+    "new mexico": {
+      "las cruces": {
+        "location_1": "las cruces",
+        "Display City State": "Las Cruces NM",
+        "url": "lascruces.craigslist.org",
+        "loc_1": "lascruces",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      },
+      "roswell / carlsbad": {
+        "location_1": "roswell / carlsbad",
+        "Display City State": "Roswell/Carlsbad NM",
+        "url": "roswell.craigslist.org",
+        "loc_1": "roswell",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      },
+      "santa fe / taos": {
+        "location_1": "santa fe / taos",
+        "Display City State": "Santa Fe/Taos NM",
+        "url": "santafe.craigslist.org",
+        "loc_1": "santafe",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      },
+      "clovis / portales": {
+        "location_1": "clovis / portales",
+        "Display City State": "Clovis/Portales NM",
+        "url": "clovis.craigslist.org",
+        "loc_1": "clovis",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      },
+      "farmington": {
+        "location_1": "farmington",
+        "Display City State": "Farmington NM",
+        "url": "farmington.craigslist.org",
+        "loc_1": "farmington",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      },
+      "albuquerque": {
+        "location_1": "albuquerque",
+        "Display City State": "Albuquerque NM",
+        "url": "albuquerque.craigslist.org",
+        "loc_1": "albuquerque",
+        "subs": [
+
+        ],
+        "Display State": "New Mexico"
+      }
+    },
+    "alaska": {
+      "anchorage / mat-su": {
+        "location_1": "anchorage / mat-su",
+        "Display City State": "Anchorage/Mat-Su AK",
+        "url": "anchorage.craigslist.org",
+        "loc_1": "anchorage",
+        "subs": [
+
+        ],
+        "Display State": "Alaska"
+      },
+      "kenai peninsula": {
+        "location_1": "kenai peninsula",
+        "Display City State": "Kenai Peninsula AK",
+        "url": "kenai.craigslist.org",
+        "loc_1": "kenai",
+        "subs": [
+
+        ],
+        "Display State": "Alaska"
+      },
+      "southeast alaska": {
+        "location_1": "southeast alaska",
+        "Display City State": "Southeast AK",
+        "url": "juneau.craigslist.org",
+        "loc_1": "juneau",
+        "subs": [
+
+        ],
+        "Display State": "Alaska"
+      },
+      "fairbanks": {
+        "location_1": "fairbanks",
+        "Display City State": "Fairbanks AK",
+        "url": "fairbanks.craigslist.org",
+        "loc_1": "fairbanks",
+        "subs": [
+
+        ],
+        "Display State": "Alaska"
+      }
+    },
+    "west virginia": {
+      "northern panhandle": {
+        "location_1": "northern panhandle",
+        "Display City State": "Northern Panhandle WV",
+        "url": "wheeling.craigslist.org",
+        "loc_1": "wheeling",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "southern WV": {
+        "location_1": "southern WV",
+        "Display City State": "Southern WV",
+        "url": "swv.craigslist.org",
+        "loc_1": "swv",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "morgantown": {
+        "location_1": "morgantown",
+        "Display City State": "Morgantown WV",
+        "url": "morgantown.craigslist.org",
+        "loc_1": "morgantown",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "eastern panhandle": {
+        "location_1": "eastern panhandle",
+        "Display City State": "Eastern Panhandle WV",
+        "url": "martinsburg.craigslist.org",
+        "loc_1": "martinsburg",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "west virginia (old)": {
+        "location_1": "west virginia (old)",
+        "Display City State": "West Virginia (Old) WV",
+        "url": "wv.craigslist.org",
+        "loc_1": "wv",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "huntington-ashland": {
+        "location_1": "huntington-ashland",
+        "Display City State": "Huntington-Ashland OH",
+        "url": "huntington.craigslist.org",
+        "loc_1": "huntington",
+        "subs": [
+
+        ],
+        "Display State": "Ohio"
+      },
+      "parkersburg-marietta": {
+        "location_1": "parkersburg-marietta",
+        "Display City State": "Parkersburg-Marietta WV",
+        "url": "parkersburg.craigslist.org",
+        "loc_1": "parkersburg",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      },
+      "charleston": {
+        "location_1": "charleston",
+        "Display City State": "Charleston WV",
+        "url": "charlestonwv.craigslist.org",
+        "loc_1": "charlestonwv",
+        "subs": [
+
+        ],
+        "Display State": "West Virginia"
+      }
+    },
+    "vermont": {
+      "vermont": {
+        "location_1": "vermont",
+        "Display City State": "Vermont VT",
+        "url": "burlington.craigslist.org",
+        "loc_1": "burlington",
+        "subs": [
+
+        ],
+        "Display State": "Vermont"
+      }
+    },
+    "north dakota": {
+      "fargo / moorhead": {
+        "location_1": "fargo / moorhead",
+        "Display City State": "Fargo/Moorhead MN",
+        "url": "fargo.craigslist.org",
+        "loc_1": "fargo",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "north dakota": {
+        "location_1": "north dakota",
+        "Display City State": "North Dakota ND",
+        "url": "nd.craigslist.org",
+        "loc_1": "nd",
+        "subs": [
+
+        ],
+        "Display State": "North Dakota"
+      },
+      "grand forks": {
+        "location_1": "grand forks",
+        "Display City State": "Grand Forks ND",
+        "url": "grandforks.craigslist.org",
+        "loc_1": "grandforks",
+        "subs": [
+
+        ],
+        "Display State": "North Dakota"
+      },
+      "bismarck": {
+        "location_1": "bismarck",
+        "Display City State": "Bismarck ND",
+        "url": "bismarck.craigslist.org",
+        "loc_1": "bismarck",
+        "subs": [
+
+        ],
+        "Display State": "North Dakota"
+      }
+    },
+    "nevada": {
+      "elko": {
+        "location_1": "elko",
+        "Display City State": "Elko NV",
+        "url": "elko.craigslist.org",
+        "loc_1": "elko",
+        "subs": [
+
+        ],
+        "Display State": "Nevada"
+      },
+      "reno / tahoe": {
+        "location_1": "reno / tahoe",
+        "Display City State": "Reno/Tahoe NV",
+        "url": "reno.craigslist.org",
+        "loc_1": "reno",
+        "subs": [
+
+        ],
+        "Display State": "Nevada"
+      },
+      "las vegas": {
+        "location_1": "las vegas",
+        "Display City State": "Las Vegas NV",
+        "url": "lasvegas.craigslist.org",
+        "loc_1": "lasvegas",
+        "subs": [
+
+        ],
+        "Display State": "Nevada"
+      }
+    },
+    "mississippi": {
+      "southwest MS": {
+        "location_1": "southwest MS",
+        "Display City State": "Southwest MS",
+        "url": "natchez.craigslist.org",
+        "loc_1": "natchez",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      },
+      "meridian": {
+        "location_1": "meridian",
+        "Display City State": "Meridian MS",
+        "url": "meridian.craigslist.org",
+        "loc_1": "meridian",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      },
+      "north mississippi": {
+        "location_1": "north mississippi",
+        "Display City State": "North MS",
+        "url": "northmiss.craigslist.org",
+        "loc_1": "northmiss",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      },
+      "gulfport / biloxi": {
+        "location_1": "gulfport / biloxi",
+        "Display City State": "Gulfport/Biloxi MS",
+        "url": "gulfport.craigslist.org",
+        "loc_1": "gulfport",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      },
+      "jackson": {
+        "location_1": "jackson",
+        "Display City State": "Jackson MS",
+        "url": "jackson.craigslist.org",
+        "loc_1": "jackson",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      },
+      "hattiesburg": {
+        "location_1": "hattiesburg",
+        "Display City State": "Hattiesburg MS",
+        "url": "hattiesburg.craigslist.org",
+        "loc_1": "hattiesburg",
+        "subs": [
+
+        ],
+        "Display State": "Mississippi"
+      }
+    },
+    "kansas": {
+      "southeast KS": {
+        "location_1": "southeast KS",
+        "Display City State": "Southeast KS",
+        "url": "seks.craigslist.org",
+        "loc_1": "seks",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "northwest KS": {
+        "location_1": "northwest KS",
+        "Display City State": "Northwest KS",
+        "url": "nwks.craigslist.org",
+        "loc_1": "nwks",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "manhattan": {
+        "location_1": "manhattan",
+        "Display City State": "Manhattan KS",
+        "url": "ksu.craigslist.org",
+        "loc_1": "ksu",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "southwest KS": {
+        "location_1": "southwest KS",
+        "Display City State": "Southwest KS",
+        "url": "swks.craigslist.org",
+        "loc_1": "swks",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "lawrence": {
+        "location_1": "lawrence",
+        "Display City State": "Lawrence KS",
+        "url": "lawrence.craigslist.org",
+        "loc_1": "lawrence",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "topeka": {
+        "location_1": "topeka",
+        "Display City State": "Topeka KS",
+        "url": "topeka.craigslist.org",
+        "loc_1": "topeka",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "wichita": {
+        "location_1": "wichita",
+        "Display City State": "Wichita KS",
+        "url": "wichita.craigslist.org",
+        "loc_1": "wichita",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      },
+      "salina": {
+        "location_1": "salina",
+        "Display City State": "Salina KS",
+        "url": "salina.craigslist.org",
+        "loc_1": "salina",
+        "subs": [
+
+        ],
+        "Display State": "Kansas"
+      }
+    },
+    "illinois": {
+      "rockford": {
+        "location_1": "rockford",
+        "Display City State": "Rockford IL",
+        "url": "rockford.craigslist.org",
+        "loc_1": "rockford",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "la salle co": {
+        "location_1": "la salle co",
+        "Display City State": "La Salle Co IL",
+        "url": "lasalle.craigslist.org",
+        "loc_1": "lasalle",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "chicago": {
+        "location_1": "chicago",
+        "Display City State": "Chicago IL",
+        "url": "chicago.craigslist.org",
+        "loc_1": "chicago",
+        "subs": [
+          {
+            "location_2": "city of chicago",
+            "loc_2": "chc"
+          },
+          {
+            "location_2": "north chicagoland",
+            "loc_2": "nch"
+          },
+          {
+            "location_2": "west chicagoland",
+            "loc_2": "wcl"
+          },
+          {
+            "location_2": "south chicagoland",
+            "loc_2": "sox"
+          },
+          {
+            "location_2": "northwest indiana",
+            "loc_2": "nwi"
+          },
+          {
+            "location_2": "northwest suburbs",
+            "loc_2": "nwc"
+          }
+        ],
+        "Display State": "Illinois"
+      },
+      "champaign urbana": {
+        "location_1": "champaign urbana",
+        "Display City State": "Champaign Urbana IL",
+        "url": "chambana.craigslist.org",
+        "loc_1": "chambana",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "mattoon-charleston": {
+        "location_1": "mattoon-charleston",
+        "Display City State": "Mattoon-Charleston IL",
+        "url": "mattoon.craigslist.org",
+        "loc_1": "mattoon",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "bloomington-normal": {
+        "location_1": "bloomington-normal",
+        "Display City State": "Bloomington-Normal IL",
+        "url": "bn.craigslist.org",
+        "loc_1": "bn",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "southern illinois": {
+        "location_1": "southern illinois",
+        "Display City State": "Southern IL",
+        "url": "carbondale.craigslist.org",
+        "loc_1": "carbondale",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "western IL": {
+        "location_1": "western IL",
+        "Display City State": "Western IL",
+        "url": "quincy.craigslist.org",
+        "loc_1": "quincy",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "springfield": {
+        "location_1": "springfield",
+        "Display City State": "Springfield IL",
+        "url": "springfieldil.craigslist.org",
+        "loc_1": "springfieldil",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "peoria": {
+        "location_1": "peoria",
+        "Display City State": "Peoria IL",
+        "url": "peoria.craigslist.org",
+        "loc_1": "peoria",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "decatur": {
+        "location_1": "decatur",
+        "Display City State": "Decatur IL",
+        "url": "decatur.craigslist.org",
+        "loc_1": "decatur",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      }
+    },
+    "idaho": {
+      "twin falls": {
+        "location_1": "twin falls",
+        "Display City State": "Twin Falls ID",
+        "url": "twinfalls.craigslist.org",
+        "loc_1": "twinfalls",
+        "subs": [
+
+        ],
+        "Display State": "Idaho"
+      },
+      "lewiston / clarkston": {
+        "location_1": "lewiston / clarkston",
+        "Display City State": "Lewiston/Clarkston ID",
+        "url": "lewiston.craigslist.org",
+        "loc_1": "lewiston",
+        "subs": [
+
+        ],
+        "Display State": "Idaho"
+      },
+      "east idaho": {
+        "location_1": "east idaho",
+        "Display City State": "East ID",
+        "url": "eastidaho.craigslist.org",
+        "loc_1": "eastidaho",
+        "subs": [
+
+        ],
+        "Display State": "Idaho"
+      },
+      "boise": {
+        "location_1": "boise",
+        "Display City State": "Boise ID",
+        "url": "boise.craigslist.org",
+        "loc_1": "boise",
+        "subs": [
+
+        ],
+        "Display State": "Idaho"
+      }
+    },
+    "arizona": {
+      "mohave county": {
+        "location_1": "mohave county",
+        "Display City State": "Mohave Co AZ",
+        "url": "mohave.craigslist.org",
+        "loc_1": "mohave",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "flagstaff / sedona": {
+        "location_1": "flagstaff / sedona",
+        "Display City State": "Flagstaff/Sedona AZ",
+        "url": "flagstaff.craigslist.org",
+        "loc_1": "flagstaff",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "yuma": {
+        "location_1": "yuma",
+        "Display City State": "Yuma AZ",
+        "url": "yuma.craigslist.org",
+        "loc_1": "yuma",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "prescott": {
+        "location_1": "prescott",
+        "Display City State": "Prescott AZ",
+        "url": "prescott.craigslist.org",
+        "loc_1": "prescott",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "phoenix": {
+        "location_1": "phoenix",
+        "Display City State": "Phoenix AZ",
+        "url": "phoenix.craigslist.org",
+        "loc_1": "phoenix",
+        "subs": [
+          {
+            "location_2": "central/south phx",
+            "loc_2": "cph"
+          },
+          {
+            "location_2": "east valley",
+            "loc_2": "evl"
+          },
+          {
+            "location_2": "phx north",
+            "loc_2": "nph"
+          },
+          {
+            "location_2": "west valley",
+            "loc_2": "wvl"
+          }
+        ],
+        "Display State": "Arizona"
+      },
+      "tucson": {
+        "location_1": "tucson",
+        "Display City State": "Tucson AZ",
+        "url": "tucson.craigslist.org",
+        "loc_1": "tucson",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "show low": {
+        "location_1": "show low",
+        "Display City State": "Show Low AZ",
+        "url": "showlow.craigslist.org",
+        "loc_1": "showlow",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      },
+      "sierra vista": {
+        "location_1": "sierra vista",
+        "Display City State": "Sierra Vista AZ",
+        "url": "sierravista.craigslist.org",
+        "loc_1": "sierravista",
+        "subs": [
+
+        ],
+        "Display State": "Arizona"
+      }
+    },
+    "wisconsin": {
+      "green bay": {
+        "location_1": "green bay",
+        "Display City State": "Green Bay WI",
+        "url": "greenbay.craigslist.org",
+        "loc_1": "greenbay",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "eau claire": {
+        "location_1": "eau claire",
+        "Display City State": "Eau Claire WI",
+        "url": "eauclaire.craigslist.org",
+        "loc_1": "eauclaire",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "sheboygan": {
+        "location_1": "sheboygan",
+        "Display City State": "Sheboygan WI",
+        "url": "sheboygan.craigslist.org",
+        "loc_1": "sheboygan",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "northern WI": {
+        "location_1": "northern WI",
+        "Display City State": "Northern WI",
+        "url": "northernwi.craigslist.org",
+        "loc_1": "northernwi",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "janesville": {
+        "location_1": "janesville",
+        "Display City State": "Janesville WI",
+        "url": "janesville.craigslist.org",
+        "loc_1": "janesville",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "madison": {
+        "location_1": "madison",
+        "Display City State": "Madison WI",
+        "url": "madison.craigslist.org",
+        "loc_1": "madison",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "milwaukee": {
+        "location_1": "milwaukee",
+        "Display City State": "Milwaukee WI",
+        "url": "milwaukee.craigslist.org",
+        "loc_1": "milwaukee",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "wausau": {
+        "location_1": "wausau",
+        "Display City State": "Wausau WI",
+        "url": "wausau.craigslist.org",
+        "loc_1": "wausau",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "la crosse": {
+        "location_1": "la crosse",
+        "Display City State": "La Crosse WI",
+        "url": "lacrosse.craigslist.org",
+        "loc_1": "lacrosse",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "kenosha-racine": {
+        "location_1": "kenosha-racine",
+        "Display City State": "Kenosha-Racine WI",
+        "url": "racine.craigslist.org",
+        "loc_1": "racine",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "appleton-oshkosh-FDL": {
+        "location_1": "appleton-oshkosh-FDL",
+        "Display City State": "Appleton-Oshkosh-FDL WI",
+        "url": "appleton.craigslist.org",
+        "loc_1": "appleton",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      }
+    },
+    "oklahoma": {
+      "oklahoma city": {
+        "location_1": "oklahoma city",
+        "Display City State": "Oklahoma City OK",
+        "url": "oklahomacity.craigslist.org",
+        "loc_1": "oklahomacity",
+        "subs": [
+
+        ],
+        "Display State": "Oklahoma"
+      },
+      "northwest OK": {
+        "location_1": "northwest OK",
+        "Display City State": "Northwest OK",
+        "url": "enid.craigslist.org",
+        "loc_1": "enid",
+        "subs": [
+
+        ],
+        "Display State": "Oklahoma"
+      },
+      "tulsa": {
+        "location_1": "tulsa",
+        "Display City State": "Tulsa OK",
+        "url": "tulsa.craigslist.org",
+        "loc_1": "tulsa",
+        "subs": [
+
+        ],
+        "Display State": "Oklahoma"
+      },
+      "stillwater": {
+        "location_1": "stillwater",
+        "Display City State": "Stillwater OK",
+        "url": "stillwater.craigslist.org",
+        "loc_1": "stillwater",
+        "subs": [
+
+        ],
+        "Display State": "Oklahoma"
+      },
+      "lawton": {
+        "location_1": "lawton",
+        "Display City State": "Lawton OK",
+        "url": "lawton.craigslist.org",
+        "loc_1": "lawton",
+        "subs": [
+
+        ],
+        "Display State": "Oklahoma"
+      }
+    },
+    "montana": {
+      "montana (old)": {
+        "location_1": "montana (old)",
+        "Display City State": "Montana (Old) MT",
+        "url": "montana.craigslist.org",
+        "loc_1": "montana",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "helena": {
+        "location_1": "helena",
+        "Display City State": "Helena MT",
+        "url": "helena.craigslist.org",
+        "loc_1": "helena",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "missoula": {
+        "location_1": "missoula",
+        "Display City State": "Missoula MT",
+        "url": "missoula.craigslist.org",
+        "loc_1": "missoula",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "kalispell": {
+        "location_1": "kalispell",
+        "Display City State": "Kalispell MT",
+        "url": "kalispell.craigslist.org",
+        "loc_1": "kalispell",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "bozeman": {
+        "location_1": "bozeman",
+        "Display City State": "Bozeman MT",
+        "url": "bozeman.craigslist.org",
+        "loc_1": "bozeman",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "billings": {
+        "location_1": "billings",
+        "Display City State": "Billings MT",
+        "url": "billings.craigslist.org",
+        "loc_1": "billings",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "great falls": {
+        "location_1": "great falls",
+        "Display City State": "Great Falls MT",
+        "url": "greatfalls.craigslist.org",
+        "loc_1": "greatfalls",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      },
+      "butte": {
+        "location_1": "butte",
+        "Display City State": "Butte MT",
+        "url": "butte.craigslist.org",
+        "loc_1": "butte",
+        "subs": [
+
+        ],
+        "Display State": "Montana"
+      }
+    },
+    "missouri": {
+      "kansas city": {
+        "location_1": "kansas city",
+        "Display City State": "Kansas City MO",
+        "url": "kansascity.craigslist.org",
+        "loc_1": "kansascity",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "kirksville": {
+        "location_1": "kirksville",
+        "Display City State": "Kirksville MO",
+        "url": "kirksville.craigslist.org",
+        "loc_1": "kirksville",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "st joseph": {
+        "location_1": "st joseph",
+        "Display City State": "St Joseph MO",
+        "url": "stjoseph.craigslist.org",
+        "loc_1": "stjoseph",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "columbia / jeff city": {
+        "location_1": "columbia / jeff city",
+        "Display City State": "Columbia/Jeff City MO",
+        "url": "columbiamo.craigslist.org",
+        "loc_1": "columbiamo",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "lake of the ozarks": {
+        "location_1": "lake of the ozarks",
+        "Display City State": "Lake of the Ozarks MO",
+        "url": "loz.craigslist.org",
+        "loc_1": "loz",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "springfield": {
+        "location_1": "springfield",
+        "Display City State": "Springfield MO",
+        "url": "springfield.craigslist.org",
+        "loc_1": "springfield",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "southeast missouri": {
+        "location_1": "southeast missouri",
+        "Display City State": "Southeast MO",
+        "url": "semo.craigslist.org",
+        "loc_1": "semo",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "joplin": {
+        "location_1": "joplin",
+        "Display City State": "Joplin MO",
+        "url": "joplin.craigslist.org",
+        "loc_1": "joplin",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      },
+      "st louis": {
+        "location_1": "st louis",
+        "Display City State": "St Louis MO",
+        "url": "stlouis.craigslist.org",
+        "loc_1": "stlouis",
+        "subs": [
+
+        ],
+        "Display State": "Missouri"
+      }
+    },
+    "michigan": {
+      "detroit metro": {
+        "location_1": "detroit metro",
+        "Display City State": "Detroit Metro MI",
+        "url": "detroit.craigslist.org",
+        "loc_1": "detroit",
+        "subs": [
+          {
+            "location_2": "macomb co",
+            "loc_2": "mcb"
+          },
+          {
+            "location_2": "wayne co",
+            "loc_2": "wyn"
+          },
+          {
+            "location_2": "oakland co",
+            "loc_2": "okl"
+          }
+        ],
+        "Display State": "Michigan"
+      },
+      "muskegon": {
+        "location_1": "muskegon",
+        "Display City State": "Muskegon MI",
+        "url": "muskegon.craigslist.org",
+        "loc_1": "muskegon",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "central michigan": {
+        "location_1": "central michigan",
+        "Display City State": "Central MI",
+        "url": "centralmich.craigslist.org",
+        "loc_1": "centralmich",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "flint": {
+        "location_1": "flint",
+        "Display City State": "Flint MI",
+        "url": "flint.craigslist.org",
+        "loc_1": "flint",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "upper peninsula": {
+        "location_1": "upper peninsula",
+        "Display City State": "Upper Peninsula MI",
+        "url": "up.craigslist.org",
+        "loc_1": "up",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "holland": {
+        "location_1": "holland",
+        "Display City State": "Holland MI",
+        "url": "holland.craigslist.org",
+        "loc_1": "holland",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "monroe": {
+        "location_1": "monroe",
+        "Display City State": "Monroe MI",
+        "url": "monroemi.craigslist.org",
+        "loc_1": "monroemi",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "grand rapids": {
+        "location_1": "grand rapids",
+        "Display City State": "Grand Rapids MI",
+        "url": "grandrapids.craigslist.org",
+        "loc_1": "grandrapids",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "the thumb": {
+        "location_1": "the thumb",
+        "Display City State": "The Thumb MI",
+        "url": "thumb.craigslist.org",
+        "loc_1": "thumb",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "southwest michigan": {
+        "location_1": "southwest michigan",
+        "Display City State": "Southwest MI",
+        "url": "swmi.craigslist.org",
+        "loc_1": "swmi",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "port huron": {
+        "location_1": "port huron",
+        "Display City State": "Port Huron MI",
+        "url": "porthuron.craigslist.org",
+        "loc_1": "porthuron",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "northern michigan": {
+        "location_1": "northern michigan",
+        "Display City State": "Northern MI",
+        "url": "nmi.craigslist.org",
+        "loc_1": "nmi",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "kalamazoo": {
+        "location_1": "kalamazoo",
+        "Display City State": "Kalamazoo MI",
+        "url": "kalamazoo.craigslist.org",
+        "loc_1": "kalamazoo",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "lansing": {
+        "location_1": "lansing",
+        "Display City State": "Lansing MI",
+        "url": "lansing.craigslist.org",
+        "loc_1": "lansing",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "jackson": {
+        "location_1": "jackson",
+        "Display City State": "Jackson MI",
+        "url": "jxn.craigslist.org",
+        "loc_1": "jxn",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "ann arbor": {
+        "location_1": "ann arbor",
+        "Display City State": "Ann Arbor MI",
+        "url": "annarbor.craigslist.org",
+        "loc_1": "annarbor",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "saginaw-midland-baycity": {
+        "location_1": "saginaw-midland-baycity",
+        "Display City State": "Saginaw-Midland-Baycity MI",
+        "url": "saginaw.craigslist.org",
+        "loc_1": "saginaw",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      },
+      "battle creek": {
+        "location_1": "battle creek",
+        "Display City State": "Battle Creek MI",
+        "url": "battlecreek.craigslist.org",
+        "loc_1": "battlecreek",
+        "subs": [
+
+        ],
+        "Display State": "Michigan"
+      }
+    },
+    "maine": {
+      "maine": {
+        "location_1": "maine",
+        "Display City State": "Maine ME",
+        "url": "maine.craigslist.org",
+        "loc_1": "maine",
+        "subs": [
+
+        ],
+        "Display State": "Maine"
+      }
+    },
+    "utah": {
+      "salt lake city": {
+        "location_1": "salt lake city",
+        "Display City State": "Salt Lake City UT",
+        "url": "saltlakecity.craigslist.org",
+        "loc_1": "saltlakecity",
+        "subs": [
+
+        ],
+        "Display State": "Utah"
+      },
+      "provo / orem": {
+        "location_1": "provo / orem",
+        "Display City State": "Provo/Orem UT",
+        "url": "provo.craigslist.org",
+        "loc_1": "provo",
+        "subs": [
+
+        ],
+        "Display State": "Utah"
+      },
+      "logan": {
+        "location_1": "logan",
+        "Display City State": "Logan UT",
+        "url": "logan.craigslist.org",
+        "loc_1": "logan",
+        "subs": [
+
+        ],
+        "Display State": "Utah"
+      },
+      "ogden-clearfield": {
+        "location_1": "ogden-clearfield",
+        "Display City State": "Ogden-Clearfield UT",
+        "url": "ogden.craigslist.org",
+        "loc_1": "ogden",
+        "subs": [
+
+        ],
+        "Display State": "Utah"
+      },
+      "st george": {
+        "location_1": "st george",
+        "Display City State": "St George UT",
+        "url": "stgeorge.craigslist.org",
+        "loc_1": "stgeorge",
+        "subs": [
+
+        ],
+        "Display State": "Utah"
+      }
+    },
+    "new hampshire": {
+      "new hampshire": {
+        "location_1": "new hampshire",
+        "Display City State": "New Hampshire NH",
+        "url": "nh.craigslist.org",
+        "loc_1": "nh",
+        "subs": [
+
+        ],
+        "Display State": "New Hampshire"
+      }
+    },
+    "nebraska": {
+      "grand island": {
+        "location_1": "grand island",
+        "Display City State": "Grand Island NE",
+        "url": "grandisland.craigslist.org",
+        "loc_1": "grandisland",
+        "subs": [
+
+        ],
+        "Display State": "Nebraska"
+      },
+      "scottsbluff / panhandle": {
+        "location_1": "scottsbluff / panhandle",
+        "Display City State": "Scottsbluff/Panhandle NE",
+        "url": "scottsbluff.craigslist.org",
+        "loc_1": "scottsbluff",
+        "subs": [
+
+        ],
+        "Display State": "Nebraska"
+      },
+      "lincoln": {
+        "location_1": "lincoln",
+        "Display City State": "Lincoln NE",
+        "url": "lincoln.craigslist.org",
+        "loc_1": "lincoln",
+        "subs": [
+
+        ],
+        "Display State": "Nebraska"
+      },
+      "omaha / council bluffs": {
+        "location_1": "omaha / council bluffs",
+        "Display City State": "Omaha/Council Bluffs NE",
+        "url": "omaha.craigslist.org",
+        "loc_1": "omaha",
+        "subs": [
+
+        ],
+        "Display State": "Nebraska"
+      },
+      "north platte": {
+        "location_1": "north platte",
+        "Display City State": "North Platte NE",
+        "url": "northplatte.craigslist.org",
+        "loc_1": "northplatte",
+        "subs": [
+
+        ],
+        "Display State": "Nebraska"
+      }
+    },
+    "california": {
+      "susanville": {
+        "location_1": "susanville",
+        "Display City State": "Susanville CA",
+        "url": "susanville.craigslist.org",
+        "loc_1": "susanville",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "stockton": {
+        "location_1": "stockton",
+        "Display City State": "Stockton CA",
+        "url": "stockton.craigslist.org",
+        "loc_1": "stockton",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "gold country": {
+        "location_1": "gold country",
+        "Display City State": "Gold Country CA",
+        "url": "goldcountry.craigslist.org",
+        "loc_1": "goldcountry",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "yuba-sutter": {
+        "location_1": "yuba-sutter",
+        "Display City State": "Yuba-Sutter CA",
+        "url": "yubasutter.craigslist.org",
+        "loc_1": "yubasutter",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "monterey bay": {
+        "location_1": "monterey bay",
+        "Display City State": "Monterey Bay CA",
+        "url": "monterey.craigslist.org",
+        "loc_1": "monterey",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "palm springs": {
+        "location_1": "palm springs",
+        "Display City State": "Palm Springs CA",
+        "url": "palmsprings.craigslist.org",
+        "loc_1": "palmsprings",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "mendocino county": {
+        "location_1": "mendocino county",
+        "Display City State": "Mendocino Co CA",
+        "url": "mendocino.craigslist.org",
+        "loc_1": "mendocino",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "los angeles": {
+        "location_1": "los angeles",
+        "Display City State": "Los Angeles CA",
+        "url": "losangeles.craigslist.org",
+        "loc_1": "losangeles",
+        "subs": [
+          {
+            "location_2": "westside-southbay",
+            "loc_2": "wst"
+          },
+          {
+            "location_2": "SF valley",
+            "loc_2": "sfv"
+          },
+          {
+            "location_2": "central LA",
+            "loc_2": "lac"
+          },
+          {
+            "location_2": "san gabriel valley",
+            "loc_2": "sgv"
+          },
+          {
+            "location_2": "long beach / 562",
+            "loc_2": "lgb"
+          },
+          {
+            "location_2": "antelope valley",
+            "loc_2": "ant"
+          }
+        ],
+        "Display State": "California"
+      },
+      "bakersfield": {
+        "location_1": "bakersfield",
+        "Display City State": "Bakersfield CA",
+        "url": "bakersfield.craigslist.org",
+        "loc_1": "bakersfield",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "redding": {
+        "location_1": "redding",
+        "Display City State": "Redding CA",
+        "url": "redding.craigslist.org",
+        "loc_1": "redding",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "modesto": {
+        "location_1": "modesto",
+        "Display City State": "Modesto CA",
+        "url": "modesto.craigslist.org",
+        "loc_1": "modesto",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "imperial county": {
+        "location_1": "imperial county",
+        "Display City State": "Imperial Co CA",
+        "url": "imperial.craigslist.org",
+        "loc_1": "imperial",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "santa maria": {
+        "location_1": "santa maria",
+        "Display City State": "Santa Maria CA",
+        "url": "santamaria.craigslist.org",
+        "loc_1": "santamaria",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "santa barbara": {
+        "location_1": "santa barbara",
+        "Display City State": "Santa Barbara CA",
+        "url": "santabarbara.craigslist.org",
+        "loc_1": "santabarbara",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "humboldt county": {
+        "location_1": "humboldt county",
+        "Display City State": "Humboldt Co CA",
+        "url": "humboldt.craigslist.org",
+        "loc_1": "humboldt",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "sacramento": {
+        "location_1": "sacramento",
+        "Display City State": "Sacramento CA",
+        "url": "sacramento.craigslist.org",
+        "loc_1": "sacramento",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "orange county": {
+        "location_1": "orange county",
+        "Display City State": "Orange Co CA",
+        "url": "orangecounty.craigslist.org",
+        "loc_1": "orangecounty",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "inland empire": {
+        "location_1": "inland empire",
+        "Display City State": "Inland Empire CA",
+        "url": "inlandempire.craigslist.org",
+        "loc_1": "inlandempire",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "fresno / madera": {
+        "location_1": "fresno / madera",
+        "Display City State": "Fresno/Madera CA",
+        "url": "fresno.craigslist.org",
+        "loc_1": "fresno",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "ventura county": {
+        "location_1": "ventura county",
+        "Display City State": "Ventura Co CA",
+        "url": "ventura.craigslist.org",
+        "loc_1": "ventura",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "chico": {
+        "location_1": "chico",
+        "Display City State": "Chico CA",
+        "url": "chico.craigslist.org",
+        "loc_1": "chico",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "visalia-tulare": {
+        "location_1": "visalia-tulare",
+        "Display City State": "Visalia-Tulare CA",
+        "url": "visalia.craigslist.org",
+        "loc_1": "visalia",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "san francisco bay area": {
+        "location_1": "san francisco bay area",
+        "Display City State": "San Francisco Bay Area CA",
+        "url": "sfbay.craigslist.org",
+        "loc_1": "sfbay",
+        "subs": [
+          {
+            "location_2": "san francisco",
+            "loc_2": "sfc"
+          },
+          {
+            "location_2": "south bay",
+            "loc_2": "sby"
+          },
+          {
+            "location_2": "east bay",
+            "loc_2": "eby"
+          },
+          {
+            "location_2": "peninsula",
+            "loc_2": "pen"
+          },
+          {
+            "location_2": "north bay",
+            "loc_2": "nby"
+          },
+          {
+            "location_2": "santa cruz",
+            "loc_2": "scz"
+          }
+        ],
+        "Display State": "California"
+      },
+      "san diego": {
+        "location_1": "san diego",
+        "Display City State": "San Diego CA",
+        "url": "sandiego.craigslist.org",
+        "loc_1": "sandiego",
+        "subs": [
+          {
+            "location_2": "city of san diego",
+            "loc_2": "csd"
+          },
+          {
+            "location_2": "north SD county",
+            "loc_2": "nsd"
+          },
+          {
+            "location_2": "east SD county",
+            "loc_2": "esd"
+          },
+          {
+            "location_2": "south SD county",
+            "loc_2": "ssd"
+          }
+        ],
+        "Display State": "California"
+      },
+      "merced": {
+        "location_1": "merced",
+        "Display City State": "Merced CA",
+        "url": "merced.craigslist.org",
+        "loc_1": "merced",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "san luis obispo": {
+        "location_1": "san luis obispo",
+        "Display City State": "San Luis Obispo CA",
+        "url": "slo.craigslist.org",
+        "loc_1": "slo",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "siskiyou county": {
+        "location_1": "siskiyou county",
+        "Display City State": "Siskiyou Co CA",
+        "url": "siskiyou.craigslist.org",
+        "loc_1": "siskiyou",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      },
+      "hanford-corcoran": {
+        "location_1": "hanford-corcoran",
+        "Display City State": "Hanford-Corcoran CA",
+        "url": "hanford.craigslist.org",
+        "loc_1": "hanford",
+        "subs": [
+
+        ],
+        "Display State": "California"
+      }
+    },
+    "texas": {
+      "victoria": {
+        "location_1": "victoria",
+        "Display City State": "Victoria TX",
+        "url": "victoriatx.craigslist.org",
+        "loc_1": "victoriatx",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "san marcos": {
+        "location_1": "san marcos",
+        "Display City State": "San Marcos TX",
+        "url": "sanmarcos.craigslist.org",
+        "loc_1": "sanmarcos",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "corpus christi": {
+        "location_1": "corpus christi",
+        "Display City State": "Corpus Christi TX",
+        "url": "corpuschristi.craigslist.org",
+        "loc_1": "corpuschristi",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "tyler / east TX": {
+        "location_1": "tyler / east TX",
+        "Display City State": "Tyler/East TX",
+        "url": "easttexas.craigslist.org",
+        "loc_1": "easttexas",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "san antonio": {
+        "location_1": "san antonio",
+        "Display City State": "San Antonio TX",
+        "url": "sanantonio.craigslist.org",
+        "loc_1": "sanantonio",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "galveston": {
+        "location_1": "galveston",
+        "Display City State": "Galveston TX",
+        "url": "galveston.craigslist.org",
+        "loc_1": "galveston",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "deep east texas": {
+        "location_1": "deep east texas",
+        "Display City State": "Deep East TX",
+        "url": "nacogdoches.craigslist.org",
+        "loc_1": "nacogdoches",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "mcallen / edinburg": {
+        "location_1": "mcallen / edinburg",
+        "Display City State": "Mcallen/Edinburg TX",
+        "url": "mcallen.craigslist.org",
+        "loc_1": "mcallen",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "killeen / temple / ft hood": {
+        "location_1": "killeen / temple / ft hood",
+        "Display City State": "Killeen/Temple/Ft Hood TX",
+        "url": "killeen.craigslist.org",
+        "loc_1": "killeen",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "college station": {
+        "location_1": "college station",
+        "Display City State": "College Station TX",
+        "url": "collegestation.craigslist.org",
+        "loc_1": "collegestation",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "wichita falls": {
+        "location_1": "wichita falls",
+        "Display City State": "Wichita Falls TX",
+        "url": "wichitafalls.craigslist.org",
+        "loc_1": "wichitafalls",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "waco": {
+        "location_1": "waco",
+        "Display City State": "Waco TX",
+        "url": "waco.craigslist.org",
+        "loc_1": "waco",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "abilene": {
+        "location_1": "abilene",
+        "Display City State": "Abilene TX",
+        "url": "abilene.craigslist.org",
+        "loc_1": "abilene",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "beaumont / port arthur": {
+        "location_1": "beaumont / port arthur",
+        "Display City State": "Beaumont/Port Arthur TX",
+        "url": "beaumont.craigslist.org",
+        "loc_1": "beaumont",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "austin": {
+        "location_1": "austin",
+        "Display City State": "Austin TX",
+        "url": "austin.craigslist.org",
+        "loc_1": "austin",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "san angelo": {
+        "location_1": "san angelo",
+        "Display City State": "San Angelo TX",
+        "url": "sanangelo.craigslist.org",
+        "loc_1": "sanangelo",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "houston": {
+        "location_1": "houston",
+        "Display City State": "Houston TX",
+        "url": "houston.craigslist.org",
+        "loc_1": "houston",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "del rio / eagle pass": {
+        "location_1": "del rio / eagle pass",
+        "Display City State": "Del Rio/Eagle Pass TX",
+        "url": "delrio.craigslist.org",
+        "loc_1": "delrio",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "amarillo": {
+        "location_1": "amarillo",
+        "Display City State": "Amarillo TX",
+        "url": "amarillo.craigslist.org",
+        "loc_1": "amarillo",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "laredo": {
+        "location_1": "laredo",
+        "Display City State": "Laredo TX",
+        "url": "laredo.craigslist.org",
+        "loc_1": "laredo",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "lubbock": {
+        "location_1": "lubbock",
+        "Display City State": "Lubbock TX",
+        "url": "lubbock.craigslist.org",
+        "loc_1": "lubbock",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "dallas / fort worth": {
+        "location_1": "dallas / fort worth",
+        "Display City State": "Dallas/Fort Worth TX",
+        "url": "dallas.craigslist.org",
+        "loc_1": "dallas",
+        "subs": [
+          {
+            "location_2": "dallas",
+            "loc_2": "dal"
+          },
+          {
+            "location_2": "fort worth",
+            "loc_2": "ftw"
+          },
+          {
+            "location_2": "mid cities",
+            "loc_2": "mdf"
+          },
+          {
+            "location_2": "north DFW",
+            "loc_2": "ndf"
+          },
+          {
+            "location_2": "south DFW",
+            "loc_2": "sdf"
+          }
+        ],
+        "Display State": "Texas"
+      },
+      "texoma": {
+        "location_1": "texoma",
+        "Display City State": "Texoma TX",
+        "url": "texoma.craigslist.org",
+        "loc_1": "texoma",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "southwest TX": {
+        "location_1": "southwest TX",
+        "Display City State": "Southwest TX",
+        "url": "bigbend.craigslist.org",
+        "loc_1": "bigbend",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "odessa / midland": {
+        "location_1": "odessa / midland",
+        "Display City State": "Odessa/Midland TX",
+        "url": "odessa.craigslist.org",
+        "loc_1": "odessa",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "el paso": {
+        "location_1": "el paso",
+        "Display City State": "El Paso TX",
+        "url": "elpaso.craigslist.org",
+        "loc_1": "elpaso",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "brownsville": {
+        "location_1": "brownsville",
+        "Display City State": "Brownsville TX",
+        "url": "brownsville.craigslist.org",
+        "loc_1": "brownsville",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      }
+    },
+    "hawaii": {
+      "hawaii": {
+        "location_1": "hawaii",
+        "Display City State": "Big Island HI",
+        "url": "honolulu.craigslist.org",
+        "loc_1": "honolulu",
+        "subs": [
+          {
+            "location_2": "big island",
+            "loc_2": "big"
+          },
+          {
+            "location_2": "kauai",
+            "loc_2": "kau"
+          },
+          {
+            "location_2": "maui",
+            "loc_2": "mau"
+          },
+          {
+            "location_2": "molokai",
+            "loc_2": "mol"
+          },
+          {
+            "location_2": "oahu",
+            "loc_2": "oah"
+          }
+        ],
+        "Display State": "Hawaii"
+      }
+    },
+    "district of columbia": {
+      "washington": {
+        "location_1": "washington",
+        "Display City State": "MD suburbs of DC",
+        "url": "washingtondc.craigslist.org",
+        "loc_1": "washingtondc",
+        "subs": [
+          {
+            "location_2": "district of columbia",
+            "loc_2": "doc"
+          },
+          {
+            "location_2": "northern virginia",
+            "loc_2": "nva"
+          },
+          {
+            "location_2": "maryland",
+            "loc_2": "mld"
+          }
+        ],
+        "Display State": "Maryland"
+      }
+    },
+    "connecticut": {
+      "northwest CT": {
+        "location_1": "northwest CT",
+        "Display City State": "Northwest CT",
+        "url": "nwct.craigslist.org",
+        "loc_1": "nwct",
+        "subs": [
+
+        ],
+        "Display State": "Connecticut"
+      },
+      "hartford": {
+        "location_1": "hartford",
+        "Display City State": "Hartford CT",
+        "url": "hartford.craigslist.org",
+        "loc_1": "hartford",
+        "subs": [
+
+        ],
+        "Display State": "Connecticut"
+      },
+      "eastern CT": {
+        "location_1": "eastern CT",
+        "Display City State": "Eastern CT",
+        "url": "newlondon.craigslist.org",
+        "loc_1": "newlondon",
+        "subs": [
+
+        ],
+        "Display State": "Connecticut"
+      },
+      "new haven": {
+        "location_1": "new haven",
+        "Display City State": "New Haven CT",
+        "url": "newhaven.craigslist.org",
+        "loc_1": "newhaven",
+        "subs": [
+
+        ],
+        "Display State": "Connecticut"
+      }
+    },
+    "oregon": {
+      "corvallis/albany": {
+        "location_1": "corvallis/albany",
+        "Display City State": "Corvallis/Albany OR",
+        "url": "corvallis.craigslist.org",
+        "loc_1": "corvallis",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "roseburg": {
+        "location_1": "roseburg",
+        "Display City State": "Roseburg OR",
+        "url": "roseburg.craigslist.org",
+        "loc_1": "roseburg",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "portland": {
+        "location_1": "portland",
+        "Display City State": "Portland OR",
+        "url": "portland.craigslist.org",
+        "loc_1": "portland",
+        "subs": [
+          {
+            "location_2": "multnomah co",
+            "loc_2": "mlt"
+          },
+          {
+            "location_2": "washington co",
+            "loc_2": "wsc"
+          },
+          {
+            "location_2": "clark/cowlitz",
+            "loc_2": "clk"
+          },
+          {
+            "location_2": "clackamas co",
+            "loc_2": "clc"
+          },
+          {
+            "location_2": "north coast",
+            "loc_2": "nco"
+          },
+          {
+            "location_2": "yamhill co",
+            "loc_2": "yam"
+          },
+          {
+            "location_2": "columbia gorge",
+            "loc_2": "grg"
+          }
+        ],
+        "Display State": "Oregon"
+      },
+      "bend": {
+        "location_1": "bend",
+        "Display City State": "Bend OR",
+        "url": "bend.craigslist.org",
+        "loc_1": "bend",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "klamath falls": {
+        "location_1": "klamath falls",
+        "Display City State": "Klamath Falls OR",
+        "url": "klamath.craigslist.org",
+        "loc_1": "klamath",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "oregon coast": {
+        "location_1": "oregon coast",
+        "Display City State": "Oregon Coast OR",
+        "url": "oregoncoast.craigslist.org",
+        "loc_1": "oregoncoast",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "eugene": {
+        "location_1": "eugene",
+        "Display City State": "Eugene OR",
+        "url": "eugene.craigslist.org",
+        "loc_1": "eugene",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "salem": {
+        "location_1": "salem",
+        "Display City State": "Salem OR",
+        "url": "salem.craigslist.org",
+        "loc_1": "salem",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "medford-ashland": {
+        "location_1": "medford-ashland",
+        "Display City State": "Medford-Ashland OR",
+        "url": "medford.craigslist.org",
+        "loc_1": "medford",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      },
+      "east oregon": {
+        "location_1": "east oregon",
+        "Display City State": "East Oregon OR",
+        "url": "eastoregon.craigslist.org",
+        "loc_1": "eastoregon",
+        "subs": [
+
+        ],
+        "Display State": "Oregon"
+      }
+    },
+    "north carolina": {
+      "raleigh / durham / CH": {
+        "location_1": "raleigh / durham / CH",
+        "Display City State": "Raleigh/Durham/CH NC",
+        "url": "raleigh.craigslist.org",
+        "loc_1": "raleigh",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "jacksonville": {
+        "location_1": "jacksonville",
+        "Display City State": "Jacksonville NC",
+        "url": "onslow.craigslist.org",
+        "loc_1": "onslow",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "outer banks": {
+        "location_1": "outer banks",
+        "Display City State": "Outer Banks NC",
+        "url": "outerbanks.craigslist.org",
+        "loc_1": "outerbanks",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "winston-salem": {
+        "location_1": "winston-salem",
+        "Display City State": "Winston-Salem NC",
+        "url": "winstonsalem.craigslist.org",
+        "loc_1": "winstonsalem",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "wilmington": {
+        "location_1": "wilmington",
+        "Display City State": "Wilmington NC",
+        "url": "wilmington.craigslist.org",
+        "loc_1": "wilmington",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "charlotte": {
+        "location_1": "charlotte",
+        "Display City State": "Charlotte NC",
+        "url": "charlotte.craigslist.org",
+        "loc_1": "charlotte",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "boone": {
+        "location_1": "boone",
+        "Display City State": "Boone NC",
+        "url": "boone.craigslist.org",
+        "loc_1": "boone",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "asheville": {
+        "location_1": "asheville",
+        "Display City State": "Asheville NC",
+        "url": "asheville.craigslist.org",
+        "loc_1": "asheville",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "greensboro": {
+        "location_1": "greensboro",
+        "Display City State": "Greensboro NC",
+        "url": "greensboro.craigslist.org",
+        "loc_1": "greensboro",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "hickory / lenoir": {
+        "location_1": "hickory / lenoir",
+        "Display City State": "Hickory/Lenoir NC",
+        "url": "hickory.craigslist.org",
+        "loc_1": "hickory",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "fayetteville": {
+        "location_1": "fayetteville",
+        "Display City State": "Fayetteville NC",
+        "url": "fayetteville.craigslist.org",
+        "loc_1": "fayetteville",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      },
+      "eastern NC": {
+        "location_1": "eastern NC",
+        "Display City State": "Eastern NC",
+        "url": "eastnc.craigslist.org",
+        "loc_1": "eastnc",
+        "subs": [
+
+        ],
+        "Display State": "N Carolina"
+      }
+    },
+    "new york": {
+      "watertown": {
+        "location_1": "watertown",
+        "Display City State": "Watertown NY",
+        "url": "watertown.craigslist.org",
+        "loc_1": "watertown",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "elmira-corning": {
+        "location_1": "elmira-corning",
+        "Display City State": "Elmira-Corning NY",
+        "url": "elmira.craigslist.org",
+        "loc_1": "elmira",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "potsdam-canton-massena": {
+        "location_1": "potsdam-canton-massena",
+        "Display City State": "Potsdam-Canton-Massena NY",
+        "url": "potsdam.craigslist.org",
+        "loc_1": "potsdam",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "plattsburgh-adirondacks": {
+        "location_1": "plattsburgh-adirondacks",
+        "Display City State": "Plattsburgh-Adirondacks NY",
+        "url": "plattsburgh.craigslist.org",
+        "loc_1": "plattsburgh",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "catskills": {
+        "location_1": "catskills",
+        "Display City State": "Catskills NY",
+        "url": "catskills.craigslist.org",
+        "loc_1": "catskills",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "finger lakes": {
+        "location_1": "finger lakes",
+        "Display City State": "Finger Lakes NY",
+        "url": "fingerlakes.craigslist.org",
+        "loc_1": "fingerlakes",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "twin tiers NY/PA": {
+        "location_1": "twin tiers NY/PA",
+        "Display City State": "Twin Tiers NY/PA",
+        "url": "twintiers.craigslist.org",
+        "loc_1": "twintiers",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "syracuse": {
+        "location_1": "syracuse",
+        "Display City State": "Syracuse NY",
+        "url": "syracuse.craigslist.org",
+        "loc_1": "syracuse",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "long island": {
+        "location_1": "long island",
+        "Display City State": "Long Island NY",
+        "url": "longisland.craigslist.org",
+        "loc_1": "longisland",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "chautauqua": {
+        "location_1": "chautauqua",
+        "Display City State": "Chautauqua NY",
+        "url": "chautauqua.craigslist.org",
+        "loc_1": "chautauqua",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "ithaca": {
+        "location_1": "ithaca",
+        "Display City State": "Ithaca NY",
+        "url": "ithaca.craigslist.org",
+        "loc_1": "ithaca",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "binghamton": {
+        "location_1": "binghamton",
+        "Display City State": "Binghamton NY",
+        "url": "binghamton.craigslist.org",
+        "loc_1": "binghamton",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "rochester": {
+        "location_1": "rochester",
+        "Display City State": "Rochester NY",
+        "url": "rochester.craigslist.org",
+        "loc_1": "rochester",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "new york city": {
+        "location_1": "new york city",
+        "Display City State": "Fairfield Co CT",
+        "url": "newyork.craigslist.org",
+        "loc_1": "newyork",
+        "subs": [
+          {
+            "location_2": "manhattan",
+            "loc_2": "mnh"
+          },
+          {
+            "location_2": "brooklyn",
+            "loc_2": "brk"
+          },
+          {
+            "location_2": "queens",
+            "loc_2": "que"
+          },
+          {
+            "location_2": "bronx",
+            "loc_2": "brx"
+          },
+          {
+            "location_2": "staten island",
+            "loc_2": "stn"
+          },
+          {
+            "location_2": "new jersey",
+            "loc_2": "jsy"
+          },
+          {
+            "location_2": "long island",
+            "loc_2": "lgi"
+          },
+          {
+            "location_2": "westchester",
+            "loc_2": "wch"
+          },
+          {
+            "location_2": "fairfield",
+            "loc_2": "fct"
+          }
+        ],
+        "Display State": "Connecticut"
+      },
+      "hudson valley": {
+        "location_1": "hudson valley",
+        "Display City State": "Hudson Valley NY",
+        "url": "hudsonvalley.craigslist.org",
+        "loc_1": "hudsonvalley",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "oneonta": {
+        "location_1": "oneonta",
+        "Display City State": "Oneonta NY",
+        "url": "oneonta.craigslist.org",
+        "loc_1": "oneonta",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "glens falls": {
+        "location_1": "glens falls",
+        "Display City State": "Glens Falls NY",
+        "url": "glensfalls.craigslist.org",
+        "loc_1": "glensfalls",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "utica-rome-oneida": {
+        "location_1": "utica-rome-oneida",
+        "Display City State": "Utica-Rome-Oneida NY",
+        "url": "utica.craigslist.org",
+        "loc_1": "utica",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "buffalo": {
+        "location_1": "buffalo",
+        "Display City State": "Buffalo NY",
+        "url": "buffalo.craigslist.org",
+        "loc_1": "buffalo",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      },
+      "albany": {
+        "location_1": "albany",
+        "Display City State": "Albany NY",
+        "url": "albany.craigslist.org",
+        "loc_1": "albany",
+        "subs": [
+
+        ],
+        "Display State": "New York"
+      }
+    },
+    "rhode island": {
+      "rhode island": {
+        "location_1": "rhode island",
+        "Display City State": "Rhode Island RI",
+        "url": "providence.craigslist.org",
+        "loc_1": "providence",
+        "subs": [
+
+        ],
+        "Display State": "Rhode Island"
+      }
+    },
+    "minnesota": {
+      "st cloud": {
+        "location_1": "st cloud",
+        "Display City State": "St Cloud MN",
+        "url": "stcloud.craigslist.org",
+        "loc_1": "stcloud",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "duluth / superior": {
+        "location_1": "duluth / superior",
+        "Display City State": "Duluth/Superior WI",
+        "url": "duluth.craigslist.org",
+        "loc_1": "duluth",
+        "subs": [
+
+        ],
+        "Display State": "Wisconsin"
+      },
+      "mankato": {
+        "location_1": "mankato",
+        "Display City State": "Mankato MN",
+        "url": "mankato.craigslist.org",
+        "loc_1": "mankato",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "minneapolis / st paul": {
+        "location_1": "minneapolis / st paul",
+        "Display City State": "Minneapolis/St Paul MN",
+        "url": "minneapolis.craigslist.org",
+        "loc_1": "minneapolis",
+        "subs": [
+          {
+            "location_2": "hennepin co",
+            "loc_2": "hnp"
+          },
+          {
+            "location_2": "ramsey co",
+            "loc_2": "ram"
+          },
+          {
+            "location_2": "anok/chis/isa",
+            "loc_2": "ank"
+          },
+          {
+            "location_2": "washington/WI",
+            "loc_2": "wsh"
+          },
+          {
+            "location_2": "dakota/scott",
+            "loc_2": "dak"
+          },
+          {
+            "location_2": "carv/sher/wri",
+            "loc_2": "csw"
+          }
+        ],
+        "Display State": "Minnesota"
+      },
+      "brainerd": {
+        "location_1": "brainerd",
+        "Display City State": "Brainerd MN",
+        "url": "brainerd.craigslist.org",
+        "loc_1": "brainerd",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "southwest MN": {
+        "location_1": "southwest MN",
+        "Display City State": "Southwest MN",
+        "url": "marshall.craigslist.org",
+        "loc_1": "marshall",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "rochester": {
+        "location_1": "rochester",
+        "Display City State": "Rochester MN",
+        "url": "rmn.craigslist.org",
+        "loc_1": "rmn",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      },
+      "bemidji": {
+        "location_1": "bemidji",
+        "Display City State": "Bemidji MN",
+        "url": "bemidji.craigslist.org",
+        "loc_1": "bemidji",
+        "subs": [
+
+        ],
+        "Display State": "Minnesota"
+      }
+    },
+    "iowa": {
+      "fort dodge": {
+        "location_1": "fort dodge",
+        "Display City State": "Fort Dodge IA",
+        "url": "fortdodge.craigslist.org",
+        "loc_1": "fortdodge",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "waterloo / cedar falls": {
+        "location_1": "waterloo / cedar falls",
+        "Display City State": "Waterloo/Cedar Falls IA",
+        "url": "waterloo.craigslist.org",
+        "loc_1": "waterloo",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "mason city": {
+        "location_1": "mason city",
+        "Display City State": "Mason City IA",
+        "url": "masoncity.craigslist.org",
+        "loc_1": "masoncity",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "cedar rapids": {
+        "location_1": "cedar rapids",
+        "Display City State": "Cedar Rapids IA",
+        "url": "cedarrapids.craigslist.org",
+        "loc_1": "cedarrapids",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "southeast IA": {
+        "location_1": "southeast IA",
+        "Display City State": "Southeast IA",
+        "url": "ottumwa.craigslist.org",
+        "loc_1": "ottumwa",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "des moines": {
+        "location_1": "des moines",
+        "Display City State": "Des Moines IA",
+        "url": "desmoines.craigslist.org",
+        "loc_1": "desmoines",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "sioux city": {
+        "location_1": "sioux city",
+        "Display City State": "Sioux City IA",
+        "url": "siouxcity.craigslist.org",
+        "loc_1": "siouxcity",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "quad cities": {
+        "location_1": "quad cities",
+        "Display City State": "Quad Cities IA/IL",
+        "url": "quadcities.craigslist.org",
+        "loc_1": "quadcities",
+        "subs": [
+
+        ],
+        "Display State": "Illinois"
+      },
+      "ames": {
+        "location_1": "ames",
+        "Display City State": "Ames IA",
+        "url": "ames.craigslist.org",
+        "loc_1": "ames",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "iowa city": {
+        "location_1": "iowa city",
+        "Display City State": "Iowa City IA",
+        "url": "iowacity.craigslist.org",
+        "loc_1": "iowacity",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      },
+      "dubuque": {
+        "location_1": "dubuque",
+        "Display City State": "Dubuque IA",
+        "url": "dubuque.craigslist.org",
+        "loc_1": "dubuque",
+        "subs": [
+
+        ],
+        "Display State": "Iowa"
+      }
+    },
+    "florida": {
+      "jacksonville": {
+        "location_1": "jacksonville",
+        "Display City State": "Jacksonville FL",
+        "url": "jacksonville.craigslist.org",
+        "loc_1": "jacksonville",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "panama city": {
+        "location_1": "panama city",
+        "Display City State": "Panama City FL",
+        "url": "panamacity.craigslist.org",
+        "loc_1": "panamacity",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "orlando": {
+        "location_1": "orlando",
+        "Display City State": "Orlando FL",
+        "url": "orlando.craigslist.org",
+        "loc_1": "orlando",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "ft myers / SW florida": {
+        "location_1": "ft myers / SW florida",
+        "Display City State": "Ft Myers/Southwest FL",
+        "url": "fortmyers.craigslist.org",
+        "loc_1": "fortmyers",
+        "subs": [
+          {
+            "location_2": "lee county",
+            "loc_2": "lee"
+          },
+          {
+            "location_2": "charlotte co",
+            "loc_2": "chl"
+          },
+          {
+            "location_2": "collier co",
+            "loc_2": "col"
+          }
+        ],
+        "Display State": "Florida"
+      },
+      "okaloosa / walton": {
+        "location_1": "okaloosa / walton",
+        "Display City State": "Okaloosa/Walton FL",
+        "url": "okaloosa.craigslist.org",
+        "loc_1": "okaloosa",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "florida keys": {
+        "location_1": "florida keys",
+        "Display City State": "Florida Keys FL",
+        "url": "keys.craigslist.org",
+        "loc_1": "keys",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "tallahassee": {
+        "location_1": "tallahassee",
+        "Display City State": "Tallahassee FL",
+        "url": "tallahassee.craigslist.org",
+        "loc_1": "tallahassee",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "ocala": {
+        "location_1": "ocala",
+        "Display City State": "Ocala FL",
+        "url": "ocala.craigslist.org",
+        "loc_1": "ocala",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "north central FL": {
+        "location_1": "north central FL",
+        "Display City State": "North Central FL",
+        "url": "lakecity.craigslist.org",
+        "loc_1": "lakecity",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "gainesville": {
+        "location_1": "gainesville",
+        "Display City State": "Gainesville FL",
+        "url": "gainesville.craigslist.org",
+        "loc_1": "gainesville",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "west palm beach": {
+        "location_1": "west palm beach",
+        "Display City State": "West Palm Beach FL",
+        "url": "westpalmbeach.craigslist.org",
+        "loc_1": "westpalmbeach",
+        "subs": [
+          {
+            "location_2": "miami / dade",
+            "loc_2": "mdc"
+          },
+          {
+            "location_2": "broward county",
+            "loc_2": "brw"
+          },
+          {
+            "location_2": "palm beach co",
+            "loc_2": "pbc"
+          }
+        ],
+        "Display State": "Florida"
+      },
+      "tampa bay area": {
+        "location_1": "tampa bay area",
+        "Display City State": "Tampa Bay Area FL",
+        "url": "tampa.craigslist.org",
+        "loc_1": "tampa",
+        "subs": [
+          {
+            "location_2": "hernando co",
+            "loc_2": "hdo"
+          },
+          {
+            "location_2": "hillsborough co",
+            "loc_2": "hil"
+          },
+          {
+            "location_2": "pasco co",
+            "loc_2": "psc"
+          },
+          {
+            "location_2": "pinellas co",
+            "loc_2": "pnl"
+          }
+        ],
+        "Display State": "Florida"
+      },
+      "fort lauderdale": {
+        "location_1": "fort lauderdale",
+        "Display City State": "Fort Lauderdale FL",
+        "url": "fortlauderdale.craigslist.org",
+        "loc_1": "fortlauderdale",
+        "subs": [
+          {
+            "location_2": "miami / dade",
+            "loc_2": "mdc"
+          },
+          {
+            "location_2": "broward county",
+            "loc_2": "brw"
+          },
+          {
+            "location_2": "palm beach co",
+            "loc_2": "pbc"
+          }
+        ],
+        "Display State": "Florida"
+      },
+      "daytona beach": {
+        "location_1": "daytona beach",
+        "Display City State": "Daytona Beach FL",
+        "url": "daytona.craigslist.org",
+        "loc_1": "daytona",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "treasure coast": {
+        "location_1": "treasure coast",
+        "Display City State": "Treasure Coast FL",
+        "url": "treasure.craigslist.org",
+        "loc_1": "treasure",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "sarasota-bradenton": {
+        "location_1": "sarasota-bradenton",
+        "Display City State": "Sarasota-Bradenton FL",
+        "url": "sarasota.craigslist.org",
+        "loc_1": "sarasota",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "heartland florida": {
+        "location_1": "heartland florida",
+        "Display City State": "Heartland FL",
+        "url": "cfl.craigslist.org",
+        "loc_1": "cfl",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "st augustine": {
+        "location_1": "st augustine",
+        "Display City State": "St Augustine FL",
+        "url": "staugustine.craigslist.org",
+        "loc_1": "staugustine",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "space coast": {
+        "location_1": "space coast",
+        "Display City State": "Space Coast FL",
+        "url": "spacecoast.craigslist.org",
+        "loc_1": "spacecoast",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "lakeland": {
+        "location_1": "lakeland",
+        "Display City State": "Lakeland FL",
+        "url": "lakeland.craigslist.org",
+        "loc_1": "lakeland",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      },
+      "south florida": {
+        "location_1": "south florida",
+        "Display City State": "South FL",
+        "url": "miami.craigslist.org",
+        "loc_1": "miami",
+        "subs": [
+          {
+            "location_2": "miami / dade",
+            "loc_2": "mdc"
+          },
+          {
+            "location_2": "broward county",
+            "loc_2": "brw"
+          },
+          {
+            "location_2": "palm beach co",
+            "loc_2": "pbc"
+          }
+        ],
+        "Display State": "Florida"
+      },
+      "pensacola": {
+        "location_1": "pensacola",
+        "Display City State": "Pensacola FL",
+        "url": "pensacola.craigslist.org",
+        "loc_1": "pensacola",
+        "subs": [
+
+        ],
+        "Display State": "Florida"
+      }
+    },
+    "massachusetts": {
+      "boston": {
+        "location_1": "boston",
+        "Display City State": "Boston MA",
+        "url": "boston.craigslist.org",
+        "loc_1": "boston",
+        "subs": [
+          {
+            "location_2": "boston/camb/brook",
+            "loc_2": "gbs"
+          },
+          {
+            "location_2": "northwest/merrimack",
+            "loc_2": "nwb"
+          },
+          {
+            "location_2": "metro west",
+            "loc_2": "bmw"
+          },
+          {
+            "location_2": "north shore",
+            "loc_2": "nos"
+          },
+          {
+            "location_2": "south shore",
+            "loc_2": "sob"
+          }
+        ],
+        "Display State": "Mass"
+      },
+      "cape cod / islands": {
+        "location_1": "cape cod / islands",
+        "Display City State": "Cape Cod/Islands MA",
+        "url": "capecod.craigslist.org",
+        "loc_1": "capecod",
+        "subs": [
+
+        ],
+        "Display State": "Mass"
+      },
+      "western massachusetts": {
+        "location_1": "western massachusetts",
+        "Display City State": "Western MA",
+        "url": "westernmass.craigslist.org",
+        "loc_1": "westernmass",
+        "subs": [
+
+        ],
+        "Display State": "Mass"
+      },
+      "south coast": {
+        "location_1": "south coast",
+        "Display City State": "South Coast MA",
+        "url": "southcoast.craigslist.org",
+        "loc_1": "southcoast",
+        "subs": [
+
+        ],
+        "Display State": "Mass"
+      },
+      "worcester / central MA": {
+        "location_1": "worcester / central MA",
+        "Display City State": "Worcester/Central MA",
+        "url": "worcester.craigslist.org",
+        "loc_1": "worcester",
+        "subs": [
+
+        ],
+        "Display State": "Mass"
+      }
+    },
+    "maryland": {
+      "western maryland": {
+        "location_1": "western maryland",
+        "Display City State": "Western MD",
+        "url": "westmd.craigslist.org",
+        "loc_1": "westmd",
+        "subs": [
+
+        ],
+        "Display State": "Maryland"
+      },
+      "annapolis": {
+        "location_1": "annapolis",
+        "Display City State": "Annapolis MD",
+        "url": "annapolis.craigslist.org",
+        "loc_1": "annapolis",
+        "subs": [
+
+        ],
+        "Display State": "Maryland"
+      },
+      "frederick": {
+        "location_1": "frederick",
+        "Display City State": "Frederick MD",
+        "url": "frederick.craigslist.org",
+        "loc_1": "frederick",
+        "subs": [
+
+        ],
+        "Display State": "Maryland"
+      },
+      "baltimore": {
+        "location_1": "baltimore",
+        "Display City State": "Baltimore MD",
+        "url": "baltimore.craigslist.org",
+        "loc_1": "baltimore",
+        "subs": [
+
+        ],
+        "Display State": "Maryland"
+      },
+      "eastern shore": {
+        "location_1": "eastern shore",
+        "Display City State": "Eastern Shore VA",
+        "url": "easternshore.craigslist.org",
+        "loc_1": "easternshore",
+        "subs": [
+
+        ],
+        "Display State": "Virginia"
+      },
+      "southern maryland": {
+        "location_1": "southern maryland",
+        "Display City State": "Southern MD",
+        "url": "smd.craigslist.org",
+        "loc_1": "smd",
+        "subs": [
+
+        ],
+        "Display State": "Maryland"
+      }
+    },
+    "kentucky": {
+      "louisville": {
+        "location_1": "louisville",
+        "Display City State": "Louisville KY",
+        "url": "louisville.craigslist.org",
+        "loc_1": "louisville",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      },
+      "eastern kentucky": {
+        "location_1": "eastern kentucky",
+        "Display City State": "Eastern KY",
+        "url": "eastky.craigslist.org",
+        "loc_1": "eastky",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      },
+      "owensboro": {
+        "location_1": "owensboro",
+        "Display City State": "Owensboro KY",
+        "url": "owensboro.craigslist.org",
+        "loc_1": "owensboro",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      },
+      "lexington": {
+        "location_1": "lexington",
+        "Display City State": "Lexington KY",
+        "url": "lexington.craigslist.org",
+        "loc_1": "lexington",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      },
+      "bowling green": {
+        "location_1": "bowling green",
+        "Display City State": "Bowling Green KY",
+        "url": "bgky.craigslist.org",
+        "loc_1": "bgky",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      },
+      "western KY": {
+        "location_1": "western KY",
+        "Display City State": "Western KY",
+        "url": "westky.craigslist.org",
+        "loc_1": "westky",
+        "subs": [
+
+        ],
+        "Display State": "Kentucky"
+      }
+    },
+    "delaware": {
+      "delaware": {
+        "location_1": "delaware",
+        "Display City State": "Delaware DE",
+        "url": "delaware.craigslist.org",
+        "loc_1": "delaware",
+        "subs": [
+
+        ],
+        "Display State": "Delaware"
+      }
+    },
+    "washington": {
+      "spokane / coeur d'alene": {
+        "location_1": "spokane / coeur d'alene",
+        "Display City State": "Spokane/Coeur D'Alene WA",
+        "url": "spokane.craigslist.org",
+        "loc_1": "spokane",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "seattle-tacoma": {
+        "location_1": "seattle-tacoma",
+        "Display City State": "Seattle-Tacoma WA",
+        "url": "seattle.craigslist.org",
+        "loc_1": "seattle",
+        "subs": [
+          {
+            "location_2": "seattle",
+            "loc_2": "see"
+          },
+          {
+            "location_2": "eastside",
+            "loc_2": "est"
+          },
+          {
+            "location_2": "snohomish co",
+            "loc_2": "sno"
+          },
+          {
+            "location_2": "kitsap co",
+            "loc_2": "kit"
+          },
+          {
+            "location_2": "tacoma",
+            "loc_2": "tac"
+          },
+          {
+            "location_2": "olympia",
+            "loc_2": "oly"
+          },
+          {
+            "location_2": "south king",
+            "loc_2": "skc"
+          }
+        ],
+        "Display State": "Washington"
+      },
+      "pullman / moscow": {
+        "location_1": "pullman / moscow",
+        "Display City State": "Pullman/Moscow ID",
+        "url": "pullman.craigslist.org",
+        "loc_1": "pullman",
+        "subs": [
+
+        ],
+        "Display State": "Idaho"
+      },
+      "bellingham": {
+        "location_1": "bellingham",
+        "Display City State": "Bellingham WA",
+        "url": "bellingham.craigslist.org",
+        "loc_1": "bellingham",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "kennewick-pasco-richland": {
+        "location_1": "kennewick-pasco-richland",
+        "Display City State": "Kennewick-Pasco-Richland WA",
+        "url": "kpr.craigslist.org",
+        "loc_1": "kpr",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "moses lake": {
+        "location_1": "moses lake",
+        "Display City State": "Moses Lake WA",
+        "url": "moseslake.craigslist.org",
+        "loc_1": "moseslake",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "wenatchee": {
+        "location_1": "wenatchee",
+        "Display City State": "Wenatchee WA",
+        "url": "wenatchee.craigslist.org",
+        "loc_1": "wenatchee",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "olympic peninsula": {
+        "location_1": "olympic peninsula",
+        "Display City State": "Olympic Peninsula WA",
+        "url": "olympic.craigslist.org",
+        "loc_1": "olympic",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "yakima": {
+        "location_1": "yakima",
+        "Display City State": "Yakima WA",
+        "url": "yakima.craigslist.org",
+        "loc_1": "yakima",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      },
+      "skagit / island / SJI": {
+        "location_1": "skagit / island / SJI",
+        "Display City State": "Skagit/Island/SJI WA",
+        "url": "skagit.craigslist.org",
+        "loc_1": "skagit",
+        "subs": [
+
+        ],
+        "Display State": "Washington"
+      }
+    },
+    "new jersey": {
+      "north jersey": {
+        "location_1": "north jersey",
+        "Display City State": "North Jersey NJ",
+        "url": "newjersey.craigslist.org",
+        "loc_1": "newjersey",
+        "subs": [
+
+        ],
+        "Display State": "New Jersey"
+      },
+      "south jersey": {
+        "location_1": "south jersey",
+        "Display City State": "South Jersey NJ",
+        "url": "southjersey.craigslist.org",
+        "loc_1": "southjersey",
+        "subs": [
+
+        ],
+        "Display State": "New Jersey"
+      },
+      "jersey shore": {
+        "location_1": "jersey shore",
+        "Display City State": "Jersey Shore NJ",
+        "url": "jerseyshore.craigslist.org",
+        "loc_1": "jerseyshore",
+        "subs": [
+
+        ],
+        "Display State": "New Jersey"
+      },
+      "central NJ": {
+        "location_1": "central NJ",
+        "Display City State": "Central NJ",
+        "url": "cnj.craigslist.org",
+        "loc_1": "cnj",
+        "subs": [
+
+        ],
+        "Display State": "New Jersey"
+      }
+    },
+    "louisiana": {
+      "lafayette": {
+        "location_1": "lafayette",
+        "Display City State": "Lafayette LA",
+        "url": "lafayette.craigslist.org",
+        "loc_1": "lafayette",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "baton rouge": {
+        "location_1": "baton rouge",
+        "Display City State": "Baton Rouge LA",
+        "url": "batonrouge.craigslist.org",
+        "loc_1": "batonrouge",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "shreveport": {
+        "location_1": "shreveport",
+        "Display City State": "Shreveport LA",
+        "url": "shreveport.craigslist.org",
+        "loc_1": "shreveport",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "monroe": {
+        "location_1": "monroe",
+        "Display City State": "Monroe LA",
+        "url": "monroe.craigslist.org",
+        "loc_1": "monroe",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "houma": {
+        "location_1": "houma",
+        "Display City State": "Houma LA",
+        "url": "houma.craigslist.org",
+        "loc_1": "houma",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "central louisiana": {
+        "location_1": "central louisiana",
+        "Display City State": "Central LA",
+        "url": "cenla.craigslist.org",
+        "loc_1": "cenla",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "new orleans": {
+        "location_1": "new orleans",
+        "Display City State": "New Orleans LA",
+        "url": "neworleans.craigslist.org",
+        "loc_1": "neworleans",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      },
+      "lake charles": {
+        "location_1": "lake charles",
+        "Display City State": "Lake Charles LA",
+        "url": "lakecharles.craigslist.org",
+        "loc_1": "lakecharles",
+        "subs": [
+
+        ],
+        "Display State": "Louisiana"
+      }
+    },
+    "alabama": {
+      "birmingham": {
+        "location_1": "birmingham",
+        "Display City State": "Birmingham AL",
+        "url": "bham.craigslist.org",
+        "loc_1": "bham",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "tuscaloosa": {
+        "location_1": "tuscaloosa",
+        "Display City State": "Tuscaloosa AL",
+        "url": "tuscaloosa.craigslist.org",
+        "loc_1": "tuscaloosa",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "florence / muscle shoals": {
+        "location_1": "florence / muscle shoals",
+        "Display City State": "Florence/Muscle Shoals AL",
+        "url": "shoals.craigslist.org",
+        "loc_1": "shoals",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "dothan": {
+        "location_1": "dothan",
+        "Display City State": "Dothan AL",
+        "url": "dothan.craigslist.org",
+        "loc_1": "dothan",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "auburn": {
+        "location_1": "auburn",
+        "Display City State": "Auburn AL",
+        "url": "auburn.craigslist.org",
+        "loc_1": "auburn",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "montgomery": {
+        "location_1": "montgomery",
+        "Display City State": "Montgomery AL",
+        "url": "montgomery.craigslist.org",
+        "loc_1": "montgomery",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "mobile": {
+        "location_1": "mobile",
+        "Display City State": "Mobile AL",
+        "url": "mobile.craigslist.org",
+        "loc_1": "mobile",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "huntsville / decatur": {
+        "location_1": "huntsville / decatur",
+        "Display City State": "Huntsville/Decatur AL",
+        "url": "huntsville.craigslist.org",
+        "loc_1": "huntsville",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "gadsden-anniston": {
+        "location_1": "gadsden-anniston",
+        "Display City State": "Gadsden-Anniston AL",
+        "url": "gadsden.craigslist.org",
+        "loc_1": "gadsden",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      }
+    },
+    "south carolina": {
+      "florence": {
+        "location_1": "florence",
+        "Display City State": "Florence SC",
+        "url": "florencesc.craigslist.org",
+        "loc_1": "florencesc",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      },
+      "myrtle beach": {
+        "location_1": "myrtle beach",
+        "Display City State": "Myrtle Beach SC",
+        "url": "myrtlebeach.craigslist.org",
+        "loc_1": "myrtlebeach",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      },
+      "hilton head": {
+        "location_1": "hilton head",
+        "Display City State": "Hilton Head SC",
+        "url": "hiltonhead.craigslist.org",
+        "loc_1": "hiltonhead",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      },
+      "columbia": {
+        "location_1": "columbia",
+        "Display City State": "Columbia SC",
+        "url": "columbia.craigslist.org",
+        "loc_1": "columbia",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      },
+      "charleston": {
+        "location_1": "charleston",
+        "Display City State": "Charleston SC",
+        "url": "charleston.craigslist.org",
+        "loc_1": "charleston",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      },
+      "greenville / upstate": {
+        "location_1": "greenville / upstate",
+        "Display City State": "Greenville/Upstate SC",
+        "url": "greenville.craigslist.org",
+        "loc_1": "greenville",
+        "subs": [
+
+        ],
+        "Display State": "S Carolina"
+      }
+    },
+    "pennsylvania": {
+      "poconos": {
+        "location_1": "poconos",
+        "Display City State": "Poconos PA",
+        "url": "poconos.craigslist.org",
+        "loc_1": "poconos",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "erie": {
+        "location_1": "erie",
+        "Display City State": "Erie PA",
+        "url": "erie.craigslist.org",
+        "loc_1": "erie",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "reading": {
+        "location_1": "reading",
+        "Display City State": "Reading PA",
+        "url": "reading.craigslist.org",
+        "loc_1": "reading",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "philadelphia": {
+        "location_1": "philadelphia",
+        "Display City State": "Philadelphia PA",
+        "url": "philadelphia.craigslist.org",
+        "loc_1": "philadelphia",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "harrisburg": {
+        "location_1": "harrisburg",
+        "Display City State": "Harrisburg PA",
+        "url": "harrisburg.craigslist.org",
+        "loc_1": "harrisburg",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "cumberland valley": {
+        "location_1": "cumberland valley",
+        "Display City State": "Cumberland Valley PA",
+        "url": "chambersburg.craigslist.org",
+        "loc_1": "chambersburg",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "altoona-johnstown": {
+        "location_1": "altoona-johnstown",
+        "Display City State": "Altoona-Johnstown PA",
+        "url": "altoona.craigslist.org",
+        "loc_1": "altoona",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "meadville": {
+        "location_1": "meadville",
+        "Display City State": "Meadville PA",
+        "url": "meadville.craigslist.org",
+        "loc_1": "meadville",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "york": {
+        "location_1": "york",
+        "Display City State": "York PA",
+        "url": "york.craigslist.org",
+        "loc_1": "york",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "scranton / wilkes-barre": {
+        "location_1": "scranton / wilkes-barre",
+        "Display City State": "Scranton/Wilkes-Barre PA",
+        "url": "scranton.craigslist.org",
+        "loc_1": "scranton",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "lehigh valley": {
+        "location_1": "lehigh valley",
+        "Display City State": "Lehigh Valley PA",
+        "url": "allentown.craigslist.org",
+        "loc_1": "allentown",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "lancaster": {
+        "location_1": "lancaster",
+        "Display City State": "Lancaster PA",
+        "url": "lancaster.craigslist.org",
+        "loc_1": "lancaster",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "williamsport": {
+        "location_1": "williamsport",
+        "Display City State": "Williamsport PA",
+        "url": "williamsport.craigslist.org",
+        "loc_1": "williamsport",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "pittsburgh": {
+        "location_1": "pittsburgh",
+        "Display City State": "Pittsburgh PA",
+        "url": "pittsburgh.craigslist.org",
+        "loc_1": "pittsburgh",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      },
+      "state college": {
+        "location_1": "state college",
+        "Display City State": "State College PA",
+        "url": "pennstate.craigslist.org",
+        "loc_1": "pennstate",
+        "subs": [
+
+        ],
+        "Display State": "Pennsylvania"
+      }
+    },
+    "indiana": {
+      "richmond": {
+        "location_1": "richmond",
+        "Display City State": "Richmond IN",
+        "url": "richmondin.craigslist.org",
+        "loc_1": "richmondin",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "bloomington": {
+        "location_1": "bloomington",
+        "Display City State": "Bloomington IN",
+        "url": "bloomington.craigslist.org",
+        "loc_1": "bloomington",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "kokomo": {
+        "location_1": "kokomo",
+        "Display City State": "Kokomo IN",
+        "url": "kokomo.craigslist.org",
+        "loc_1": "kokomo",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "lafayette / west lafayette": {
+        "location_1": "lafayette / west lafayette",
+        "Display City State": "Lafayette/West Lafayette IN",
+        "url": "tippecanoe.craigslist.org",
+        "loc_1": "tippecanoe",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "muncie / anderson": {
+        "location_1": "muncie / anderson",
+        "Display City State": "Muncie/Anderson IN",
+        "url": "muncie.craigslist.org",
+        "loc_1": "muncie",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "indianapolis": {
+        "location_1": "indianapolis",
+        "Display City State": "Indianapolis IN",
+        "url": "indianapolis.craigslist.org",
+        "loc_1": "indianapolis",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "terre haute": {
+        "location_1": "terre haute",
+        "Display City State": "Terre Haute IN",
+        "url": "terrehaute.craigslist.org",
+        "loc_1": "terrehaute",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "fort wayne": {
+        "location_1": "fort wayne",
+        "Display City State": "Fort Wayne IN",
+        "url": "fortwayne.craigslist.org",
+        "loc_1": "fortwayne",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "evansville": {
+        "location_1": "evansville",
+        "Display City State": "Evansville IN",
+        "url": "evansville.craigslist.org",
+        "loc_1": "evansville",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      },
+      "south bend / michiana": {
+        "location_1": "south bend / michiana",
+        "Display City State": "South Bend/Michiana IN",
+        "url": "southbend.craigslist.org",
+        "loc_1": "southbend",
+        "subs": [
+
+        ],
+        "Display State": "Indiana"
+      }
+    },
+    "georgia": {
+      "valdosta": {
+        "location_1": "valdosta",
+        "Display City State": "Valdosta GA",
+        "url": "valdosta.craigslist.org",
+        "loc_1": "valdosta",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "macon / warner robins": {
+        "location_1": "macon / warner robins",
+        "Display City State": "Macon/Warner Robins GA",
+        "url": "macon.craigslist.org",
+        "loc_1": "macon",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "athens": {
+        "location_1": "athens",
+        "Display City State": "Athens GA",
+        "url": "athensga.craigslist.org",
+        "loc_1": "athensga",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "statesboro": {
+        "location_1": "statesboro",
+        "Display City State": "Statesboro GA",
+        "url": "statesboro.craigslist.org",
+        "loc_1": "statesboro",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "brunswick": {
+        "location_1": "brunswick",
+        "Display City State": "Brunswick GA",
+        "url": "brunswick.craigslist.org",
+        "loc_1": "brunswick",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "augusta": {
+        "location_1": "augusta",
+        "Display City State": "Augusta GA",
+        "url": "augusta.craigslist.org",
+        "loc_1": "augusta",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "savannah / hinesville": {
+        "location_1": "savannah / hinesville",
+        "Display City State": "Savannah/Hinesville GA",
+        "url": "savannah.craigslist.org",
+        "loc_1": "savannah",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "northwest GA": {
+        "location_1": "northwest GA",
+        "Display City State": "Northwest GA",
+        "url": "nwga.craigslist.org",
+        "loc_1": "nwga",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      },
+      "columbus": {
+        "location_1": "columbus",
+        "Display City State": "Columbus GA",
+        "url": "columbusga.craigslist.org",
+        "loc_1": "columbusga",
+        "subs": [
+
+        ],
+        "Display State": "Alabama"
+      },
+      "atlanta": {
+        "location_1": "atlanta",
+        "Display City State": "Atlanta GA",
+        "url": "atlanta.craigslist.org",
+        "loc_1": "atlanta",
+        "subs": [
+          {
+            "location_2": "atlanta",
+            "loc_2": "atl"
+          },
+          {
+            "location_2": "otp north",
+            "loc_2": "nat"
+          },
+          {
+            "location_2": "otp east",
+            "loc_2": "eat"
+          },
+          {
+            "location_2": "otp south",
+            "loc_2": "sat"
+          },
+          {
+            "location_2": "otp west",
+            "loc_2": "wat"
+          }
+        ],
+        "Display State": "Georgia"
+      },
+      "albany": {
+        "location_1": "albany",
+        "Display City State": "Albany GA",
+        "url": "albanyga.craigslist.org",
+        "loc_1": "albanyga",
+        "subs": [
+
+        ],
+        "Display State": "Georgia"
+      }
+    },
+    "arkansas": {
+      "texarkana": {
+        "location_1": "texarkana",
+        "Display City State": "Texarkana TX",
+        "url": "texarkana.craigslist.org",
+        "loc_1": "texarkana",
+        "subs": [
+
+        ],
+        "Display State": "Texas"
+      },
+      "jonesboro": {
+        "location_1": "jonesboro",
+        "Display City State": "Jonesboro AR",
+        "url": "jonesboro.craigslist.org",
+        "loc_1": "jonesboro",
+        "subs": [
+
+        ],
+        "Display State": "Arkansas"
+      },
+      "fort smith": {
+        "location_1": "fort smith",
+        "Display City State": "Fort Smith AR",
+        "url": "fortsmith.craigslist.org",
+        "loc_1": "fortsmith",
+        "subs": [
+
+        ],
+        "Display State": "Arkansas"
+      },
+      "little rock": {
+        "location_1": "little rock",
+        "Display City State": "Little Rock AR",
+        "url": "littlerock.craigslist.org",
+        "loc_1": "littlerock",
+        "subs": [
+
+        ],
+        "Display State": "Arkansas"
+      },
+      "fayetteville": {
+        "location_1": "fayetteville",
+        "Display City State": "Fayetteville AR",
+        "url": "fayar.craigslist.org",
+        "loc_1": "fayar",
+        "subs": [
+
+        ],
+        "Display State": "Arkansas"
+      }
+    }
+  }
+}

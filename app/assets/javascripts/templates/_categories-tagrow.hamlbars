@@ -1,0 +1,10 @@
+{{#if parent_cat}}
+.tag
+  .text {{ parent_cat_name }}
+  .code {{ parent_cat }}
+%span /
+{{/if}}
+.tag
+  .text {{ category_name }}
+  .code {{ category }}
+%span /

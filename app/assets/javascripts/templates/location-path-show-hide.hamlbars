@@ -1,0 +1,73 @@
+.context-text{:style=>"display: none; font-size: 11px"}
+ {{#localities}}
+ .locality {{name}}
+ .locality-code.path-code {{code}}
+ .level{:style=>"display: none"} locality
+ {{/localities}}
+ {{#cities}}
+ .city {{name}}
+ .city-code.path-code {{code}}
+ .level{:style=>"display: none"} city
+ {{/cities}}
+ {{#counties}}
+ .county {{name}}
+ .county-code.path-code {{code}}
+ .level{:style=>"display: none"} county
+ {{/counties}}
+ {{#regions}}
+ .region region: {{name}}
+ .region-code.path-code {{code}}
+ .level{:style=>"display: none"} region
+ {{/regions}}
+ {{#metros}}
+ .metro metro: {{name}}
+ .metro-code.path-code {{code}}
+ .level{:style=>"display: none"} metro
+ {{/metros}}
+ {{#states}}
+ .state {{name}}
+ .state-code.path-code {{code}}
+ .level{:style=>"display: none"} state
+ {{/states}}
+ {{#countries}}
+ .country {{name}}
+ .country-code.path-code {{code}}
+ .level{:style=>"display: none"} country
+ {{/countries}}
+ {{#locality}}
+ .locality {{locality}}
+ .locality-code.path-code {{locality_code}}
+ .level{:style=>"display: none"} locality
+ {{/locality}}
+ {{#city}}
+ .city {{city}}
+ .city-code.path-code {{city_code}}
+ .level{:style=>"display: none"} city
+ {{/city}}
+ {{#county}}
+ .county {{county}}
+ .county-code.path-code {{county_code}}
+ .level{:style=>"display: none"} county
+ {{/county}}
+ {{#region}}
+ .region region: {{region}}
+ .region-code.path-code {{region_code}}
+ .level{:style=>"display: none"} region
+ {{/region}}
+ {{#metro}}
+ .metro metro: {{metro}}
+ .metro-code.path-code {{metro_code}}
+ .level{:style=>"display: none"} metro
+ {{/metro}}
+ {{#state}}
+ .state {{state}}
+ .state-code.path-code {{state_code}}
+ .level{:style=>"display: none"} state
+ {{/state}}
+ {{#country}}
+ .country {{country}}
+ .country-code.path-code {{country_code}}
+ .level{:style=>"display: none"} country
+ {{/country}}
+ %a{:class=>'context-close all',:href=>"javascript:void(null)",:onclick=>"$(this).parent().hide();$('.context-link').show();"} close
+%a{:style=>"display: block",:class=>'context-link all',:href=>"javascript:void(null)",:onclick=>"$('.context-text').show();$('.context-link').hide();"} view context

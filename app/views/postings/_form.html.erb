@@ -1,0 +1,39 @@
+    <div class="fields">
+        <%= f.label :heading, :class => "label" %>
+        <%= f.text_field  :heading %>
+    </div>
+    <div class="fields">
+        <%= f.label :description, :class => "label" %>
+        <%= f.text_area :description %>
+    </div>
+    <div class="fields">
+
+    <%= f.label :location, :class => "label" %>
+        <%= text_field_tag :location %>
+        <%= f.hidden_field :location %>
+    </div>
+    <div class="fields">
+        <%= f.label :category, :class => "label" %>
+        <%= text_field_tag :category %>
+        <%= f.hidden_field :category %>
+    </div>
+    <div class="fields">
+        <label class="label">privacy:</label>
+        <br/>
+        <br/>
+    </div>
+    <div class="fields">
+        <%= f.radio_button :privacy, Posting::Privacy::PUBLIC, :class => "radio-label" %> <label>public</label><br/>
+        <sub>show my facebook / twitter identity</sub><br/>
+        <%= f.text_field :email0, :value => current_user["email"], :placeholder => "enter your email address" %><br/>
+        <%= f.text_field :email0_confirmation, :value => current_user["email"], :placeholder => "re-enter your email address" %><br/>
+        <%= f.check_box :anonymize_email %><sub>anonymize this email address</sub><br/><br/>
+        <%= f.radio_button :privacy, Posting::Privacy::SEMI_ANONYMOUS, :class => "radio-label" %> <label>semi-anonymous</label><br/>
+        <sub>show on anonymized email identity</sub><br/>
+        <%= f.text_field :email1, :value =>current_user["email"], :placeholder => "enter your email address" %><br/>
+        <%= f.text_field :email1_confirmation, :value => current_user["email"], :placeholder => "re-enter your email address" %><br/><br/>
+        <%= f.radio_button :privacy, Posting::Privacy::ANONYMOUS, :class => "radio-label" %><label>anonymous</label><br/>
+        <sub>track via posting key only</sub><br/><br/>
+
+    </div>
+

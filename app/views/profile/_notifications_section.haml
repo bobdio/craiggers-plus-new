@@ -1,0 +1,16 @@
+.label
+  = check_box_tag 'enable_chats', '1', !@settings['is_blocked']
+  %label{ :for => 'enable_chats' }
+    enable chat and allow others to see when I'm available
+.sub-option{:style=>'margin-left:25px'}
+  = check_box_tag 'blockUnverified', '1', @settings['blockUnverified'], { :disabled => @settings['is_blocked'] }
+  %label{ :for => 'blockUnverified' }
+    block chat with unverified users
+.label
+  = check_box_tag 'notifications[emailEnabled]', '1', @settings['notifications']['emailEnabled']
+  %label{ :for => 'notifications_emailEnabled' }
+    enable email notifications
+.label
+  = check_box_tag 'notifications[textEnabled]', '1', @settings['notifications']['textEnabled']
+  %label{ :for => 'notifications_textEnabled' }
+    enable SMS notifications

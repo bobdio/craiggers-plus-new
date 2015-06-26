@@ -1,0 +1,5 @@
+%h2
+  {{ message }}
+.buttons
+  .button.cancel cancel
+  .button.ok {{ okLabel }}

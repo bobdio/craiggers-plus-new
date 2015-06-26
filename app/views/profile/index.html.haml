@@ -1,0 +1,93 @@
+- content_for :title do
+  Profile
+-#/migration-tag - content_for :javascripts do
+-#  /migration-tag = javascript_include_tag 'profile'
+
+#content
+  = form_tag '/profile/update', :multipart => true do
+    %h2
+      .username= current_user['username']
+      = image_tag current_user['photo']
+    %br
+    .label
+      %label{ :for => 'photo' } profile picture:
+      %input#photo{ :type => 'file', :name => 'photo' }
+    %br
+    %br
+    .label.email-address
+      %label{ :for => 'email_address' } email address:
+      = text_field_tag 'email_address', current_user['profile']['email']
+      Rest assured, We will never share your email address.
+    .label.website
+      %label{ :for => 'website' } web site:
+      = text_field_tag 'website', current_user['profile']['website']
+    .label.location
+      %label{ :for => 'location' } location:
+      = text_field_tag 'location', current_user['profile']['location']
+    .label.bio
+      %label{ :for => 'bio' } bio:
+      = text_field_tag 'bio', current_user['profile']['bio']
+    .label.phone-number
+      %label{ :for => 'phone_number' } phone number:
+      = text_field_tag 'phone_number', @settings['phone']
+      We'll only use this if you sign up for SMS notifications.
+    %br
+    -#- if current_domain['enable_notifications']
+    = render :partial => 'notifications_section'
+    .notice
+      = flash[:notice]
+    %input{ :type => 'submit', :value => 'Update Profile' }
+
+    -# %h2
+    -#   Add an additional layer of trust to your proﬁle by verifying your 
+    -#   identity through social media sites like Facebook and Twitter.
+    -# (
+    -# %span{:style => "color:green" }√
+    -# ) Verified
+    -# #publicids
+    -#- if current_user.public_identities.count == 0
+    -#  You currently have no linked public identities
+    -#- else
+    -# TODO: get rid of tables
+    -#%table{:style=>"padding-left:20px;"}
+    -#  - current_user.public_identities.each do |i|
+    -#    %tr
+    -#      %td
+    -#        %strong
+    -#          = "#{i.provider.gsub('_','')}:".capitalize.sub('Linkedin', 'LinkedIn')
+    -#      %td
+    -#        &nbsp&nbsp
+    -#        = i.displayName
+    -#      %td{ :style => 'height: 25px' }
+    -#        &nbsp&nbsp
+    -#        = image_tag(i.photo, :size => '25x25') if i.photo
+    -#      %td
+    -#        &nbsp&nbsp
+    -#        = link_to 'unlink', "/profile/unidentify/?id=#{i.provider}"
+    -#
+    -#- if current_user.public_identities.count < (identities.count + 1)
+    -#  #add_identity
+    -#    %h1
+    -#      (
+    -#      %span{:style => "color:red"}x
+    -#      ) Unlinked
+    -#    %table#unlinked_identities
+    -#      - identities.each do |provider, image|
+    -#        - unless current_user.has_identity?(provider)
+    -#          %tr
+    -#            %td link my
+    -#            %td
+    -#              = link_to image_tag(image, :size => "25x25", :style=>"margin-bottom:-5px;"), "/auth/#{provider}"
+    -#            %td account
+    -#          %tr{:style => 'height: 5px;'}
+    -#  #errors{:style=>"color:red;"}
+    -#    = flash_error
+
+%style
+  :sass
+    .container_16
+      width: 960px
+    #footer
+      display: none
+    td
+      vertical-align: bottom

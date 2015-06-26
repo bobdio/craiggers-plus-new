@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Treemap</title>
+    <link rel="stylesheet" href="treemap.css">
+    <link rel="stylesheet" href="../lib/button.css">
+    <link rel="stylesheet" href="../lib/colorbrewer/colorbrewer.css">
+  </head>
+  <body>
+    <div id="error"></div>
+    <div id="wrapper">
+      <p><input type="text" id="keywords" value="">
+        <button id="update" class="first last">Search</button>
+      <p><button id="category" class="first">
+          Category
+        </button><button id="both" class="active">Both
+        </button><button id="location" class="last">
+          Location
+        </button>
+      <div id="left">
+        <div class="breadcrumbs">Category: </div>
+        <p><label for="category-sublevels">
+          <input type="checkbox" id="category-sublevels" checked="checked">
+          Show sublevels</label>
+        <div class="chart"></div>
+      </div>
+      <div id="right">
+        <div class="breadcrumbs">Location: </div>
+        <p><label for="location-sublevels">
+          <input type="checkbox" id="location-sublevels" checked="checked">
+          Show sublevels</label>
+        <div class="chart"></div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Powered by <a href="http://3taps.com/">3taps</a>.
+      <p>Created by <a href="http://www.jasondavies.com/">Jason Davies</a> using
+        <a href="http://mbostock.github.com/d3/">D3.js</a>.
+    </div>
+    <script src="../lib/async/async.min.js"></script>
+    <script src="../lib/d3/d3.js"></script>
+    <script src="../lib/d3/d3.csv.js"></script>
+    <script src="../lib/d3/d3.layout.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/underscore/underscore-min.js"></script>
+    <script src="../lib/3taps/3taps.js"></script>
+    <script src="../common/keys.js"></script>
+    <script src="../common/data.js"></script>
+    <script src="treemap.js"></script>
+    <script src="ui.js"></script>
+  </body>
+</html>

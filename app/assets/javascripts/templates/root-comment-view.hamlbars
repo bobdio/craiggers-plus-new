@@ -1,0 +1,12 @@
+{{#comments}}
+{{#each comments}}
+{{#with this}}
+.comment-view{:id => 'comment-view-{{id}}'}
+  %strong.details-popup-holder{ 'data-uid' => '{{ commenterID }}' } {{credit}}
+  commented {{timestamp}} ago:
+  %br
+  .comment-text {{text}}
+  .link{ :id => '{{ id }}'} reply
+{{/with}}
+{{/each}}
+{{/comments}}

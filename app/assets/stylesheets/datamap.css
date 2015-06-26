@@ -1,0 +1,59 @@
+/* This stylesheet contains various styles used by the datamap script. */
+
+/* The datamap_heading style is used to format the datamap's heading.  This
+   displays the name and context for the current location. */
+
+div.datamap_heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: bigger;
+}
+
+/* The datamap_error style is used to format the text displayed when the
+   datamap encounters an error. */
+
+text.datamap_error {
+  fill: red;
+  font: 24px sans-serif;
+}
+
+/* The datamap_waiting style is used to format the "Loading..." message
+   displayed while the datamap is loading data. */
+
+text.datamap_waiting {
+  fill: blue;
+  font: 24px sans-serif;
+}
+
+/* The datamap_heading style is used to format the overall <div> element used
+   to contain the datamap's heading. */
+
+div.datamap_heading {
+   margin-left: 2px;
+   margin-right: 2px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+/* The datamap_heading_separator style is used to format the heading separator
+   text displayed within a <span> element. */
+
+span.datamap_heading_separator {
+    font-weight: bold;
+    color: #808080;
+}
+
+/* The datamap_heading_link style is used to format the clickable links within
+   the datamap's heading. */
+
+span.datamap_heading_link {
+    color: #000080;
+}
+
+/* The datamap_heading_cur_loc style is used to format the current location's
+   name within the datamap's heading. */
+
+span.datamap_heading_cur_loc {
+    font-weight: bold;
+}
+

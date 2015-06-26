@@ -1,0 +1,64 @@
+.community.filter.ccc
+.forsale.filter.sss
+  .group.range
+    .text year:
+    %span.label
+      %label.holder{ :for => 'min_year' } min
+      %input#min_year.min
+    to
+    %span.label
+      %label.holder{ :for => 'max_year' } max
+      %input#max_year.max
+    .reset
+      .link clear
+.gigs.filter.ggg
+  .group
+    - filter_checkbox('pay')
+    - filter_checkbox('no-pay')
+.housing.filter.hhh
+  .group.range.sqfts
+    .text sq ft:
+    %span.label
+      %label.holder{ :for => 'min_sqft' } min
+      %input#min_sqft.min
+    to
+    %span.label
+      %label.holder{ :for => 'max_sqft' } max
+      %input#max_sqft.max
+    .reset
+      .link clear
+  .group.bedrooms
+    .text bedroom range:
+    %select.min
+      %option{ :value => 0 } 0 BR
+      - bedrooms_options
+    to
+    %select.max
+      - bedrooms_options
+    .searchclear
+      %span.search.link filter
+      %span.reset.link clear
+  .group.catsdogs
+    - filter_checkbox('cats')
+    - filter_checkbox('dogs')
+.jobs.filter.jjj
+  .group.jobtypes
+    - filter_checkboxes(%w(telecommute contract internship part-time non-profit))
+    .searchclear
+      %span.all.link select all
+      %span.none.link clear
+.personals.filter.ppp
+  .group.range
+    .text poster's age:
+    %span.label
+      %label.holder{ :for => 'minage' } min
+      %input#minage.min
+    to
+    %span.label
+      %label.holder{ :for => 'maxage' } max
+      %input#maxage.max
+    .reset
+      .link clear
+.resumes.filter.res
+.services.filter.bbb
+

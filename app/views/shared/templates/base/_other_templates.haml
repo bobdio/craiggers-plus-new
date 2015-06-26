@@ -1,0 +1,340 @@
+%script#annotations.partial{ :type => 'text/html' }
+  .phone.tags.tagrow
+    {{#format_phone }}
+    phone: {{ format_phone }}
+    {{/format_phone }}
+  .location.tags.tagrow
+    {{>locations-tagrow}}
+  .category.tags.tagrow
+    {{>categories-tagrow}}
+  .bedrooms.tagrow
+    {{#bedrooms}}
+    .annotag.tag
+      .text {{ bedrooms }}
+      .param bedrooms
+      .val {{ bedrooms }}
+    {{/bedrooms}}
+  .catsdogs.tagrow
+    {{#cats}}
+    .cats.annotag.tag
+      .text cats
+      .param cats
+      .val {{ cats }}
+    {{/cats}}
+    {{#dogs}}
+    .dogs.annotag.tag
+      .text dogs
+      .param dogs
+      .val {{ dogs }}
+    {{/dogs}}
+  .daterange
+  .status.tagrow
+    {{#model}}
+    .model.annotag.tag
+      .text model: {{ model }}
+      .param model
+      .val {{ model }}
+    {{/model}}
+    {{#make}}
+    .make.annotag.tag
+      .text make: {{ make }}
+      .param make
+      .val {{ make }}
+    {{/make}}
+    {{#vin}}
+    .vin.annotag.tag
+      .text vin: {{ vin }}
+      .param vin
+      .val {{ vin }}
+    {{/vin}}
+    {{#year}}
+    .year.annotag.tag
+      .text year: {{ year }}
+      .param year
+      .val {{ year }}
+    {{/year}}
+    {{#age}}
+    .age.annotag.tag
+      .text age: {{ age }}
+      .param age
+      .val {{ age }}
+    {{/age}}
+    {{#telecommuting}}
+    .telecommute.annotag.tag
+      .text telecommute
+      .param telecommute
+      .val YES
+    {{/telecommuting}}
+    {{#contract}}
+    .contract.annotag.tag
+      .text contract
+      .param contract
+      .val YES
+    {{/contract}}
+    {{#internship}}
+    .internship.annotag.tag
+      .text internship
+      .param internship
+      .val YES
+    {{/internship}}
+    {{#partTime}}
+    .part-time.annotag.tag
+      .text part-time
+      .param partTime
+      .val YES
+    {{/partTime}}
+    {{#nonprofit}}
+    .non-profit.annotag.tag
+      .text non-profit
+      .param nonprofit
+      .val YES
+    {{/nonprofit}}
+    {{#sqft}}
+    .sqft.annotag.tag
+      .text {{ sqft }} sq ft
+      .param sqft
+      .val {{ sqft }}
+    {{/sqft}}
+    {{#has_images}}
+    .has-image.annotag.tag
+      .text has-image
+      .param has-image
+      .val {{ has_images }}
+    {{/has_images}}
+  .compensation.tags.tagrow {{#compensation}} compensation: {{ compensation }} {{/compensation}}
+
+%script#categories-tagrow.partial{ :type => 'text/html' }
+  - if current_domain['name'] == 'jeboom'
+    {{#parent_cat}}
+    .tag
+      .text {{ parent_cat_name }}
+      .code {{ parent_cat }}
+    %span /
+    {{/parent_cat}}
+    .tag
+      .text {{ category_name }}
+      .code {{ category }}
+    %span /
+  - if current_domain['name'] == 'craiggers'
+    .tag
+      .text {{ original_category }}
+      .code {{ original_cat }}
+    {{#original_subcategory}}
+    .tag
+      .text {{ original_subcategory }}
+      .code {{ original_subcat }}
+    {{/original_subcategory}}
+    {{#original_subcategory_2}}
+    .tag
+      .text {{ original_subcategory_2 }}
+      .code {{ original_subcat_2 }}
+    {{/original_subcategory_2}}
+    {{#original_flavor}} {{ original_flavor }} {{/original_flavor}}
+    {{^category}}
+    %br
+    {{/category}}
+%script#locations-tagrow.partial{ :type => 'text/html' }
+  {{#locations }}
+  .tag
+    .text {{ name }}
+    .code {{ code }}
+    .level{ style: "display:none" } {{ level }}
+  %span /
+  {{/locations }}
+
+%script#locations-tagrow{ :type => 'text/html' }
+  {{>locations-tagrow}}
+
+%script#state{ :type => 'text/html' }
+  .clickable {{ name }}
+  .code {{ code }}
+  .cities
+    {{#cities}}{{>cities}}{{/cities}}
+
+%script#cities.partial{ :type => 'text/html' }
+  .city
+    .clickable {{ location_1 }}
+    .code {{ loc_1 }}
+    .subs
+      {{#subs}}{{>subs}}{{/subs}}
+
+%script#subs.partial{ :type => 'text/html' }
+  .sub
+    .clickable {{ location_2 }}
+    .code {{ loc_2 }}
+
+%script#cat{ :type => 'text/html' }
+  .cat
+    .clickable {{ name }}
+    .code {{ code }}
+    .subcats
+      {{#subcats}}{{>subcats}}{{/subcats}}
+
+%script#subcats.partial{ :type => 'text/html' }
+  .subcat
+    .clickable {{ name }}
+    .code {{ code }}
+
+%script#favorite{ :type => 'text/html' }
+  .heading {{{ heading }}}
+  .unfavorite delete
+
+%script#catfilters-default.partial{ :type => 'text/html' }
+  %form
+    %label
+      %input{ :name => 'titleonly', :type => 'radio', :value => 'titleonly' }
+      title only
+    %label
+      %input{ :name => 'titleonly', :type => 'radio', :value => 'entirepost', :checked => 'true' }
+      entire post
+  %div
+    %label
+      %input{ :name => 'image', :type => 'checkbox' }
+      has image
+
+%script#catfilters-all{ :type => 'text/html' }
+  {{>catfilters-default}}
+
+%script#catfilters-ggg{ :type => 'text/html' }
+  {{>catfilters-default}}
+  %div
+    %label
+      %input{ :name => 'pay', :type => 'radio', :value => 'pay' }
+      pay
+    %label
+      %input{ :name => 'pay', :type => 'radio', :value => 'nopay' }
+      no-pay
+    %label
+      %input{ :name => 'pay', :type => 'radio', :value => 'all' }
+      all
+
+%script#catfilters-hhh{ :type => 'text/html' }
+  {{>catfilters-default}}
+  %div
+    %label
+      rent:
+      %input{ :name => 'rentmin', :type => 'text', :value => 'min', :size => '3' }
+      %input{ :name => 'rentmax', :type => 'text', :value => 'max', :size => '3' }
+  %div
+    %select
+      %option 0+ BR
+  %div
+    %label
+      %input{ :name => 'cats', :type => 'checkbox' }
+      cats
+    %label
+      %input{ :name => 'dogs', :type => 'checkbox' }
+      dogs
+
+%script#catfilters-sss{ :type => 'text/html' }
+  {{>catfilters-default}}
+  %div
+    %label
+      price:
+      %input{ :name => 'pricemin', :type => 'text', :value => 'min', :size => '3' }
+      %input{ :name => 'pricemax', :type => 'text', :value => 'max', :size => '3' }
+
+%script#catfilters-ppp{ :type => 'text/html' }
+  {{>catfilters-default}}
+  %div
+    %label
+      poster's age:
+      %input{ :name => 'agemin', :type => 'text', :value => 'min', :size => '3' }
+      %input{ :name => 'agemax', :type => 'text', :value => 'max', :size => '3' }
+
+%script#catfilters-jjj{ :type => 'text/html' }
+  {{>catfilters-default}}
+  %div
+    %label
+      %input{ :name => 'telecommute', :type => 'checkbox' }
+      telecommute
+  %div
+    %label
+      %input{ :name => 'contract', :type => 'checkbox' }
+      contract
+  %div
+    %label
+      %input{ :name => 'internship', :type => 'checkbox' }
+      internship
+  %div
+    %label
+      %input{ :name => 'part-time', :type => 'checkbox' }
+      part-time
+  %div
+    %label
+      %input{ :name => 'non-profit', :type => 'checkbox' }
+      non-profit
+
+%script#root-category-autocomplete{ :type => 'text/html' }
+  .ac_results_cat{ :style => "width: 200px;" }
+    %ul{ :style => "max-height: 180px; overflow-x: auto; overflow-y: auto;" }
+      {{#categories}}
+      %li.selectable{ :style => "overflow:hidden;"} {{.}}
+      {{/categories}}
+
+%script#geolocate-loading{ :type => 'text/html' }
+  #geolocate-loading-popup
+    = image_tag 'searching.gif'
+    .text finding your location...
+
+%script#other-categories-els{ :type => 'text/html' }
+  .community.el
+  .events.el
+  .forsale.el
+  .gigs.el
+  .housing.el
+  .jobs.el
+  .personals.el
+  .resumes.el
+  .services.el
+
+-#%script#expired-favorited-posting{ :type => 'text/html' }
+  -#.content
+  -#  {{#price}}
+  -#  .price ${{ price }}
+  -#  {{/price}}
+  -#  .heading {{{ heading }}}
+  -#  .path {{ path }}
+  -#  .timestamp (EXPIRED)
+  -#  .utc {{ timestamp }}
+  -#  .favorite.favorited
+  -#    .dogear
+  -#    .clickable
+  -#      .text unfavorite
+  -#      .star
+  -#  .postkey {{ postKey }}
+-#
+-#%script#confirm-popup-dialog{ :type => 'text/html' }
+-#  %h2
+-#    {{ message }}
+-#  .buttons
+-#    .button.cancel cancel
+-#    .button.ok {{ okLabel }}
+
+-#%script#tooltip{ :type => 'text/html' }
+-#  .tip
+-#    .text {{ text }}
+-#    .pointer
+#update-form-saved-search{style: 'display:none'}
+  %h3 Edit Saved Search
+  %br
+
+  .name{style: 'margin: 5px 0px;'}
+    name
+    %input{name: 'name', value: '', style: 'width: 200px;'}
+
+  .notifications{style: 'margin: 5px 0px;'}
+    notifications
+    %input{name: 'notifications', type: 'checkbox'}
+
+  .email{style: 'margin: 5px 0px;'}
+    email
+    %input{name: 'email', style: 'width: 200px;'}
+
+  .error{style: 'color: red; font-weight: normal; margin-left: 45px;'}
+
+  %br
+  .buttons
+    .button.cancel{style: 'margin: 2px;'} cancel
+    .button.destroy{style: 'margin: 2px;'} delete
+    .button.update{style: 'margin: 2px;'} save

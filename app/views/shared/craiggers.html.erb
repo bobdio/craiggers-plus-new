@@ -1,0 +1,48 @@
+<h2>Click <!-- link to posting --><a href="http://jeboom.com/#!/posting/<%= @posting_text[:postKey] %>">here</a> to send me a message.</h2><br />
+<table>
+  <tr>
+    <td valign="top">
+      <table>
+        <!-- main image, linked to posting -->
+        <% if @posting_text[:image] %>
+        <tr>
+          <td colspan="2"><a href="http://jeboom.com/#!/posting/<%= @posting_text[:postKey] %>"><img border="0" src="<%= @posting_text[:image] %>" style="max-width:300px" /></a></td>
+        </tr>
+        <%  end %>
+        <!-- up to 4 other images, smaller, all linked to posting -->
+        <%@posting_text[:images].each do |images|   %>
+        <tr>
+          <% if images[0] %>
+            <td><a href="http://jeboom.com/#!/posting/<%= @posting_text[:postKey] %>"><img border="0" src="<%= images[0] %>" style="max-width:150px"/></a></td>
+          <% end %>
+          <% if images[1] %>
+            <td><a href="http://jeboom.com/#!/posting/<%= @posting_text[:postKey] %>"><img border="0" src="<%= images[1] %>" style="max-width:150px"/></a></td>
+          <% end %>
+        </tr>
+        <%  end %>
+        
+      </table>
+    </td>
+    <td valign="top">
+      <h1><!-- heading --><%= @posting_text[:title]%> </h1>
+      <table>
+        <tr>
+          <td>
+            <h1><%=  @posting_text[:price] %></h1>
+          </td>
+          <td>
+            <ul>
+              <li><!-- cat --><%= @posting_text[:category] %></li>
+              <li><!-- subcat --><%= @posting_text[:subcategory] %></li>
+              <li><!-- location path --><%= @posting_text[:location] %> </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <h2>Description</h2>
+      <!-- body --> <%= @posting_text[:description] %>
+    </td>
+  </tr>
+</table>
+
+

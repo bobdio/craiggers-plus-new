@@ -1,0 +1,57 @@
+.context-text{:style=>"display: block;"}
+ {{#localities}}
+ .locality {{name}}
+ .locality-code.path-code {{code}}
+ {{/localities}}
+ {{#cities}}
+ .city {{name}}
+ .city-code.path-code {{code}}
+ {{/cities}}
+ {{#counties}}
+ .county {{name}}
+ .county-code.path-code {{code}}
+ {{/counties}}
+ {{#regions}}
+ .region region: {{name}}
+ .region-code.path-code {{code}}
+ {{/regions}}
+ {{#metros}}
+ .metro metro: {{name}}
+ .metro-code.path-code {{code}}
+ {{/metros}}
+ {{#states}}
+ .state {{name}}
+ .state-code.path-code {{code}}
+ {{/states}}
+ {{#countries}}
+ .country {{name}}
+ .country-code.path-code {{code}}
+ {{/countries}}
+ {{#locality}}
+ .locality {{locality}}
+ .locality-code.path-code {{locality_code}}
+ {{/locality}}
+ {{#city}}
+ .city {{city}}
+ .city-code.path-code {{city_code}}
+ {{/city}}
+ {{#county}}
+ .county {{county}}
+ .county-code.path-code {{county_code}}
+ {{/county}}
+ {{#region}}
+ .region region: {{region}}
+ .region-code.path-code {{region_code}}
+ {{/region}}
+ {{#metro}}
+ .metro metro: {{metro}}
+ .metro-code.path-code {{metro_code}}
+ {{/metro}}
+ {{#state}}
+ .state {{state}}
+ .state-code.path-code {{state_code}}
+ {{/state}}
+ {{#country}}
+ .country {{country}}
+ .country-code.path-code {{country_code}}
+ {{/country}}

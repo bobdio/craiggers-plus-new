@@ -1,0 +1,63 @@
+<script src="/javascripts/jquery-min.js"></script>
+<script src="/javascripts/raphael-min.js"></script>
+
+<div id="map"></div>
+
+
+<div id="states">
+  <div id="state-NJ" code="NJ" class="state"></div>
+  <div id="state-CA" code="CA" class="state"></div>
+  <div id="state-NY" code="NY" class="state"></div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+var paper = Raphael('map', 551, 361);
+
+var image = paper.image('/images/us-map.jpg', 0, 0, 551, 361);
+
+var Marker = function(opts) {
+  var purple = '#611b6e';
+  var text = paper.text(opts && opts.x || 50, opts && opts.y || 80, opts && opts.chars || 'XX').attr({
+    'fill': purple,
+    'font-size': 20,
+    'font-weight': 'bold'
+  });
+  var circle = paper.circle(opts && opts.x || 50, opts && opts.y || 80, 22).attr({
+    'fill': purple,
+    'opacity': 0.4
+  });
+  var start = function () {
+    this.ox = circle.attr("cx");
+    this.oy = circle.attr("cy");
+    circle.attr({opacity: 0.7});
+    opts && opts.start && opts.start();
+  };
+  var move = function (dx, dy) {
+    circle.attr({cx: this.ox + dx, cy: this.oy + dy});
+    text.attr({x: this.ox + dx, y: this.oy + dy});
+    opts && opts.move && opts.move();
+  };
+  var up = function () {
+    circle.attr({opacity: 0.4});
+    opts && opts.up && opts.up({ x: circle.attr('cx'), y: circle.attr('cy') });
+  };
+  circle.drag(move, start, up);
+};
+
+var State = function(state, opts) {
+  Marker({
+    chars: state,
+    up: function(loc) {
+      $('#state-' + state).text('{ state: ' + state  + ', x: ' + loc.x + ', y: ' + loc.y + ' }');
+    }
+  });
+};
+
+$.each($('#states .state'), function(index, state) {
+  var marker = State($(state).attr('code'));
+});
+
+});
+</script>

@@ -1,0 +1,17 @@
+%tr
+  %td
+    %span.step4-image1-text
+      = "Photo #{photo_upload_counter + 1}:"
+  %td
+    %span.step4-image2-text1
+      %input{:name => "step4-photo#{photo_upload_counter + 1}", :size=>20 ,:type => 'file', :onchange => "$('#remove_link#{photo_upload_counter + 1}').css('visibility','visible');"}
+  %td
+    %span.step4-image-remove
+      %a{:style=>"visibility: hidden;text-decoration:none;",:id => "remove_link#{photo_upload_counter + 1}",:href => "javascript:void(null)", :onclick=> "remove_file(#{photo_upload_counter + 1});$(this).css('visibility','hidden');"}
+        remove
+  %td
+    %span.step4-image3-text1
+      %input{:name => "step4-photo-caption#{photo_upload_counter + 1}", :type => 'text', :style=>"width:200px;"}
+  %td
+    %span.step4-image4-text1
+      %input.step4-photo-checkbox{:type => 'radio', :name => "primary-photo", :value => photo_upload_counter + 1, :style=>"margin-left:30px;" }

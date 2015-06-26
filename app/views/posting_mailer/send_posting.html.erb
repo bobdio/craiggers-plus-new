@@ -1,0 +1,6 @@
+<p>Hi <%= @to %>,</p>
+
+<p><%= @from %> has sent you a link to a <%= @domain['name'] %> posting.  To view the details of the posting, click on this link: <%= raw @posting %></p>
+
+<p>- <%= @domain['name'] %>.com</p>
+<%= link_to image_tag(@domain['host'] + '/images/' + @domain['logo']['small']), @domain['host'] %>

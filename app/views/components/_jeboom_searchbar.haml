@@ -1,0 +1,27 @@
+#searchbar.searchcontainer
+  %form
+    .query.wrapper
+      .searchglass
+      %input#searchbar_query_input.input
+
+    %input.search.button{ :type => 'submit', :value => 'search' }
+
+    .category.wrapper.column{ style: 'margin: 5px 1px; display:none'}
+      .holder
+        %label{ :for => 'category_input', style: 'color:black' } All Categories
+      .viewlist.closed
+      %input#category_input.input{ style: 'width:320px; text-transform: capitalize;'}
+      .autocomplete
+      .jumbolist
+        .container
+          = render :partial => "shared/jeboom_jumbocategories"
+    .location.wrapper.column{style: 'display:none; margin-bottom: 10px;'}
+      .holder
+        %label{ :for => 'location_input', style: 'color:black' } All Locations
+      .viewlist.closed
+      %input#location_input.input{ :autocomplete => 'off', style: 'width:320px;' }
+      .location.autocomplete{style: 'margin-left:10px;'}
+    .advanced
+      %a advanced search
+
+

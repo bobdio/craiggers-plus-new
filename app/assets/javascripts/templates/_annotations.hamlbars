@@ -1,0 +1,103 @@
+.location.tags.tagrow
+  {{>_locations-tagrow}}
+.category.tags.tagrow
+  {{>_categories-tagrow}}
+.bedrooms.tagrow
+  {{#if bedrooms}}
+  .annotag.tag
+    .text {{ bedrooms }}
+    .param bedrooms
+    .val {{ bedrooms }}
+  {{/if}}
+.catsdogs.tagrow
+  {{#if cats}}
+  .cats.annotag.tag
+    .text cats
+    .param cats
+    .val {{ cats }}
+  {{/if}}
+  {{#if dogs}}
+  .dogs.annotag.tag
+    .text dogs
+    .param dogs
+    .val {{ dogs }}
+  {{/if}}
+.daterange
+.status.tagrow
+  {{#if model}}
+  .model.annotag.tag
+    .text model: {{ model }}
+    .param model
+    .val {{ model }}
+  {{/if}}
+  {{#if make}}
+  .make.annotag.tag
+    .text make: {{ make }}
+    .param make
+    .val {{ make }}
+  {{/if}}
+  {{#if vin}}
+  .vin.annotag.tag
+    .text vin: {{ vin }}
+    .param vin
+    .val {{ vin }}
+  {{/if}}
+  {{#if year}}
+  .year.annotag.tag
+    .text year: {{ year }}
+    .param year
+    .val {{ year }}
+  {{/if}}
+  {{#if age}}
+  .age.annotag.tag
+    .text age: {{ age }}
+    .param age
+    .val {{ age }}
+  {{/if}}
+  {{#if telecommuting}}
+  .telecommute.annotag.tag
+    .text telecommute
+    .param telecommute
+    .val YES
+  {{/if}}
+  {{#if contract}}
+  .contract.annotag.tag
+    .text contract
+    .param contract
+    .val YES
+  {{/if}}
+  {{#if internship}}
+  .internship.annotag.tag
+    .text internship
+    .param internship
+    .val YES
+  {{/if}}
+  {{#if partTime}}
+  .part-time.annotag.tag
+    .text part-time
+    .param partTime
+    .val YES
+  {{/if}}
+  {{#if nonprofit}}
+  .non-profit.annotag.tag
+    .text non-profit
+    .param nonprofit
+    .val YES
+  {{/if}}
+  {{#if sqft}}
+  .sqft.annotag.tag
+    .text {{ sqft }} sq ft
+    .param sqft
+    .val {{ sqft }}
+  {{/if}}
+  {{#if has_images}}
+  .has-image.annotag.tag
+    .text has-image
+    .param has-image
+    .val {{ has_images }}
+  {{/if}}
+.compensation.tags.tagrow {{#if compensation}} compensation: {{ compensation }} {{/if}}
+.phone.tags.tagrow
+  {{#if format_phone }}
+  phone: {{ format_phone }}
+  {{/if}}

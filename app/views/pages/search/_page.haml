@@ -1,0 +1,25 @@
+#drawer-button
+  .label saved searches
+#drawer.col.grid_3
+  = render :partial => 'pages/search/drawer'
+
+-#monitor.col.grid_3
+  = render :partial => 'pages/search/monitor'
+-#monitor-button
+  .label activity monitor
+
+#leftcol.col.grid_3
+  = render :partial => 'pages/search/leftcol'
+
+#workspace.main-content
+  = render :partial => 'pages/search/middlecol'
+  #detail-wrapper
+    = render :partial => 'components/detail'
+
+#treemap.main-content
+  = render :partial => 'pages/treemap/page'
+
+#datamap.main-content
+  #datamapcol.col.grid_13
+    #datamap-heading
+    = render :partial => 'pages/datamap/page'

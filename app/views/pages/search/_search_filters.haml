@@ -1,0 +1,25 @@
+#searchfilters.filter-dropdown
+  .header
+    .text settings
+  .body
+    #sortby
+      sort by:
+      %select.sortby
+        %option.recent most recent
+        %option.hitolo price: high to low
+        %option.lotohi price: low to high
+    .filters
+      .static
+        - title_or_entire
+      .static
+        - has_image
+      .static.dates
+        .text show dates:
+        %input.datepicker#start_date
+        %input.datepicker-label#start_date_label
+        to
+        %input.datepicker#end_date
+        %input.datepicker-label#end_date_label
+
+      = render 'pages/search/annotations'
+

@@ -1,0 +1,3 @@
+<%= form_tag "/postings/validate_file_and_send_thumbnail/#{file_form_counter}", :multipart=>true do  %>
+  <%= file_field_tag "file" %>
+<% end %>

@@ -1,0 +1,7 @@
+user_api:
+  dev: 'http://identity.3taps.com'
+  development: 'http://identity.3taps.com'
+  staging: 'http://identity.3taps.com'
+  test: 'http://identity.3taps.com'
+  production: 'http://identity.3taps.com'
+  webappprod: 'http://identity.3taps.com'

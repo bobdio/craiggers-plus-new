@@ -1,0 +1,40 @@
+#annotations_block.static
+  .compensation{style: 'display:none'}
+    %input{name: 'compensation', type: 'checkbox', value: 'pay'}
+    compensation
+
+  .partTime{style: 'display:none'}
+    %input{name: 'partTime', type: 'checkbox', value: 'YES'}
+    part-time
+
+  - %w(cats dogs telecommute contract internship nonprofit).each do |type|
+    %div{class: type, style: 'display:none'}
+      %input{name: type, type: 'checkbox', value: 'YES'}
+      #{type}
+
+  .bedrooms{style: 'display:none'}
+    %select{name: "bedrooms", style: 'width: 60px'}
+      %option
+      - (1..20).each do |i|
+        %option{value: "#{i}br"} #{i}br
+    bedrooms
+
+  .year{style: 'display:none'}
+    %select{name: "year", style: 'width: 60px'}
+      %option
+      - (1900..2013).each do |i|
+        %option{value: i} #{i}
+    year
+
+  .age{style: 'display:none'}
+    %select{name: 'age',  style: 'width: 60px'}
+      %option
+      - (7..90).each do |age|
+        %option{value: age}
+          = age
+    age
+
+  - %w(sqft make model vin personal_flavor).each do |type|
+    %div{class: type, style: 'display:none'}
+      #{type}
+      %input{name: type}

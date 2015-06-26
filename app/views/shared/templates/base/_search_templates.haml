@@ -1,0 +1,125 @@
+%script#currentsearch-data{ :type => 'text/html' }
+  .query
+    .text
+      {{#query}}{{query}}{{/query}}
+      {{^query}}everything{{/query}}
+  .divider in
+  {{#all_loc}}
+  .location
+    .name {{location}}
+  {{/all_loc}}
+  {{^all_loc}}
+  .location
+    .name {{location}}
+    .close remove
+  {{/all_loc}}
+  {{#loc_1}}
+  .loc_1
+    .name {{loc_1}}
+    .close remove
+  {{/loc_1}}
+  {{#loc_2}}
+  .loc_2
+    .name {{loc_2}}
+    .close remove
+  {{/loc_2}}
+  .divider in
+  {{#all_cat}}
+  .cat
+    .name {{cat}}
+  {{/all_cat}}
+  {{^all_cat}}
+  .cat
+    .name {{cat}}
+    .close remove
+  {{/all_cat}}
+  {{#subcat}}
+  .subcat
+    .name {{subcat}}
+    .close remove
+  {{/subcat}}
+  .divider
+  .price
+    sort by price:
+    %label
+      %input.checkbox.hitolo{ :type => 'checkbox', :name => 'hitolo' }
+      high to low
+    %label
+      %input.checkbox.lotohi{ :type => 'checkbox', :name => 'lotohi' }
+      low to high
+  .divider
+  .searchname
+    %label
+      search name:
+      %input{ :type => 'text', :value => '{{#query}}{{query}}{{/query}}{{^query}}everything{{/query}}' }
+
+-#%script#savedsearch{ :type => 'text/html' }
+-#  .delete
+-#    = image_tag 'pencil_medium.png', style: 'width: 20px;'
+-#  .name
+-#    .text {{name}}
+-#  .annos
+-#    %div
+-#      {{#parent_cat}}{{parent_cat}} > {{/parent_cat}}
+-#      {{#cat}}{{cat}}{{/cat}}
+-#    {{#parent_locations}} {{name}} > {{/parent_locations}}
+-#    {{#location}}{{location}}{{/location}}
+-#  .extras
+-#    -#.email email search
+-#    .notification
+-#      = image_tag "notification-email.png"
+-#
+-#%script#savedsearch-emailpopup{ :type => 'text/html' }
+-#  .header Email Search
+-#  .form
+-#    %label
+-#      your email:
+-#      %input.your
+-#    %label
+-#      destination email:
+-#      %input.dest
+-#    %button.send send
+-#  .orjust
+-#    or just copy this url
+-#    %a.what{ :href => '{{orjust}}' } {{orjust}}
+-#  .sent sent!
+-#  .notsent hm, something seems to have gone wrong... we're on the case!
+-#
+-#%script#savedsearch-notificationpopup{ :type => 'text/html' }
+-#  .header Setup Notification
+-#  .form
+-#    %label
+-#      your email:
+-#      %input.email
+-#    %button.setup setup
+-#  .sent.left Thanks for signing up.  craiggers will send you two emails a day with links to up to 100 new matches found for your search.
+-#  .notsent hm, something seems to have gone wrong... we're on the case!
+
+-#%script#searching-popup{ :type => 'text/html' }
+-#  #searching
+-#    searching...
+-#    = image_tag 'searching.gif'
+-#  #cancel-running-search.link cancel
+
+%script#currentsearch-resultcount{ :type => 'text/html' }
+  .result
+    .selector
+      %input{ :type => 'checkbox', :name => '{{name}}', :class => '{{code}}', :value => '{{code}}' }
+    .name {{name}}
+    .count{ :class => '{{code}}' } {{count}}
+    .code {{code}}
+
+-#%script#filters-list{ :type => 'text/html' }
+-#  {{#items}}
+-#  .result
+-#    .selector
+-#      {{#selected}}
+-#      %input{ :type => 'checkbox', :name => '{{name}}', :class => '{{code}}', :value => '{{code}}', :checked => true }
+-#      {{/selected}}
+-#      {{^selected}}
+-#      %input{ :type => 'checkbox', :name => '{{name}}', :class => '{{code}}', :value => '{{code}}' }
+-#      {{/selected}}
+-#    .name {{name}}
+-#    .count{ :class => '{{code}}' } {{count}}
+-#    .code {{code}}
+-#  {{/items}}

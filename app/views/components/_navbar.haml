@@ -1,0 +1,22 @@
+#navbar
+  #nav-container
+    #logo.logo
+      .beta beta
+      -#%a{ :href => 'javascript:void(null)', :onclick=>"$.get('search/previous').complete(function(){ window.location = '/#!/' });" }
+      %a{ :href => 'javascript:void(null)', :onclick=>"window.location = '/#!/';" }
+    #version
+      = version_number
+    %a.skip{ :href => 'javascript:void(null)' } skip this page
+    #header.header
+      .mainnav
+        .navlink.active#search-link search
+        .navlink#favorites-link favorites
+
+      #sublinks{ style: 'display: none' }
+        %span.subnavlink.active#workspace-link workspace
+        - if current_domain['name'] == 'craiggers'
+          %span.subnavlink#treemap-link treemap
+        - if current_domain['multisource']
+          %span.subnavlink#datamap-link datamap
+
+    = render :partial => 'shared/signinout'

@@ -1,0 +1,23 @@
+#postings
+  .numresults
+    showing
+    .current --
+    of
+    .total --
+    .type results
+    %br
+    .exectime
+    .expired
+      (not showing
+      .count
+      expired postings)
+  .newmatches -- newer results
+  .searching
+    = image_tag 'searching.gif'
+    .text searching...
+  #thumb-popup
+  .postings
+    &nbsp;
+  .numresults.end_of_results{ style: 'font-size:16px; font-weight: bold' }  end of results
+  .numresults.older_results{ style: 'font-size:16px; font-weight: bold' }  see older results
+  .moreresults next 100

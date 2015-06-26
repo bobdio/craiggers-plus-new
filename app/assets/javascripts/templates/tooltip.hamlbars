@@ -1,0 +1,3 @@
+.tip
+  .text {{ text }}
+  .pointer

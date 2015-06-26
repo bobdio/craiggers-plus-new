@@ -1,0 +1,13 @@
+{{#if present}}
+.ac_results_loc{:style=>"width: 200px;"}
+  %ul{:style => "max-height: 180px; overflow-x: auto; overflow-y: auto;"}
+    {{#each locations}}
+    {{#with this}}
+    %li.selectable{:class=> '{{oddeven}}' } {{region}} {{metro}} {{name}}
+    .code{:style=>"display: none"}
+      {{code}}
+    .level{:style=>"display: none"}
+      {{level}}
+    {{/with}}
+    {{/each}}
+{{/if}}

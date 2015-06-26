@@ -1,0 +1,11 @@
+<%= form_for @posting, :url => '/postings/show', :html => {:multipart => true, :id => "new_posting_form"} do |f| %>
+  <%= render :partial=>'postings/form', :locals=>{:f=>f} %>
+  <div class="fields">
+    <%= submit_tag 'Submit posting'%>
+  </div>
+<% end %>
+<div class="fields">
+  <label class="label">Images:</label>
+  <%= render :partial => 'file_form', :collection => Array.new(4) %>
+  <div id="fileErrorExplanation" class="field_with_errors" ></div>
+</div>

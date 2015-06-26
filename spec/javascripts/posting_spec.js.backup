@@ -1,0 +1,99 @@
+describe("CraiggersPosting", function() {
+
+  var dummy = {
+    posting: null
+  };
+
+  beforeEach(function() {
+    dummy.posting = {
+      "heading": "dummy posting",
+      "images": null,
+      "externalURL": "http://craigslist.org/",
+      "userID": "dummy@craigslist.org",
+      "timestamp": "2011/04/17 14:52:00 UTC", // this is a valid dummy posting as of 4/17
+      "externalID": "2330294448",
+      "postKey": "BNCZ56H",
+      "annotations": {
+        "tags": [ "#craigslist", "#realestate", "#commercial", "#RSW" ],
+                                                                            "cat": "hhh",
+        "subcat": "off",
+        "state": "Florida",
+        "location_3": "ACROSS FROM PAGE FIELD AIRPORT/DANA DR.",
+        "category": "housing",
+        "price": 0,
+        "GeographicArea": "ACROSS FROM PAGE FIELD AIRPORT/DANA DR.",
+        "location_2": "lee county",
+        "subcategory": "Commercial Real Estate",
+        "continent": "US",
+        "loc_1": "fortmyers",
+        "loc_2": "lee",
+        "locality": "ACROSS FROM PAGE FIELD AIRPORT/DANA DR.",
+        "st": "FL",
+        "location_1": "ft myers / SW florida"
+      },
+      "category": "RCRE",
+      "location": "RSW",
+      "price": 0
+    };
+  });
+
+  it("should convert 'Sq Ft' annotations to 'sqft'", function() { 
+
+    var posting = new Craiggers.Models.Posting(dummy.posting);
+    expect(posting.get('annotations').sqft).toBeDefined();
+    expect(posting.get('annotations').sqft).toBeNull();
+    
+    var sqft = 1234;
+    dummy.posting.annotations['Sq Ft'] = 1234;
+
+    posting = new Craiggers.Models.Posting(dummy.posting);
+
+    expect(posting.get('annotations').sqft).toBeDefined();
+    expect(posting.get('annotations').sqft).toEqual(sqft);
+
+  });
+
+  it("should have a status attribute for job types", function() {
+
+    var posting = new Craiggers.Models.Posting(dummy.posting);
+
+    expect(posting.get('statuses')).toBeDefined();
+    expect(posting.get('statuses')).toEqual('');
+
+    dummy.posting.annotations.telecommuting = 'on';
+    dummy.posting.annotations.contract = 'on';
+    dummy.posting.annotations.nonprofit = 'on';
+
+    posting = new Craiggers.Models.Posting(dummy.posting);
+
+    expect(posting.get('statuses')).toBeDefined();
+    expect(posting.get('statuses')).toEqual('telecommute / contract / non-profit');
+
+    dummy.posting.annotations.partTime = 'on';
+    dummy.posting.annotations.internship = 'on';
+
+    posting = new Craiggers.Models.Posting(dummy.posting);
+
+    expect(posting.get('statuses')).toBeDefined();
+    expect(posting.get('statuses')).toEqual('telecommute / contract / internship / part-time / non-profit');
+  });
+
+  it("should commatize the price", function() {
+    
+    delete dummy.posting.price;
+    var posting = new Craiggers.Models.Posting(dummy.posting);
+    expect(posting.get('price')).toBeUndefined();
+
+    var price = 12345;
+    dummy.posting.price = price;
+    posting = new Craiggers.Models.Posting(dummy.posting);
+    expect(posting.get('price')).toEqual(_.commatizeNumber(price));
+
+    price = '12345';
+    dummy.posting.price = price;
+    posting = new Craiggers.Models.Posting(dummy.posting);
+    expect(posting.get('price')).toEqual(_.commatizeNumber(price));
+
+  });
+
+});

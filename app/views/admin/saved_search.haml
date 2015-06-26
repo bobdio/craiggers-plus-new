@@ -1,0 +1,74 @@
+
+%div{style: 'margin:10px 0px 0px 20px;'}
+  = link_to 'Back', :back, style: 'margin-bottom: 10px;'
+
+  %hr
+  %table  
+    %tr
+      %td text:
+      %td
+        = @json['params']['text'] || @json['params']['heading']
+    %tr
+      %td category:
+      %td
+        = category_by_code @json['params']['category']
+    %tr
+      %td locatin:
+      %td
+        = Location.name_for(@json['params'])
+    %tr
+      %td title only:
+      %td
+        = @json['params']['heading'] ? 'Yes' : 'No'
+    %tr
+      %td entire post:
+      %td
+        = @json['params']['heading'] ? 'No' : 'Yes'
+    %tr
+      %td has image:
+      %td
+        = @json['params']['has_image'] ? 'Yes' : 'No'
+    %tr
+      %td date:
+      %td
+        = date_from_to @json['params']['timestamp']
+    %tr
+      %td price:
+      %td
+        = price @json['params']['price']
+    %tr
+      %td source:
+      %td
+        = @json['params']['source'] ? @json['params']['source'] : 'All'
+    %tr
+      %td status:
+      %td
+        = @json['params']['status'] ? @json['params']['status'] : 'All'
+
+  %hr
+  %table.saved_search
+    %tr
+      %td User
+      %td UniqKey
+      %td Counter
+      %td Notification
+      %td Created
+      %td Unsubscribed
+      %td Deleted
+    - @saved_searches.each do |saved_search|
+      %tr
+        %td
+          = saved_search.username
+        %td
+          = link_to saved_search.uniq_key, uniq_key_path(saved_search.uniq_key)
+        %td
+          = saved_search.counter
+        %td
+          = (saved_search.send_notifications ? 'on' : 'off')
+        %td
+          = format_date saved_search.created_at
+        %td
+          = format_date saved_search.unsubscribed
+        %td
+          = format_date saved_search.deleted
+

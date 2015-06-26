@@ -1,0 +1,23 @@
+{{#if locations }}
+{{#each locations}}
+{{#with this}}
+.tag
+  .text {{ name }}
+  .code {{ code }}
+  .level{ style: "display:none" } {{ level }}
+%span /
+{{/with}}
+{{/each}}
+{{/if }}
+{{#if show_annotations_locations_tag}}
+%div
+  {{#if source_continent}}
+  %span.continent {{ source_continent }}
+  %span /
+  {{/if}}
+  {{#if source_state}}
+  %span.state {{ source_state }}
+  %span /
+  {{/if}}
+  %span.neighborhood {{ source_neighborhood }}
+{{/if}}

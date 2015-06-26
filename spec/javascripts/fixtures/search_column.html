@@ -1,0 +1,35 @@
+<div class='filter-dropdown'>
+  <div class='header'>
+    <div class='text'>categories</div>
+  </div>
+  <div class='body'>
+    <div class='allnone'>
+      <div class='all'>select all</div>
+      <div class='none'>clear</div>
+    </div>
+    <div class='allcount'>
+      <span class='allcountname'>all categories</span>
+      <span class='count allcountnumber'></span>
+    </div>
+    <div class='results'></div>
+    <div class='seemore'>see more...</div>
+  </div>
+</div>
+
+<script id='filters-list' type='text/html'>
+  {{#items}}
+  <div class='result'>
+    <div class='selector'>
+      {{#selected}}
+      <input checked='checked' class='{{code}}' name='{{name}}' type='checkbox' value='{{code}}' />
+      {{/selected}}
+      {{^selected}}
+      <input class='{{code}}' name='{{name}}' type='checkbox' value='{{code}}' />
+      {{/selected}}
+    </div>
+    <div class='name'>{{name}}</div>
+    <div class='count {{code}}'>{{count}}</div>
+    <div class='code'>{{code}}</div>
+  </div>
+  {{/items}}
+</script>

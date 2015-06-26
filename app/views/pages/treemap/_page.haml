@@ -1,0 +1,24 @@
+#error
+#wrapper
+  %div{ :id => "error" }
+  #left
+    %p
+      %a{ :href => "#", :id => "category-sublevels", :class => "toggle-sublevels", :title => "show sublevels" }
+    .chart
+  #right
+    %p
+      %a{ :href => "#", :id => "location-sublevels", :class => "toggle-sublevels", :title => "show sublevels" }
+    .chart
+  .clear
+  %p
+    -# FIXME: this creates global js variables!!!
+    %button#category.first> Category
+    %button#both.active> Both
+    %button#location.last Location
+  %p.credits
+    Created by
+    %a{ :href => 'http://www.jasondavies.com/' } Jason Davies
+    using
+    %a{ :href => 'http://mbostock.github.com/d3/' } D3.js
+    %span> .
+

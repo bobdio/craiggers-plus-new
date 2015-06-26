@@ -1,0 +1,73 @@
+jeboom.com:
+  name: jeboom
+  slogan: ''
+  title: Jeboom!
+  icon: "jeboom-icon.png"
+  logo:
+    big: "logos/jeboom-big.png"
+    small: "logos/jeboom-small.png"
+    normal: "logos/jeboom.png"
+    shadow: "logos/jeboom-big.png"
+  sources:
+  - E_BAY
+  - CRAIG
+  - EBAYM
+  profile_show_sms: true
+  enable_notifications: true
+  multisource: true
+  location-type: dynamic
+  generic_image: 'http://dev.jeboom.com/images/user.jpg'
+  fb_api_keys:
+    http://jeboom.com:
+      key: 212009122145323
+      secret: 3975d2a10a6117b1e7d24de5d4ab2368
+    http://staging.jeboom.com:
+      key: 202123413194686
+      secret: 404c6f526be54c6ceb84cc31cd492f89
+    http://dev.jeboom.com:
+      key: 148081321954529
+      secret: 13769f5954b1e58dbbd0651f69b4ded7
+    http://localhost:3000:
+      key: 140316859358580
+      secret: 2949eb6d7733e4665d6bf4e07c1bf299
+  enable_websockets:
+    http://jeboom.com: false
+    http://staging.jeboom.com: false
+    http://dev.jeboom.com: true
+    http://localhost:3000: true
+
+craiggers.com:
+  name: craiggers
+  title: Craiggers
+  icon: "craiggers-icon.png"
+  slogan: 'craigslist data, better than craigslist!'
+  logo:
+    big: "logos/craiggers-big.png"
+    small: "logos/craiggers-small.png"
+    normal: "logos/craiggers.png"
+    shadow: "logos/craiggers-shadow.png"
+  sources: 
+  - CRAIG
+  profile_show_sms: false
+  enable_notifications: false
+  multisource: false
+  location-type: static
+  generic_image: 'http://dev.craiggers.com/images/user.jpg'
+  fb_api_keys:
+    http://craiggers.com:
+      key: 177194562324947
+      secret: 22acf2e157b8b3f7138effd5497ea31f
+    http://staging.craiggers.com:
+      key: 213808612018615
+      secret: 9c0d693078d2ed6fdab2ae12a6c1a4e4
+    http://dev.craiggers.com:
+      key: 179438782136988
+      secret: 347539b7d926705ff117c7ad86c19a8c
+    http://localhost:3000:
+      key: 140316859358580
+      secret: 2949eb6d7733e4665d6bf4e07c1bf299
+  enable_websockets:
+    http://craiggers.com: false
+    http://staging.craiggers.com: false
+    http://dev.craiggers.com: true
+    http://localhost:3000: true

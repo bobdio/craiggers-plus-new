@@ -1,0 +1,15 @@
+--- 
+pid: /tmp/pids/thin.pid
+address: 0.0.0.0
+timeout: 30
+wait: 30
+port: 3006
+log: log/thin.log
+max_conns: 1024
+require: []
+
+environment: webappprod
+max_persistent_conns: 512
+servers: 9
+daemonize: true
+chdir: /home/craiggers-prod/current

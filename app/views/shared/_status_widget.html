@@ -1,0 +1,31 @@
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 1,
+  interval: 6000,
+  width: 250,
+  height: 300,
+  theme: {
+    shell: {
+      background: '#dddddd',
+      color: '#888888'
+    },
+    tweets: {
+      background: '#dddddd',
+      color: '#621b6e',
+      links: '#0000ee'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    hashtags: false,
+    timestamp: false,
+    avatars: false,
+    behavior: 'all'
+  }
+}).render().setUser('craiggersstatus').start();
+</script>
