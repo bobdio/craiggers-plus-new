@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20220412091914) do
+ActiveRecord::Schema.define(:version => 20220412091931) do
 
   create_table "authorizations", :force => true do |t|
     t.string   "provider"
@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(:version => 20220412091914) do
   end
 
   create_table "favorites", :force => true do |t|
-    t.string   "json"
+    t.text     "json"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "username"
@@ -71,6 +71,10 @@ ActiveRecord::Schema.define(:version => 20220412091914) do
     t.integer  "parent_id"
   end
 
+  add_index "locations", ["code"], :name => "index_locations_on_code"
+  add_index "locations", ["level"], :name => "index_locations_on_level"
+  add_index "locations", ["parent_id"], :name => "index_locations_on_parent_id"
+
   create_table "password_retrieve_requests", :force => true do |t|
     t.string   "user_id",    :null => false
     t.string   "token",      :null => false
@@ -78,16 +82,41 @@ ActiveRecord::Schema.define(:version => 20220412091914) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "postings", :force => true do |t|
+    t.string   "source",       :limit => 50
+    t.string   "category",     :limit => 50
+    t.string   "account_id",   :limit => 50
+    t.string   "heading"
+    t.text     "body"
+    t.integer  "price"
+    t.string   "currency",     :limit => 50
+    t.text     "images"
+    t.text     "annotations"
+    t.string   "status"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+    t.integer  "location_id"
+    t.string   "username"
+    t.string   "external_url"
+    t.datetime "actual_date"
+  end
+
   create_table "saved_searches", :force => true do |t|
     t.text     "json"
-    t.datetime "created_at",                                         :null => false
-    t.datetime "updated_at",                                         :null => false
     t.string   "username"
-    t.boolean  "send_notifications",               :default => true
-    t.string   "uniq_key",           :limit => 32
-    t.string   "key",                :limit => 32
-    t.integer  "counter",                          :default => 0
+    t.boolean  "send_notifications",                   :default => false
+    t.string   "uniq_key",               :limit => 32
+    t.string   "key",                    :limit => 32
+    t.integer  "counter",                              :default => 0
     t.string   "secret_key"
+    t.date     "unsubscribed"
+    t.date     "deleted"
+    t.string   "name"
+    t.string   "timestamp_last_posting",               :default => "0"
+    t.string   "subscription_id"
+    t.integer  "interval"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "sessions", :force => true do |t|
@@ -133,5 +162,17 @@ ActiveRecord::Schema.define(:version => 20220412091914) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "verifications", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "secure_hash"
+    t.boolean  "verified",    :default => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+  end
+
+  add_index "verifications", ["name"], :name => "index_verifications_on_name"
+  add_index "verifications", ["secure_hash"], :name => "index_verifications_on_secure_hash"
 
 end

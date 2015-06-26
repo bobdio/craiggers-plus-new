@@ -1,33 +1,21 @@
-!!!
-%html
-  %head
-    %title= current_domain['title']
-    %meta{ :name => 'viewport', :content => 'width=480, initial-scale=0.5' }
-    = favicon_link_tag current_domain['icon']
-    = stylesheet_link_tag    "application"
-    = javascript_include_tag "templates"
-    = csrf_meta_tag
-    = render :partial => 'layouts/analytics'
-  %body
-    #templates
-      = render :partial => "shared/templates/base/comment_templates"
-      = render :partial => "shared/templates/base/other_templates"
-      = render :partial => "shared/templates/base/posting_templates"
-      = render :partial => "shared/templates/base/search_templates"
-      = render :partial => "shared/templates/base/#{current_domain['location-type']}_location_templates"
+- cache(:controller => "posting", :action => "index") do 
+  !!!
+  %html
+    %head
+      %title= current_domain['title']
+      %meta{ :name => 'viewport', :content => 'width=480, initial-scale=0.5' }
+      %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8' }
+      = favicon_link_tag current_domain['icon']
+      = stylesheet_link_tag    "application"
+      = javascript_include_tag "templates"
+      = csrf_meta_tag
+      = render :partial => 'layouts/analytics'
+    %body
+      :javascript
+        var app_version = "#{version_number}"
+      #content
+        = yield
 
-    .clear
-    .flash{:style=>"color:red"}
-      = flash_notice
-
-    = popup_message
-
-    = render :partial => 'components/navbar'
-    #content
-      = yield
-
-    .clear
-
-    = render :partial => 'layouts/feedback'
-    
-    = javascript_include_tag "http://www.google.com/recaptcha/api/js/recaptcha_ajax.js", "application"
+      = render :partial => 'layouts/feedback'
+      
+      = javascript_include_tag "https://www.google.com/recaptcha/api/js/recaptcha_ajax.js", "application"

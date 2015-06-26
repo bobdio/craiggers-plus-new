@@ -1,0 +1,13 @@
+#navbar.search
+	#nav-container
+		#logo.logo
+			.beta beta
+			%a
+		#version
+			{{version}}
+		#header.header
+			.mainnav
+				#search-link.navlink.active search
+				#favorites-link.navlink favorites
+				#explore-link.navlink explore
+

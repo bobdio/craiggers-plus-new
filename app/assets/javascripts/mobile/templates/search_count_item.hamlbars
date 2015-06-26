@@ -1,0 +1,10 @@
+%tr.item_count_tr{:id => '{{item_id}}', :data => '{{item_data}}'}
+	%td.item_icon_td
+		#source-icon{ :class=> '{{icon_class}}' }
+	%td
+		.item_name {{name}}
+	%td
+		.item_count {{count}}
+	%td
+		.checkmark_container
+			.checkmark

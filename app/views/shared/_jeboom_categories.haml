@@ -4,7 +4,7 @@
     .code all
   - @cats.each do |cat|
     .cat
-      .clickable= cat.group
+      .clickable= cat.name
       .code= cat.code
       .subcats
         - cat.subcats.asc.each do |subcat|

@@ -2,6 +2,8 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
+tmp/*
+tmp
 *.swp
 public/stylesheets/.sass-cache
 nbproject
@@ -11,3 +13,4 @@ nbproject/**/*
 .idea
 .project
 .rvmrc
+*.DS_Store

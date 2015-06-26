@@ -1,0 +1,42 @@
+.posting-form-header
+- @posting ||= Posting.new
+.posting-form-content
+  = form_for @posting do |f|
+    .location.wrapper.column.field-block
+      .viewlist.closed
+      %label.posting-field-label Location:
+      %input#location_input.location_input.input{ :autocomplete => 'off', type: 'text' }
+      .location.autocomplete
+      .location-path
+
+    .category_field.field-block
+      %label.posting-field-label Category:
+      %input#category_input.input{ style: 'text-transform: capitalize;', type: 'text'}
+      .autocomplete
+
+    .heading.field-block
+      %label.posting-field-label Heading:
+      %input.input{name:  'heading', value: '', type: 'text'}
+
+    .body.field-block
+      %label.posting-field-label Description:
+      %textarea{name: 'body', value: '', type: 'text'}
+
+
+    .price.field-block{ style: 'display: none;' }
+      %label.posting-field-label Price:
+      %input.price_input.input{ :autocomplete => 'off', type: 'text', name: 'name', id: 'posting_price' }
+      .currency= f.select :currency, [["USD", "USD"], ["EUR", "EUR"]]
+
+    .annotations
+
+  .pictures.field-block
+    %label.posting-field-label Select pictures:
+    = form_tag postings_files_upload_path, id: 'files_upload' do
+      = file_field_tag "file-1"
+    .uploading{style: 'display:none;'}  Uploading...
+  %div{ style: 'clear: both;' }
+  #uploaded_images_container
+.buttons-block    
+  %button.btn.submit Create
+  %button.btn.btn-inverse.reset_all Reset All

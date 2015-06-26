@@ -1,0 +1,4 @@
+.source_container{:id => "{{code}}" }
+	.source_code {{code}}
+	.source_last_posting_ago {{ago}}
+	.source_num_matches {{num_matches}}

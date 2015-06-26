@@ -265,5 +265,9 @@ h1#title {
   color: red;
   padding-bottom: 10px; }
 
+.notice_success {
+  color: green;
+  padding-bottom: 10px; }
+
 #unlinked_identities tr td {
   padding-left: 10px; }

@@ -1,5 +1,6 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
+require "whenever/capistrano"
 
 server "72.55.133.140", :web, :app, :db, primary: true
 
@@ -28,11 +29,14 @@ set :bundle_gemfile, "Gemfile"
 set(:bundle_dir) { File.join(shared_path, 'bundle') }
 set :bundle_flags, "--deployment --quiet"
 set :bundle_without, [:development, :test]
-
+set :whenever_command, "bundle exec whenever"
 namespace :deploy do
   task :symlink_shared do
     run "ln -nfs #{shared_path}/version.txt #{release_path}/version.txt"
     run "cd #{release_path} && bundle exec rake assets:clean RAILS_ENV=#{rails_env}"
+    run "cd #{release_path} && bundle exec rake reinitiate_sources RAILS_ENV=#{rails_env}"
+    run "cd #{release_path} && bundle exec rake craiggers:generate:categories RAILS_ENV=#{rails_env}"
+    run "cd #{release_path} && bundle exec rake db:seed RAILS_ENV=#{rails_env}"
     #run "echo 'var BASE_URL = \"http://api6.3taps.com\"' > #{release_path}/app/assets/javascripts/base_url.js"
   end
   task :restart do

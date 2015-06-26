@@ -1,0 +1,15 @@
+#location_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#done_button.refine_menu_header_button
+			.button_label Done
+		#cancel_button.refine_menu_header_button
+			.button_label Cancel
+		.title Location
+	#location_menu_holder.count_items_holder
+		.location_container
+			%input#location.input_with_clear_button{:value => "All locations", :placeholder => "Enter metro area, state, or zip code"}
+			#clear_location_button.clear_input_button
+				%input.btn.btn-inverse{:type => "submit", :value => ""}
+				.clear_button_image
+		%div#matched_locations_message
+		#matched_locations.items_list

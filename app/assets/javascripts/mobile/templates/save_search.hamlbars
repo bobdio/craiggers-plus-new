@@ -1,0 +1,76 @@
+#save_search_page_container.page_with_top_menu
+	#save_search.results_sub_page
+		#header.global_header
+			.header_buttons
+				#save_search_button.header_button
+					.button_label Save Search
+					.save_search_icon.icon_image
+				.buttons_border
+				#cancel_button.header_button
+					.button_label Cancel
+					.icon_image.cancel_icon
+		#save_search_body
+			.save_search_item_group
+				#search_name.save_search_item.active
+					.save_search_item_name Name:
+					.input_container
+						#clear_input_button.clear_input_button
+							%input.btn.btn-inverse{:type => "submit", :value => ""}
+							.clear_button_image
+						%input#search_name_input.input_with_clear_button{:placeholder => "Name here"}
+				.header_buttons.sign_buttons
+					#log_in_button.header_button
+						.button_label Log In
+					.buttons_border
+					#sign_up_header_button.header_button
+						.button_label Sign Up
+				.header_buttons.sign_buttons.signed_buttons
+					#user_name_button.header_button
+						.user_image
+						.name_container
+							.button_label Name
+					.buttons_border
+					#logout_button.header_button
+						.button_label Log Out
+			.search_options
+				#notifications.search_option
+					.option_icon.notifications_icon.icon_image
+					.slider-frame
+						.slider-button
+					.option_name Notifications
+				#search_frequency.save_search_item.search_option
+					.option_icon.frequency_icon.icon_image
+					.save_search_item_name Frequency
+					.save_search_item_value
+						.name_value.state_activation_item{:data => "save_search_frequency_menu"}
+				#has_image.search_option
+					.option_icon.has_image_icon.icon_image
+					.slider-frame.on
+						.slider-button
+					.option_name Has Image
+				#title_only.search_option
+					.option_icon.title_only_icon.icon_image
+					.slider-frame.on
+						.slider-button
+					.option_name Title Only
+				#has_price.search_option
+					.option_icon.has_price_icon.icon_image
+					.slider-frame.on
+						.slider-button
+					.option_name Has Price
+			#search_counts
+#save_search_frequency_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title Frequency
+	#save_search_body
+		.frequency_items.items_list
+#access_to_notifications.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+	.modal-header
+		%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+		%h3 Notifications
+	.modal-body
+		.control-group
+			You must Log In or Sign Up to subscribe to a Saved Search notification. 
+			

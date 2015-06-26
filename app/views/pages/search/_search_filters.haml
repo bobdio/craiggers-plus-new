@@ -5,15 +5,16 @@
     #sortby
       sort by:
       %select.sortby
-        %option.recent most recent
-        %option.hitolo price: high to low
-        %option.lotohi price: low to high
+        %option.recent{:data => ""} most recent
+        %option.hitolo{:data => "-price"} price: high to low
+        %option.lotohi{:data => "price"} price: low to high
     .filters
       .static
         - title_or_entire
       .static
         - has_image
-      .static.dates
+      /
+        .static.dates
         .text show dates:
         %input.datepicker#start_date
         %input.datepicker-label#start_date_label
@@ -23,3 +24,6 @@
 
       = render 'pages/search/annotations'
 
+    .safe_checkbox_container    
+      %input.safe{ :type => 'checkbox', :checked => 'true' }
+        safe search     

@@ -1,0 +1,8 @@
+.posting_header_container{ :data => '{{ id }}'}
+	.posting-info{ :data => '{{ id }}'}
+		%div#add_to_favorites_button{:data => "{{ id }}"}
+			.favorite_star
+	.postin_title {{ title }}
+	.timeAgo {{ timeAgo }} ago
+	.price {{ price }}
+	.location {{location_name}}

@@ -8,14 +8,9 @@ class APIUser < Hashie::Mash
     self.update(UserAPI.update(self.id,{}))
   end
 
-  def save_search(json)
-    self.update_from_api
-    SavedSearch.create username: self.username, json: json
-  end
-
   def unsave_search(key)
     if search = SavedSearch.find_by_secret_key(key)
-      self.update_from_api
+      #self.update_from_api
       search.set_deleted
     end
   end

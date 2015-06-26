@@ -1,17 +1,20 @@
 class ApplicationController < ActionController::Base
-  #before_filter lambda {prepend_view_path(Rails.root + "app/views/jeboom")}
-  before_filter :force_ssl
+  before_filter :force_ssl, :log_user_agent, :authenticate
+  has_mobile_fu
 
-  protect_from_forgery
+  # protect_from_forgery
   skip_before_filter :verify_authenticity_token, :only => :files_upload
   layout 'main'
 
   protected
+  def log_user_agent
+    SULOUA.info "#{Time.now.utc}: #{request.user_agent}"
+  end
+
   def init
-    build_metrics
     Session.sweep
     @locations = Location.countries
-    @cats = Cat.from_taps#current_domain['multisource'] ? Cat.from_taps : Cat.from_craig
+    @cats = Cat.from_taps.includes(:subcats)
     @sources = Source.asc
   end
 
@@ -22,8 +25,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
-    @current_user = session[:current_user] ||= get_user
-    @current_user
+    session[:current_user]
   end
 
   def current_app_settings
@@ -54,7 +56,7 @@ class ApplicationController < ActionController::Base
       }
     }.with_indifferent_access
 
-    if current_user.signedin?
+    if current_user.signedin
       # get_user
       settings.merge! current_user[:settings]
       # settings.merge! ActiveSupport::JSON.decode(current_user["settings"])  unless  current_user["settings"].blank?
@@ -81,7 +83,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_user, :current_provider, :current_domain, :get_notification_settings, :current_app_settings, :get_app_settings
 
   def authorize_user
-    return true if current_user.signedin?
+    return true if current_user.signedin
     if request.xhr?
       render :nothing => true, :status => 403
     else
@@ -105,6 +107,15 @@ class ApplicationController < ActionController::Base
   end
 
   private
+
+  def authenticate
+    unless Rails.env.production?
+       unless authenticate_with_http_basic {|u, p|  u == "3taps" && p == "taptaptap" }
+         request_http_basic_authentication
+       end
+     end
+  end
+
   def twitter_followers_number(guid)
     uri = "http://api.twitter.com/1/users/show.json?user_id=#{guid}"
     data = RestClient.get(uri)
@@ -130,41 +141,12 @@ class ApplicationController < ActionController::Base
     # return unless ['staging', 'production'].include? Rails.env
     return if request.ssl?
     return if current_domain['name'] != 'craiggers'
-    return if request.host.starts_with? 'dev' 
+    return if request.host.starts_with? 'dev'
     return if request.host.starts_with? 'staging'
 
     host = request.host
     host = "www.#{host}" if !host.starts_with? 'www.'
     redirect_to "https://#{host}/#{request.query_string}"
-  end
-
-  def build_metrics
-    @total = 0
-    host = 'http://search.3taps.com/search/'
-    token = 'authToken=c9e6638a4d2db53f3a50200290ae1b65'
-
-    now = Time.now
-    ago = now - 24.hours
-    timestamp = "timestamp=#{ago.to_i.to_s}..#{now.to_i.to_s}"
-
-    summary = get_json_data("#{host}?#{token}&#{timestamp}")
-    @total = summary['num_matches'] / 1000 if summary['success']
-
-    @summary_by_sources = []
-    %w(CRAIG EBAYC BKPGE).each do |source|
-      matches = last = 0
-
-      last_24 = get_json_data("#{host}?#{token}&#{timestamp}&source=#{source}")
-
-      if last_24['success']
-        matches = last_24['num_matches'] / 1000
-        if last_24['postings'].present?
-          last = (now.to_i - last_24['postings'].first['timestamp']) / 60
-        end
-      end
-
-      @summary_by_sources << { name: source, matches: matches, last: last }
-    end
   end
 
   def get_json_data(url)
@@ -176,8 +158,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def signedin?
-    unless current_user.signedin?
+  def signedin
+    unless current_user.signedin
       render nothing: true, :status => 403 and return false
     end
   end

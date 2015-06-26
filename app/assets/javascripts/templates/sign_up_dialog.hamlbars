@@ -1,0 +1,36 @@
+%form#sign_up_form
+  .info{style: "display:none; margin-bottom:1em; font-weight: normal;"}
+    Sign up so you can manage your saved searches and notification settings.
+  %table
+    %tr
+      %td
+        username
+      %td
+        password
+      %td{ :colspan => '2' }
+        email address
+    %tr
+      %td
+        %input#username.textfield{ :name => 'name', :type => 'text', :maxlength => 15 }
+      %td
+        %input#password.textfield{ :name => 'password', :type => 'password' }
+      %td
+        %input#email.textfield{ :name => 'email', :type => 'text' }
+      %td
+        %input#submit_sign_up_form{:name =>"commit", :type => "submit", :value => "sign up"}
+    %tr
+      %td{ :colspan => '3', :style => 'align:left' }
+        %label
+          %input#terms.checkbox{ :type => 'checkbox' } I agree with
+          %a{ :href=> '/terms', :target => 'new' } terms of service
+    %tr
+      %td{ :colspan => '3', :style => 'align:left' }
+        %label
+          %input#contact_me.checkbox{ :name => 'contact_me', :type => 'checkbox', :checked => true } I would like to receive newsletters and updates by email
+
+  .info{style: "display:none; margin-top:1em; font-weight: normal; "}
+    Already signed up? 
+    %span.link{ style: 'font-size: 100%' } Sign in here.
+  #errors_holder
+  #success_holder
+  .popup-close

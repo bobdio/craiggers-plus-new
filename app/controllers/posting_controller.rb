@@ -8,7 +8,8 @@ class PostingController < ApplicationController
   # we need something other
 
   def index
-    # if request.user_agent =~ /msie/i or request.user_agent =~ /(Mobile\/.+Safari)/i
+    redirect_to mobile_path and return if is_tablet_device? || is_mobile_device?
+    expire_fragment('footer')
     if request.user_agent =~ /msie/i
       redirect_to unsupported_browser_path
     end
@@ -28,7 +29,7 @@ class PostingController < ApplicationController
   end
 
   def favorite
-    if current_user.signedin?
+    if current_user
       current_user.favorite(params[:posting])
     else
       saved = Favorite.create(:json => params[:posting])
@@ -39,7 +40,7 @@ class PostingController < ApplicationController
   end
 
   def unfavorite
-    if current_user.signedin?
+    if current_user
       current_user.unfavorite(params[:posting])
     else
       saved = Favorite.find_by_json(params[:posting])

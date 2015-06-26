@@ -9,7 +9,8 @@
       .beta beta
       = logo_tag
     .tagline= slogan_teg
-    = render :partial => "components/jeboom_searchbar"
-
-= render :partial => 'shared/landing_page_footer'
+    = render "components/jeboom_searchbar"
+    = render "components/explore_links"
+- cache('footer') do
+  = render 'shared/landing_page_footer'
 

@@ -1,0 +1,19 @@
+.signinout
+  .signin 
+    %span#sign_up_link.header-link sign up
+    \|
+    %span#sign_in_link.header-link sign in
+  .signedin
+    .create_new_posting
+      post
+    .photo
+      %img
+    .hoverable
+      .user
+        .name
+      .dropdown
+        .field.right
+          %a{:href => "/signout"} sign out
+        .field.right
+          %a#manage_postings_link manage postings
+

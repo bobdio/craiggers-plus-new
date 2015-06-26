@@ -1,0 +1,129 @@
+$top-menu-buttoh-height: 20px;
+$top-menu-container-height: 95px;
+
+#top_menu.active {
+	#top_menu_activation_button {
+		.open_button {
+			border-width: 0px 5.5px 5px 5.5px;
+			border-color: transparent transparent white transparent;
+		}
+	}
+}
+
+#top_menu {
+	width: 100%;
+	position: fixed;
+	//top:-$top-menu-container-height;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	//display: none;
+	.top_menu_container {
+		background-color: gray;
+		height: $top-menu-container-height;
+		width: 100%;
+	}
+
+	.buttons_row {
+		height: 46px;
+	}
+
+	#log_out {
+		display: none;
+
+		.avatar_image {
+			width: 24px;
+			height: 26px;
+			position: relative;
+			left: 1px;
+		}
+	}
+
+	#top_menu_activation_button {
+		background-color: #fe4139;
+		height: $top-menu-buttoh-height;
+
+		.open_button {
+			width: 0px;
+			height: 0px;
+			border-style: solid;
+			border-width: 5px 5.5px 0 5.5px;
+			border-color: white transparent transparent transparent;
+			top: 7.5px;
+			position: relative;
+			left: 50%;
+		}
+	}
+
+	.top_menu_button.view_button {
+		.button_label {
+			color: #b4b4b4;
+		}
+	}
+
+	.top_menu_button.view_button.active {
+		.button_label {
+			color: white;
+		}
+
+		.button_image {
+			.list_view_icon {
+				background-position-x: -645px;
+			}
+
+			.has_image_icon {
+				background-position-x: -593px;
+			}
+		}
+		
+	}
+
+	.top_menu_button {
+		display: inline-block;
+		text-align: center;
+		font-size: 11px;
+		margin-left: 10px;
+		margin-right: 10px;
+		color: white;
+
+		.button_image {
+			height: 25px;
+			text-align: center;
+
+			.has_image_icon {
+				background-position-y: -26px;
+				margin-left: 0px;
+				display: inline-block;
+			}
+
+			.list_view_icon {
+				background-position-y: -25px;
+				margin-left: 0px;
+				display: inline-block;
+				width: 25px;
+				height: 26px;
+				background-position-x: -618px;
+				height: 20px;
+				margin-top: 5px;
+			}
+		}
+
+		.icon_image {
+			position: relative;
+		}
+
+		a {
+			color: white;
+		}
+	}
+
+	.favorites {
+		margin-left: 10px;
+		
+
+		.favorite_star {
+			position: relative;
+			top: 4px;
+		}
+	}
+}

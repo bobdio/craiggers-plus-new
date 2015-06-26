@@ -35,7 +35,7 @@ module ApplicationHelper
   end
 
   def title_or_entire
-    haml_tag :div, :class => "group" do
+    haml_tag :div, :class => "group", :style => 'margin:0' do
       filter_radio("title only", "title_or_entire")
       filter_radio("entire post", "title_or_entire", true)
     end
@@ -84,6 +84,11 @@ module ApplicationHelper
         haml_concat "#{br} BR"
       end
     end
+  end
+
+  def handle_annotations_with_custom_label(label)
+    custom_labels = {'partTime' => ' part-time'}
+    custom_labels[label] || label
   end
 
 end

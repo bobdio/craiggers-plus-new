@@ -7,6 +7,7 @@ CraiggersPlus::Application.configure do
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.cache_store = :mem_cache_store
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = false
@@ -46,8 +47,9 @@ CraiggersPlus::Application.configure do
   # config.action_controller.asset_host = "http://assets.example.com"
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-  config.assets.precompile += %w( *.js *.css )
-
+  config.assets.precompile += %w( for_static.js for_static.css )
+  config.assets.precompile += %w( mobile.js mobile.css )
+  config.assets.precompile += %w( spec_runner.js spec_runner.css )
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
@@ -62,7 +64,7 @@ CraiggersPlus::Application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.default_url_options = {
-    :host => 'staging.jeboom.com'
+    :host => 'jeboom.com'
   }
 
   # Log the query plan for queries taking more than this (works
@@ -70,4 +72,6 @@ CraiggersPlus::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
 
-VERSION = 'v.0.1 beta'
+GOOGLE_KEY = '/home/jeboom/505e243f76da32974a86acec51a2377f872456cc-privatekey.p12'
+
+VERSION = 'v.0.1'

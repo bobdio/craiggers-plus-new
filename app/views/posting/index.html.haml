@@ -1,12 +1,9 @@
 = render :partial => 'components/email-popup'
 
 #container
-
   #popup-dialog
     .wrapper
       .content
-    .popup-close
-
   #root.page
     = render :partial => 'pages/root/page'
 
@@ -14,9 +11,3 @@
     = render :partial => 'pages/search/page'
 
   #posting.page.grid_12.prefix_2.suffix_2
-
-- if @change_password
-  :javascript
-    $(function() {
-      new Craiggers.Views.Dialog('change_password')
-    })

@@ -1,0 +1,6 @@
+.saved_search_container{ :id => '{{ id }}' }
+	.remove
+		%i.icon-remove
+	.saved_search_name {{name}}
+	.saved_search_category {{category}}
+	.saved_search_location {{location}}

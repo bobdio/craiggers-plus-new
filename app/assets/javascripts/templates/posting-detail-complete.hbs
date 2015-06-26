@@ -1,18 +1,35 @@
+<div class='content_without_footer'>
 {{#if favorited}}
 <div class="favorite favorited"></div>
 {{else}}
 <div class="favorite"></div>
+{{/if}}
+{{#if local_posting}}
+  <div class='local_posting_actions'>
+    <a href='javascript:;' class='delete_posting'>delete</a>
+    <a href='javascript:;' class='edit_posting'>edit</a>
+    <a href='javascript:;' class='repost_posting'>repost</a>
+  </div>
 {{/if}}
 <div class="heading">
     {{{ heading }}}
 </div>
 <a class="origin_link" href='{{ external_url }}' target='_blank'> {{ external_url }}</a>
 <div class="data hr">
-    <div class="timestamp">{{ clienttime }}</div>
+    <div class='timestamp_container' style='height:20px;'>
+        <div class="timestamp" style="float:left; width:300px;">
+        {{#if expires_in}}
+            expires in {{ expires_in }}
+        {{else}}
+            {{ time }}
+        {{/if}}
+        </div>
+        <div class="price">{{#if formated_price}}${{ formated_price }}{{/if}}</div>
+    </div>
     <div class="contact">
         reply to:
         {{#if source_account}}
-        <a href='mailto:{{ source_account }}'>{{ source_account }}</a>
+        <a href='mailto:{{ source_account }}?subject={{ heading }}&body={{ external_url }}'>{{ source_account }}</a>
         {{else}}
         see below
         {{/if}}
@@ -36,29 +53,9 @@
         <a class="share-link email" href='#emailpopup'> email</a>
     </div>
 </div>
-<div class="annotations hr">
 
-    <table class="annotations_table">
-        <tr>
-            <td>
-                {{> _annotations}}
-            </td>
-            <td>
-                <div class="price">{{#if format_price}}${{ format_price }}{{/if}}
-                    <br/>
-                    <br/>
-                    {{#if has_apts_housing}}
-                    <iframe id="rentvalet_iframe" name="rentvalet_iframe"
-                            src="/widget/rentvalet?contact={{accountName}}&address={{location_path}}&rent={{price}}&url={{url}}"
-                            width="98" height="84" align="top" scrolling="no"> Browser doesn't support
-                        iframes
-                    </iframe>
-                    {{/if}}
-            </td>
-        </tr>
-    </table>
-</div>
 <div class="images hr">
+
 </div>
 <div class="body hr">{{{ body }}}</div>
 
@@ -77,24 +74,50 @@
 </div>
 {{/if}}
 <div class="view-comments"></div>
-<hr>
-<table class="publicdomain">
-    <tr>
-        <td>
-            <a href='http://creativecommons.org/publicdomain/mark/1.0/'>
-                <div class="image">
-                    <img src='/assets/publicdomain.png' height="40"/>
-                </div>
-            </a>
-        </td>
-        <td class="disclaimer">
-            This work ({{{ heading }}} by {{ accountName }}),
-            identified by craigslist, is free of known copyright restrictions.
-        </td>
-    </tr>
-</table>
-<div class="poweredby3taps">
-    <a href="http://3taps.com" target="_blank">
-        <img src="/assets/poweredby3taps.png"/>
-    </a>
+</div>
+
+<div class="publicdomain_and_powered">
+    <div class="annotations hr">
+
+        <table class="annotations_table">
+            <tr>
+                <td>
+                    {{> _annotations}}
+                </td>
+                <td>
+
+                        <br/>
+                        <br/>
+                        {{#if has_apts_housing}}
+                        <iframe id="rentvalet_iframe" name="rentvalet_iframe"
+                                src="/widget/rentvalet?contact={{accountName}}&address={{location_path}}&rent={{price}}&url={{url}}"
+                                width="98" height="84" align="top" scrolling="no"> Browser doesn't support
+                            iframes
+                        </iframe>
+                        {{/if}}
+                </td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <table class="publicdomain">
+        <tr>
+            <td>
+                <a href='http://creativecommons.org/publicdomain/mark/1.0/'>
+                    <div class="image">
+                        <img src='/assets/publicdomain.png' height="40"/>
+                    </div>
+                </a>
+            </td>
+            <td class="disclaimer">
+                This work ({{{ heading }}} by {{ source_account }}),
+                identified by craigslist, is free of known copyright restrictions.
+            </td>
+        </tr>
+    </table>
+    <div class="poweredby3taps">
+        <a href="http://3taps.com" target="_blank">
+            <img src="/assets/poweredby3taps.png"/>
+        </a>
+    </div>
 </div>

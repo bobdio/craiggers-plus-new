@@ -1,0 +1,12 @@
+#email_verification.page_with_top_menu.top_menu_page
+	#header.global_header
+		.title
+			Email Verification
+	#body
+		.message
+			
+		%form#email_verification_form
+			%input#token_input{:title => "verify", :placeholder => "token"}
+			#verify_button_container
+				%input#verify.btn.btn-inverse{:type => "submit", :value => "Verify"}
+		#error_messages_container

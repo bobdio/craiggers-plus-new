@@ -2,11 +2,12 @@ CraiggersPlus::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
-  config.cache_classes = true
+  config.cache_classes = false
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.cache_store = :mem_cache_store
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
   config.serve_static_assets = true
@@ -47,7 +48,8 @@ CraiggersPlus::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   config.assets.precompile += %w( for_static.js for_static.css )
-
+  config.assets.precompile += %w( mobile.js mobile.css )
+  config.assets.precompile += %w( spec_runner.js spec_runner.css )
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 

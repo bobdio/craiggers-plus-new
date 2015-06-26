@@ -1,0 +1,25 @@
+.title
+  Oops! Need to sign up?
+  %span.link Sign up here.
+%form{ :id => 'sign_in_form' }
+  %table
+    %tr
+      %td
+        %span.username username
+      %td{ :colspan => '2' }
+        %span.password password
+    %tr
+      %td
+        %input#username.textfield{ :name => 'name', :type => 'text' }
+      %td
+        %input#password.textfield{ :name => 'password', :type => 'password' }
+      %td
+        %input#submit_sign_in_form{ :name => "commit", :type => "submit", :value => "sign in"}
+    %tr
+      %td
+        %label
+          %input#remember.checkbox{:name => 'remember', :type => 'checkbox' } remember me
+      %td{ :colspan => '2' }
+        %a#forgot_it.link.forgot forgot it?
+#errors_holder
+.popup-close

@@ -1,0 +1,11 @@
+.posting-info{ :data => '{{ id }}'}
+	#source-icon{ :class=> '{{icon_class}}' }
+	.source_info{ :data => '{{ id }}'}
+		.source-account 
+			%a{ :href => '{{source_account_link}}' } {{source_account_name}}
+		.source_phone
+			%a{ :href => '{{source_phone_link}}' } {{source_phone}}
+	%div#add_to_favorites_button{:data => "{{ id }}"}
+		.favorite_star
+.postin_title {{ title }}
+.price {{ price }}

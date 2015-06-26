@@ -1,0 +1,2 @@
+ActionController::MobileFu.send(:remove_const, :TABLET_USER_AGENTS)
+ActionController::MobileFu::TABLET_USER_AGENTS = Regexp.new('ipad|android 3.0|xoom|sch-i800|gt-p1000|playbook|tablet|kindle|honeycomb|nexus 7|silk')

@@ -8,11 +8,11 @@
 </div>
 <a class="origin_link" href='{{ external_url }}' target='_blank'> {{ external_url }}</a>
 <div class="data hr">
-    <div class="timestamp">{{ clienttime }}</div>
+    <div class="timestamp">{{ time }}</div>
     <div class="contact">
         reply to:
         {{#if source_account}}
-        <a href='mailto:{{ source_account }}'>{{ source_account }}</a>
+        <a href='mailto:{{ source_account }}?subject={{ heading }}&body={{ external_url }}'>{{ source_account }}</a>
         {{else}}
         see below
         {{/if}}

@@ -3,3 +3,4 @@
 .buttons
   .button.cancel cancel
   .button.ok {{ okLabel }}
+.popup-close

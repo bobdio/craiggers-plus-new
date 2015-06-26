@@ -1,0 +1,31 @@
+#main_scroller
+	#main
+		.search_slogan What are you looking for?
+		.search_header
+			.search_bar
+				.query.wrapper
+					%form#search_form
+						%input#searchbar_query_input.input.input_with_clear_button{:title => "Search", :placeholder => "Enter keywords"}
+			#search_button.search_button
+				%input.btn.btn-inverse{:type => "submit", :value => ""}
+				.glass_icon.icon_image
+		.location_container
+			.arrow >
+			#location_value
+			.remember_location
+				%label.checkbox
+					%input#remember_location{:type => "checkbox"} Remember My Location
+					
+		#location_error_dialog.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+			.modal-header
+				%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+				%h3 Location Error
+			.modal-body
+				Sorry, but your current location cannot be determined. You can type specific location in location input field.
+				.current_location_buttons
+					%button#ok_btn.btn.btn-inverse{:type => "button"} Ok
+.main_footer
+	.copyright
+		© 2013 jeboom!
+	.tos
+		%a{:href => "/assets/Terms_of_Service.doc", :target => "_blank"} Terms of Service

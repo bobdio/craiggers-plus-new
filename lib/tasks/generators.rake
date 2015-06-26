@@ -12,34 +12,27 @@ namespace :craiggers do
       puts "destroying current cats/subcats..."
       Cat.destroy_all
       Subcat.destroy_all
-
+      
       puts "starting csv parse..."
-      cats = {}
-      File.open("#{Rails.root}/lib/categories/master-cl-categories-mapping-20110315.csv", 'r').each_line do |row|
-        cols = row.gsub(/\"/,'').split(",").collect { |c| c.strip }
-        data = cols[1].split(";")
-        if data[2].blank? and cats[data[0]].blank?
-          cat = Cat.new
-          cat.name = data[0]
-          cat.code = data[1]
-          cat.position = -1 if cat.name.chars.first.match(/\W/)
-          cats[cat.name] = cat
-          cat.save
-          puts 'cat >> ' + cols[1].to_s + ' >> saved'
-          next
-        end
-        if cats[data[2]].blank?
-          abort "expected all cats to be listed first - instead found subcat with no already defined cat"
-        end
 
+      categories_data = JSON.parse(TapsConnector.categories,:symbolize_names => true)[:categories]
+
+      parent_categories_data = categories_data.map {|record| {name: record[:group_name], code: record[:group_code]}}.uniq
+      parent_categories_data.each do |parent_category_data|
+        cat = Cat.new(parent_category_data) 
+        cat.originate = 1 
+        cat.save
+      end
+
+      parent_categories = Cat.all
+
+      categories_data.each do |record|
         sub = Subcat.new
-        sub.name = data[0]
-        sub.code = data[1]
-        sub.cat = cats[data[2]]
-        #sub.position = -1 if sub.name.chars.first.match(/\W/)
+        sub.name = record[:name]
+        sub.code = record[:code]
+        sub.cat_id = parent_categories.select {|parent_category| parent_category.code == record[:group_code]}.first.id
+        sub.originate = 1
         sub.save
-
-        puts 'subcat >> ' + cols[1].to_s + ' >> saved'
       end
     end
 
@@ -59,17 +52,17 @@ namespace :craiggers do
       File.open("#{Rails.root}/lib/locations/cl-locations-data.csv", 'r').each_line do |row|
         cols = row.gsub(/\"/,'').split(",").collect { |c| c.strip }
         # country/state/loc_1/location_1/url/loc_2/location_2/(blank)/Display City State/Display State
-        unless Location.find_by_name(cols[1])
+        unless Location.find_by_short_name(cols[1])
           location = Location.new
-          location.name = cols[1]
+          location.short_name = cols[1]
           location.code = cols[8].match(/\w{2}$/)[0]
           location.save
-          puts 'location >> ' + location.name.to_s + ' >> saved'
+          puts 'location >> ' + location.short_name.to_s + ' >> saved'
         end
 
         next if cols[2].blank? or cols[3].blank?
 
-        location ||= Location.find_by_name(cols[1])
+        location ||= Location.find_by_short_name(cols[1])
         unless location.loc1s.collect{ |l| l.name }.include?(cols[3])
           loc_1 = Loc1.new
           loc_1.name = cols[3]
@@ -107,17 +100,17 @@ namespace :craiggers do
       File.open("#{Rails.root}/lib/locations/cl-locations-data.csv", 'r').each_line do |row|
         cols = row.gsub(/\"/,'').split(",").collect { |c| c.strip }
         # country/state/loc_1/location_1/url/loc_2/location_2/(blank)/Display City State/Display State
-        unless Location.find_by_name(cols[1])
+        unless Location.find_by_short_name(cols[1])
           location = Location.new
-          location.name = cols[1]
+          location.short_name = cols[1]
           location.code = cols[8].match(/\w{2}$/)[0]
           location.save
-          puts 'location >> ' + location.name.to_s + ' >> saved'
+          puts 'location >> ' + location.short_name.to_s + ' >> saved'
         end
 
         next if cols[2].blank? or cols[3].blank?
 
-        location ||= Location.find_by_name(cols[1])
+        location ||= Location.find_by_short_name(cols[1])
         unless location.loc1s.collect{ |l| l.name }.include?(cols[3])
           loc_1 = Loc1.new
           loc_1.name = cols[3]

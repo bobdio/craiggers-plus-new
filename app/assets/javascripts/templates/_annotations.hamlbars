@@ -39,14 +39,62 @@
   {{#if vin}}
   .vin.annotag.tag
     .text vin: {{ vin }}
-    .param vin
-    .val {{ vin }}
   {{/if}}
   {{#if year}}
   .year.annotag.tag
     .text year: {{ year }}
-    .param year
-    .val {{ year }}
+  {{/if}}
+  {{#if mileage}}
+  .mileage.annotag.tag
+    .text mileage: {{ mileage }}
+  {{/if}}
+  {{#if bodyStyle}}
+  .bodyStyle.annotag.tag
+    .text bodyStyle: {{ bodyStyle }}
+    .param bodyStyle
+    .val {{ bodyStyle }}
+  {{/if}}
+  {{#if exteriorColor}}
+  .exteriorColor.annotag.tag
+    .text exteriorColor: {{ exteriorColor }}
+    .param exteriorColor
+    .val {{ exteriorColor }}
+  {{/if}}
+  {{#if interiorColor}}
+  .interiorColor.annotag.tag
+    .text interiorColor: {{ interiorColor }}
+    .param interiorColor
+    .val {{ interiorColor }}
+  {{/if}}
+  {{#if wheelbase}}
+  .wheelbase.annotag.tag
+    .text wheelbase: {{ wheelbase }}
+    .param wheelbase
+    .val {{ wheelbase }}
+  {{/if}}
+  {{#if drivetrain}}
+  .drivetrain.annotag.tag
+    .text drivetrain: {{ drivetrain }}
+    .param drivetrain
+    .val {{ drivetrain }}
+  {{/if}}
+  {{#if transmission}}
+  .transmission.annotag.tag
+    .text transmission: {{ transmission }}
+  {{/if}}
+  {{#if engine}}
+  .engine.annotag.tag
+    .text engine: {{ engine }}
+  {{/if}}
+  {{#if fuel}}
+  .fuel.annotag.tag
+    .text fuel: {{ fuel }}
+    .param fuel
+    .val {{ fuel }}
+  {{/if}}
+  {{#if seller}}
+  .seller.annotag.tag
+    .text seller: {{ seller }}
   {{/if}}
   {{#if age}}
   .age.annotag.tag

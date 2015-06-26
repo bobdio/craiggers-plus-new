@@ -68,26 +68,23 @@ namespace :craiggers do
       })
 
       [{
-        :name => 'Canada',
-        :code => 'CAN'
+        bounds_max_lat: 71.36581, bounds_max_long: 179.77747,
+        bounds_min_lat: 18.92388, bounds_min_long: -179.14200,
+        full_name: "United States", short_name: "United States",
+        code: "USA", level: 'country'
       },{
-        :name => 'United States',
-        :code => 'USA'
-      }].each do |country|
-        Location.create!({
-          :short_name => country[:name],
-          :full_name => country[:name],
-          :code => country[:code],
-          :level => 'country'
-        })
-      end
+        bounds_max_lat: 83.11388, bounds_max_long: -52.61445,
+        bounds_min_lat: 41.67555, bounds_min_long: -141.00299,
+        full_name: "Canada", short_name: "Canada",
+        code: "CAN", level: 'country'
+      }].each { |country| Location.create! country }
 
       levels = ['country', 'state', 'metro', 'region', 'county', 'city', 'locality', 'zipcode']
       levels.each_index do |i|
         base_level = levels[i]
         next_level = levels[i+1]
 
-        return unless next_level
+        break unless next_level
 
         p '===================================='
         p "#{base_level} <- #{next_level}"

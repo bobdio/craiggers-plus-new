@@ -1,0 +1,44 @@
+.heading
+  = @posting.heading
+  = link_to @posting.external_url, @posting.external_url, :class=>"origin_link", :target=>'_blank' if @posting.external_url.present?
+.data.hr
+  .timestamp
+    = @posting.created_at.to_i
+    .contact
+      reply to: see below
+    .share
+      .share-link.twitter
+        = link_to '#', :class => "twitter-share-button" do
+          =image_tag 'twitter-share-icon.png'
+      .share-link.facebook
+        = link_to '#', :target=>'_blank' do
+          = image_tag 'facebook-share-icon.gif'
+        = link_to 'email', '#emailpopup', :class=>"share-link email"
+.annotations.hr
+  %table.annotations_table
+    %tr
+      %td
+        = show_annotations(@posting.annotations)
+      %td
+        .price= "#{@posting.price} #{@posting.currency}"
+        %br
+        %br
+.images.hr
+.body.hr=@posting.body
+
+
+.view-comments
+%hr
+
+%table.publicdomain
+  %tr
+    %td
+      = link_to "http://creativecommons.org/publicdomain/mark/1.0/", :target=>"_blank" do
+        .image
+          = image_tag "publicdomain.png", :height => '40'
+    %td.disclaimer
+      = "This work #{@posting.heading} by #{@posting.account_id},
+                  identified by craigslist, is free of known copyright restrictions."
+.poweredby3taps
+  = link_to "http://3taps.com", :target=>"_blank" do
+    = image_tag "poweredby3taps.png"
