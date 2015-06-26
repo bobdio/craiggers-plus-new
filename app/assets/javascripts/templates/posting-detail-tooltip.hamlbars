@@ -1,6 +1,6 @@
 .heading {{{ heading }}}
 %a{ :href => '{{ externalURL }}', :target => '_blank' } {{ externalURL }}
 .timestamp
-  {{ clienttime }}
+  {{ time }}
 .annotations
   .price ${{ price }}

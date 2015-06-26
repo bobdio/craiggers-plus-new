@@ -1,0 +1,152 @@
+@import "mobile_mixins";
+
+#postings_manager {
+	position : static;
+
+	@include option_item_container();
+
+	#message {
+		text-align: center;
+		margin-top: 10px;
+		color: red;
+	}
+}
+
+#add_new_posting_menu {
+	.items_holder {
+
+		margin: 10px;
+
+		text-align: left;
+
+		@include option_item_container();
+
+		#posting_location.invalid {
+			color: red;
+		}
+
+		#posting_category.invalid {
+			color: red;
+		}
+
+		.input_item {
+			margin-right: 15px;
+			//margin-bottom: 10px;
+
+			.input_field {
+				width: 100%;
+				height: 30px;
+			}
+
+			#posting_phone {
+				margin-top: 10px;
+			}
+
+			#posting_email {
+				margin-top: 10px;
+			}
+
+			#posting_image {
+				margin-bottom: 15px;
+			}
+
+			#heading.invalid {
+				border-color: red;
+			}
+
+			#description.invalid {
+				border-color: red;
+			}
+
+			#location {
+				width: 100%;
+			}
+
+			#category {
+				width: 100%;
+			}
+
+			#description {
+				width: 100%;
+				height: 60px;
+			}
+
+			#posting_price {
+				width: 100px;
+			}
+
+			#posting_currency {
+				margin-bottom: 0px;
+				width: 150px;
+			}
+		}
+
+		#save_button {
+			margin-top: 10px;
+		}
+
+		#update_button {
+			margin-top: 10px;
+		}
+
+		#remove_button {
+			margin-top: 10px;
+			float: right;
+		}
+	}
+}
+
+#posting_images_menu {
+
+	#uploaded_images {
+		margin-top: 10px;
+
+		.remove_button_container {
+			position: absolute;
+			width: 26px;
+			height: 25px;
+			background-color: black;
+			border: 0;
+			right: 0px;
+		}
+
+		.clear_button_image {
+			pointer-events: none;
+		}
+
+		.posting_gallery_image {
+			position: relative;
+		}
+	}
+
+	#error_messages {
+		color: red;
+	}
+
+	form#upload_posting_image {
+		margin-top: 10px;
+		margin-left: 15px;
+
+		.file_input_wrapper {
+			overflow: hidden;
+			width: 0px;
+			height: 0px;
+		}
+
+		input[type="file"]#file-1 {
+			height: 20px;
+			line-height: 16px;
+		}
+	}
+}
+
+.categories_menu {
+	.items_holder {
+		@include option_item_container();
+
+		.posting_category_name {
+			margin-left: 15px;
+			pointer-events: none;
+		}
+	}
+}

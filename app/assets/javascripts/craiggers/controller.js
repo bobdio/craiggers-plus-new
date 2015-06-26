@@ -2,6 +2,11 @@ ThreeTapsController = Backbone.Controller.extend({
 
   initialize: function() {
     // fallback route to root
+
+    $('#postings').css('min-height', document.body.clientHeight)
+    $(window).resize(function() {
+      $('#postings').css('min-height', document.body.clientHeight)
+    });
     this.route(/^.*$/, 'catchall', this.root);
   },
 
@@ -12,23 +17,9 @@ ThreeTapsController = Backbone.Controller.extend({
     Craiggers.Search.set({
       params: {
         subnav: 'workspace-link',
-        nav: 'search-link' 
+        nav: 'search-link'
       }
     })
-
-//    $.ajax({
-//      url: '/search/previous',
-//      async: false,
-//      dataType: 'text',
-//      success: function(data) {
-//        new Craiggers.Pages.Search();
-//        Craiggers.Search.set({ url: data }).submit();
-//      },
-//      error: function() {
-//        Craiggers.Controller.saveLocation('!/');
-//        new Craiggers.Pages.Root();
-//      }
-//    });
   },
 
   blankSearch: function() {
@@ -36,7 +27,7 @@ ThreeTapsController = Backbone.Controller.extend({
   },
 
   posting: function(postkey) {
-    new Craiggers.Pages.Posting({ 
+    new Craiggers.Pages.Posting({
       postkey: postkey
     });
   }

@@ -159,16 +159,23 @@ _.extend(Craiggers.Util, {
     },
 
     distance_of_time_in_words: function(to, from) {
+      var time = new Date();
+      var max_hours_in_minutes = time.getHours() * 60;
+
       var distance_in_seconds = (to - from) / 1000;
       var distance_in_minutes = Math.floor(distance_in_seconds / 60);
 
       if ( distance_in_minutes == 0 ) { return 'less than a min'; }
       if ( distance_in_minutes == 1 ) { return '1 min'; }
       if ( distance_in_minutes < 45 ) { return distance_in_minutes + ' mins'; }
-      if ( distance_in_minutes < 120 ) { return '1 hour'; }
-      if ( distance_in_minutes < 1440 ) { return Math.floor(distance_in_minutes / 60) + ' hours'; }
-      if ( distance_in_minutes < 2880 ) { return '1 day'; }
-      if ( distance_in_minutes < 43200 ) { return Math.floor(distance_in_minutes / 1440) + ' days'; }
+      if ( distance_in_minutes < max_hours_in_minutes) {
+        if ( distance_in_minutes < 120 ) { return '1 hour'; }
+        if ( distance_in_minutes < 1440 ) { return Math.floor(distance_in_minutes / 60) + ' hours'; }
+      } else {
+        var time_by_days_in_minutes = distance_in_minutes - max_hours_in_minutes;
+        if ( time_by_days_in_minutes < 1440 ) { return '1 day'; }
+        if ( time_by_days_in_minutes < 43200 ) { return Math.ceil(time_by_days_in_minutes / 1440) + ' days'; }
+      }
       if ( distance_in_minutes < 86400 ) { return '1 month'; }
       if ( distance_in_minutes < 525960 ) { return Math.floor(distance_in_minutes / 43200) + ' months'; }
       if ( distance_in_minutes < 1051199 ) { return '1 year'; }

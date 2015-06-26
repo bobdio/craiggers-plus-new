@@ -1,0 +1,170 @@
+#header.main_header.home_page_header {
+
+	background-color: black;
+	height: 40px;
+	position: relative;
+
+	.logo {
+		height: 30px;
+		margin-left: 20px;
+		line-height: 38px;
+		font-size: 24px;
+		color: white;
+
+		img {
+			height: 100%;
+			width: auto;
+			margin-top: 0px;
+		}
+	}
+
+	.header_buttons {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 40px;
+		line-height: 30px;
+		margin-top: 0px;
+		margin-right: 0px;
+
+		.header_button {
+			display: inline-block;
+			width: 80px;
+			background-color: #2e2e2e;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+		}
+
+		.header_button:active {
+			background-color: black;
+		}
+	}
+
+	.sign_out {
+		margin-left: 10px;
+	}
+}
+
+.main_header {
+	height: 40px;
+	background-color: #B6B4B4;
+
+	span {
+		color: white;
+	}
+
+	a {
+		color: white;
+	}
+
+	.header_buttons {
+		float: right;
+		margin-right: 30px;
+	}
+
+	.header_buttons.signed_buttons {
+		display: none;
+	}
+
+	.header_buttons.sign_buttons {
+		display: none;
+	}
+
+	.favorites {
+		display: none;
+		margin-left: 20px;
+		line-height: 25px;
+		font-size: 18px;
+	}
+
+	
+
+	.sign_out {
+		margin-left: 20px;
+	}
+
+	.user_image {
+		padding-top : 2px;
+		height: 25px;
+
+		img {
+			height: 100%;
+		}
+	}
+}
+
+#sign_up_modal,#sign_in_modal {
+
+	position: absolute;
+
+	.modal-body.sign_modal {
+		max-height: none;
+	}
+}
+
+#success_sign_up_dialog {
+	.sign_up_dialog_buttons {
+		margin-top: 20px;
+	}
+}
+
+.checkbox.sign_checkbox {
+	margin: 5px;
+}
+
+#errors_holder {
+	color: red;
+}
+
+@media only screen and (min-width : 640px) {
+	#header.main_header.home_page_header {
+		height: 70px;
+
+		.header_buttons.signed_buttons {
+			height: 70px;
+			line-height: 60px;
+			font-size: 24px;
+		}
+
+		.header_buttons.sign_buttons {
+
+			.header_button {
+				display: inline-block;
+				width: 100px;
+				background-color: #2e2e2e;
+				height: 70px;
+				line-height: 70px;
+				text-align: center;
+				font-size: 24px;
+			}
+		}
+
+		.logo {
+			font-size: 36px;
+			padding-top: 15px;
+		}
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.form-horizontal .control-label.sign_label {
+		display:inline-block;
+		width: 30%;
+		text-align: center;
+	}
+
+	.main_header.home_page_header {
+		.logo {
+			margin-right: 100px;
+		}
+	}
+
+	.sign_text_input {
+		width: 150px;
+	}
+
+	.sign_controls {
+		display:inline-block;
+	}
+}

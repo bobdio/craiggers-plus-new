@@ -26,7 +26,7 @@
         .holder
           %label{ :for => 'location_input' } all locations
         .viewlist.closed
-        %input#location_input.input{ :autocomplete => 'off' }
+        %input#location_input.location_input.input{ :autocomplete => 'off' }
         .location.autocomplete
         .location-path
         -#.geolocate
@@ -36,7 +36,6 @@
           .container
             = render :partial => "shared/jeboom_jumbolocations"
         -#.hoverable find your location
-
       - if current_domain['name'] == 'craiggers'
         = render :partial => 'pages/search/search_filters'
 
@@ -61,8 +60,7 @@
             #sms-error.notification-setting.error
           %p
             %input#save-notification{:type => 'submit', :value => 'save'}
-      .clear
-
+      .clear  
   #price-range
     .text
       price range:
@@ -74,23 +72,25 @@
       $
       %input.max#max-price-range
     %span.reset.link clear
-    .static
-      - has_price
+    /
+      .static
+        - has_price
   -# #categoryspecfilters.filters
   -#   = render :partial => 'pages/search/filters'
-  = render :partial => 'pages/search/search_filters'
-  -##sourcesfilter.filter-dropdown
-  -#  .header
-  -#    .text sources
-  -#  .body
-  -#    .allnone
-  -#      .all select all
-  -#      .none clear
-  -#    .allcount
-  -#      %span.allcountname all sources
-  -#      %span.count.allcountnumber
-  -#    .results
-  -#    .seemore see more...
+  = render :partial => 'pages/search/search_filters'  
+  #sourcesfilter.filter-dropdown
+    .header
+      .text sources
+    .loader  
+    .body
+      .allnone
+        .all select all
+        .none clear
+      .allcount
+        %span.allcountname all sources
+        %span.count.allcountnumber
+      .results
+      .seemore see more...
   -##categoryfilter.filter-dropdown
   -#  .header
   -#    .text categories
@@ -143,10 +143,10 @@
     .body
       %input.distance{style: 'float:left; margin: 1px; width:75px;'}
       %select.dimension
-        %option{value: 'ft'} feet.
-        %option{value: 'm'} meters.
-        %option{value: 'mi'} miles.
-        %option{selected: 'selected', value: 'km'}kilometers.
+        -#%option{value: 'ft'} feet.
+        -#%option{value: 'm'} meters.
+        %option{selected: 'selected', value: 'mi'} miles
+        %option{value: 'km'}kilometers
   -#
   -#= render :partial => 'pages/search/status_filter'
   -#- if current_domain['name'] == 'craiggers'

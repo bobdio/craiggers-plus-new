@@ -1,40 +1,31 @@
 #annotations_block.static
-  .compensation{style: 'display:none'}
-    %input{name: 'compensation', type: 'checkbox', value: 'pay'}
-    compensation
+  .bedrooms.field-block{style: 'display:none'}
+    %label.posting-field-label Bedrooms:
+    = select_tag 'bedrooms', options_for_select((1..20).to_a.map {|num| num.to_s + 'br'}), style: 'width:60px;'
 
-  .partTime{style: 'display:none'}
-    %input{name: 'partTime', type: 'checkbox', value: 'YES'}
-    part-time
+  .start_year.field-block{style: 'display:none; float:left;'}
+    %label.posting-field-label Year:
+    = select_tag 'start_year', options_for_select((1900..2013).to_a), style: 'width:60px;'
+    &nbsp;    
+  .end_year.field-block{style: 'display:none; float:left;'}    
+    = select_tag 'end_year', options_for_select((1900..2013).to_a), style: 'width:60px;'
 
-  - %w(cats dogs telecommute contract internship nonprofit).each do |type|
-    %div{class: type, style: 'display:none'}
-      %input{name: type, type: 'checkbox', value: 'YES'}
-      #{type}
+  .age.field-block{style: 'display:none'}
+    %label.posting-field-label Age:
+    = select_tag 'age', options_for_select((7..90).to_a), style: 'width:60px;'
 
-  .bedrooms{style: 'display:none'}
-    %select{name: "bedrooms", style: 'width: 60px'}
-      %option
-      - (1..20).each do |i|
-        %option{value: "#{i}br"} #{i}br
-    bedrooms
+  .sex.field-block{style: 'display:none'}
+    %label.posting-field-label Sex:
+    = select_tag 'sex', options_for_select(['Male', 'Female']), style: 'width:60px;'
 
-  .year{style: 'display:none'}
-    %select{name: "year", style: 'width: 60px'}
-      %option
-      - (1900..2013).each do |i|
-        %option{value: i} #{i}
-    year
+  -# vin was here!
+  - %w(phone sqft make model personal_flavor compensation).each do |type|
+    %div.field-block{class: type, style: 'display:none'}
+      %label.posting-field-label #{type.capitalize}:
+      %input{name: type, type: 'text'}
 
-  .age{style: 'display:none'}
-    %select{name: 'age',  style: 'width: 60px'}
-      %option
-      - (7..90).each do |age|
-        %option{value: age}
-          = age
-    age
-
-  - %w(sqft make model vin personal_flavor).each do |type|
-    %div{class: type, style: 'display:none'}
-      #{type}
-      %input{name: type}
+  - %w(partTime cats dogs telecommute contract internship nonprofit scheduling).each do |type|
+    %div.field-block{class: type, style: 'display:none'}
+      %label.posting-field-label #{handle_annotations_with_custom_label(type).capitalize}:
+      = check_box_tag type, 'YES'
+.ac_results

@@ -38,15 +38,15 @@ Craiggers.Pages = {
 
     if ( $('#searchbar').is(':visible') ) {
       // landing page
-      $('.signinout').css('width', '160px')
+      //$('.signinout').css('width', '160px')
     } else {
       // results page
-      $('.signinout').css('width', 160 - scrollbarWidth() + 'px')
+      //$('.signinout').css('width', 160 - scrollbarWidth() + 'px')
     }
 
     function scrollbarWidth() {
-      var div = $('<div style="height:50px;position:absolute;top:-200px;left:-200px;"><div></div></div>'); 
-      // Append our div, do our calculation and then remove it 
+      var div = $('<div style="height:50px;position:absolute;top:-200px;left:-200px;"><div></div></div>');
+      // Append our div, do our calculation and then remove it
       $('body').append(div);
       div.css('overflow', 'scroll');
       div.css('width', '50px');
@@ -69,6 +69,8 @@ Craiggers.Pages = {
       this.advanced = false
 
       Craiggers.Pages.clear();
+      $('#content #container').show()
+      $('#explore-iframe').remove()
       $('.input').val('').blur();
       $('.location-path').html('');
       Craiggers.Search = new Craiggers.Models.Search();
@@ -77,6 +79,7 @@ Craiggers.Pages = {
       $('#navbar').show().removeClass('search posting').addClass('root');
       this.el.show();
       Craiggers.Pages.setSigninoutPosition();
+      $('.metrics_container').show()
       $('#searchbar').find('.query .input').focus();
     },
 
@@ -137,7 +140,7 @@ Craiggers.Pages = {
       $.ajax({
         url: BASE_URL + '/search?sourceId=' + this.postkey + '&' + AUTH_TOKEN,
         dataType: 'jsonp',
-        success: function(data, textStatus, jqXHR) {
+        success: function(data) {
           if ( data.code ) {
             el.html(data.message);
             return;

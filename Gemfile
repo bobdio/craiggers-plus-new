@@ -8,18 +8,24 @@ gem 'rails', '3.2.9'
 gem 'fusion_tables'
 
 gem 'pg'
+gem 'passenger'
 
 gem 'google-api-client'
+
+gem 'whenever'
+gem 'mobile-fu'
 
 #gem 'resque', :require => 'resque/server'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
+  gem 'memcache-client'
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem 'jquery-ui-rails'
   gem 'handlebars_assets'
+  gem 'jquery-fileupload-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
@@ -33,7 +39,7 @@ gem 'haml-rails'
 
 group :development, :test do
   gem 'awesome_print'
-#  gem 'debugger'
+  gem 'pry'
 end
 
 group :development do

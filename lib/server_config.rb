@@ -7,5 +7,9 @@ class ServerConfig
     def user_api
       config["user_api"][::Rails.env]
     end
+
+    def notification_api
+      config["notification_api"][::Rails.env]
+    end
   end
 end

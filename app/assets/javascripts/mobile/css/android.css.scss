@@ -1,0 +1,43 @@
+#content.android {
+	#save_search .clear_input_button {
+		right: -43px;
+	}
+
+	#location_menu {
+		.clear_input_button {
+			right: 2px;
+		}
+
+		.location_container {
+			padding-right: 44px;
+		}
+	}
+
+	#refine_search {
+		.search_bar {
+			padding-right: 55px;
+		}
+
+		.clear_input_button {
+			right: -42px;
+		}
+	}
+
+	.input_with_clear_button, #searchbar_query_input.input_with_clear_button {
+		height: 32px;
+	}
+
+	#main {
+		.search_bar {
+			padding-right: 51px;
+		}
+
+		#search_button {
+			right: 5px;
+		}
+	}
+
+	.input_items_container #clear_location_button {
+		right: -43px;
+	}
+}

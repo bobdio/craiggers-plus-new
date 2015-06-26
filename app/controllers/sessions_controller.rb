@@ -53,7 +53,7 @@ class SessionsController < ApplicationController
     if session[:savedsearches].present?
       session[:savedsearches].each do |s|
         search = SavedSearch.find(s)
-        self.current_user.save_search(JSON.parse(search.json))
+        SavedSearch.create(username: current_user.username, json: JSON.parse(search.json))
         search.destroy
       end
       session[:savedsearches] = nil

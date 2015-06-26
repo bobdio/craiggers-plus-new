@@ -1,6 +1,6 @@
 .ui-widget-header {
   border: 1px solid #e78f08;
-  background-color: #cc3300;
+  background-color: #251F1B;
   color: white;
   font-weight: bold;
   font-family: sans-serif; }
@@ -10,7 +10,7 @@
   background: url(image_path('logos/jeboom-small.png')); }
 
 .beta {
-  color: #CC6600;
+  color: #C60;
   display: inline-block;
   vertical-align: top;
   margin-top: 10px;
@@ -30,12 +30,12 @@
 }
 
 #popup-dialog .content {
-  border-color: #cc3300; }
+  border-color: #251F1B; }
 
 #notifysave {
-  border-color: #cc3300; }
+  border-color: #251F1B; }
   #notifysave:before {
-    border-right-color: #cc3300; }
+    border-right-color: #251F1B; }
 
 #treemap-link {
   display: none; }
@@ -44,13 +44,13 @@
   display: none; }
 
 #root .tagline {
-  color: #cc3300; }
+  color: #251F1B; }
 
 .mainnav .navlink.active {
-  color: #cc3300 !important; }
+  color: #251F1B !important; }
 
 #sublinks .active {
-  color: #cc3300; }
+  color: #251F1B; }
 
 #searchcolumn .form .location .autocomplete {
   display: none; }
@@ -63,13 +63,13 @@
   width: 14px; }
 
 .button {
-  background-color: #cc3300;
-  background-image: -moz-linear-gradient(top, #ee7711 0%, #dd5500 13%, #cc3300 80%, #bb2211 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ee7711), color-stop(0.13, #dd5500), color-stop(0.8, #cc3300), color-stop(1, #bb2211));
-  background-image: linear-gradient(top, #ee7711 0%, #dd5500 13%, #cc3300 80%, #bb2211 100%); }
+  background-color: #251F1B;
+  background-image: -moz-linear-gradient(top, #696969 0%, #776F6C 13%, #251F1B 80%, #634F3F 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #696969), color-stop(0.13, #776F6C), color-stop(0.8, #251F1B), color-stop(1, #634F3F));
+  background-image: linear-gradient(top, #696969 0%, #776F6C 13%, #251F1B 80%, #634F3F 100%); }
 
 .posting-image-viewer .minis .mini.selected {
-  border-color: #cc3300; }
+  border-color: #251F1B; }
 
 /*==================================================== */
 /* SEARCH BAR */
@@ -89,9 +89,9 @@
     width: 14px; }
 
 .searchcontainer .input:focus {
-  border: 1px solid #cc3300; }
+  border: 1px solid #251F1B; }
 .searchcontainer .geolocate {
-  color: #cc3300; }
+  color: #251F1B; }
 .searchcontainer .location .geolocate {
   cursor: pointer;
   height: 14px;
@@ -147,7 +147,7 @@
       background: white;
       color: purple; }
 .searchcontainer .location-path {
-  color: #cc3300; }
+  color: #251F1B; }
   .searchcontainer .location-path .context-link {
     margin-left: 10px;
     font-size: 11px; }
@@ -177,7 +177,7 @@
   background: url(image_path('crosshair-purple.png')) no-repeat 3px 2px !important; }
 
 #drawer-button {
-  color: #cc3300; }
+  color: #251F1B; }
 
 /*==================================================== */
 /* END SEARCH BAR */
@@ -185,7 +185,7 @@
 #postings .posting .owner {
   visibility: hidden; }
 #postings .newmatches {
-  color: #cc3300;
+  color: #251F1B;
   background: #ff794c; }
 
 #locationfilter .body .allnone {
@@ -201,4 +201,211 @@
   margin-bottom: 4px; }
 
 #detail .header .email {
-  color: #cc3300; }
+  color: #251F1B; }
+
+
+
+
+.error input[type=text], .error textarea{
+  border-color: red;
+}
+
+.error_message {
+  color: red;
+}
+
+.no-disp{
+  display: none!important;
+}
+
+/* aim menu for locations */
+
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 20px;
+  color: #333333;
+  white-space: nowrap;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #0081c2;
+  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-repeat: repeat-x;
+  outline: 0;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1010;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  white-space: normal;
+  background-color: #ffffff;
+  border: solid #251F1B 2px;
+  -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+            border-radius: 10px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border: solid #251F1B 2px;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 10px;
+     -moz-border-radius: 10px;
+          border-radius: 10px;
+  -webkit-box-shadow: 0 0 50px #444444;
+     -moz-box-shadow: 0 0 50px #444444;
+          box-shadow: 0 0 50px #444444;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+#searchcolumn .category .jumbolist .popover, 
+#searchbar .category .jumbolist .popover {
+  width: 160px;
+  -webkit-border-top-left-radius: 0px;
+  border-top-left-radius: 0px;
+  overflow: visible;
+  padding: 10px;
+  min-width: 180px;
+  max-width: 520px;
+  padding-top: 8px;
+  padding-bottom: 1px;
+    -webkit-box-shadow: 6px 7px 20px 0px #C0BEBE;
+       -moz-box-shadow: 6px 7px 20px 0px #C0BEBE;
+            box-shadow: 6px 7px 20px 0px #C0BEBE;
+  
+}
+
+#searchcolumn .category .jumbolist .popover-content, 
+#searchbar .category .jumbolist .popover-content {
+  text-align: center;
+}
+
+#searchcolumn .category .jumbolist .popover-content img, 
+#searchbar .category .jumbolist .popover-content img {
+  height: 212px;
+  max-width: 250px;
+}
+
+#searchcolumn .category .jumbolist .dropdown-menu, 
+#searchbar .category .jumbolist .dropdown-menu {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  min-width: 140px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#searchbar .category .jumbolist .dropdown-menu {
+  top: -280px;
+  left: 0px;
+}
+
+#searchcolumn .category .jumbolist .dropdown-menu   li, 
+#searchbar .category .jumbolist .dropdown-menu   li {
+  margin-left: 10px;
+}
+
+#searchcolumn .category .jumbolist .dropdown-menu li.first_category{margin-left: 0px;};
+
+#searchcolumn .category .jumbolist .dropdown-menu   li   a:hover, 
+#searchbar .category .jumbolist .dropdown-menu   li   a:hover {
+  background-image: none;
+  color: white;
+  background-color: rgb(0, 129, 194);
+  background-color: rgba(0, 129, 194, 0.5);
+}
+
+#searchcolumn .category .jumbolist .dropdown-menu   li   a.maintainHover, 
+#searchbar .category .jumbolist .dropdown-menu   li   a.maintainHover {
+  color: white;
+  background-color: #0081C2;
+} 
+
+#searchcolumn .category .jumbolist,
+#searchbar .category .jumbolist{
+  overflow: visible !important;
+  height: auto;
+  border: none;
+}
+
+#searchcolumn .category .more_menu_results,
+#searchcolumn .category .less_menu_results,
+#searchbar .category .more_menu_results,
+#searchbar .category .less_menu_results {
+  &:hover { color: #d84b00; }
+  background: none;
+  color: #3f3f3f;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: normal;
+  height: 12px;
+  margin-top: 8px;
+  margin-bottom: 3px;
+  padding: 2px 2px 4px 2px;
+  //text-align: center;
+}
+
+#searchcolumn .category .jumbolist .selectable.primary,
+#searchbar .category .jumbolist .selectable.primary {
+  //border-bottom: 1px #fad7cb solid;
+  font-size: 12px;
+  padding: 2px 2px 5px 2px;
+}
+
+#searchcolumn .category .jumbolist .primary:last-child,
+#searchbar .category .jumbolist .primary:last-child {
+  border: none;
+}
+
+#searchcolumn .category .jumbolist .selectable,
+#searchbar .category .jumbolist .selectable {
+  &:hover { color: #d84b00; }
+  color: #3f3f3f;
+  cursor: pointer;
+  margin-bottom: 2px;
+  padding: 2px 2px 7px 2px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font-weight: normal;
+}
+
+#currentsearch .filter-dropdown .filters .ac_results {
+  border: none;
+}

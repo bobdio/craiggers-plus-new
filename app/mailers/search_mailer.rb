@@ -14,6 +14,13 @@ class SearchMailer < ActionMailer::Base
     @headings = options['headings']
     mail :to => options['email'],
          :from => 'no-reply@jeboom.com',
-         :subject => "Your jeboom.com '#{@name}' search has new postings"
+         :subject => "JeBoom! New matches for '#{@name}'"
+  end
+
+  def notify_about_no_new_postings(source)
+    @source = source
+    mail :to => ['mnakamura@3taps.com'], 
+         :from => 'no-reply@jeboom.com', 
+         :subject => "no new postings from #{source}"
   end
 end

@@ -73,6 +73,8 @@ Craiggers.Pages.Treemap = Backbone.View.extend({
     Craiggers.Search.set({
       url: $(e.currentTarget).attr('href').replace('http://craiggers.com/#', '')
     });
+    Craiggers.Search.set(SINGLE_SEARCH_DEFAULT_CONFIG)
+      Craiggers.Search.set({ type_of_search: 'new_search' })
     Craiggers.Search.submit();
   }
 

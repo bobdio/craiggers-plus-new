@@ -1,11 +1,13 @@
 class Location < ActiveRecord::Base
-  scope :asc, order("locations.name asc")
-  scope :dsc, order("locations.name desc")
+  scope :asc, order("locations.full_name asc")
+  scope :dsc, order("locations.full_name desc")
   scope :countries, where(level: 'country')
 
   belongs_to :parent, foreign_key: "parent_id", class_name: "Location"
   has_many :children, foreign_key: "parent_id", class_name: "Location"
-
+  has_many :postings
+  
+  attr_accessor :country, :state, :metro, :region, :county, :city, :locality, :zipcode
   # NOTE: exampel:
   # def country
   #   Location.expand(code)[-1]
@@ -46,5 +48,13 @@ class Location < ActiveRecord::Base
       end
       data
     end
+  end
+
+  def next_level
+    levels = %w(country state metro county city locality)
+    levels.each_with_index do |arr_level, index| 
+      return levels[index+1] if level == arr_level
+    end
+    nil
   end
 end

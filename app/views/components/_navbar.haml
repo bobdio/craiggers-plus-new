@@ -6,11 +6,21 @@
       %a{ :href => 'javascript:void(null)', :onclick=>"window.location = '/#!/';" }
     #version
       = version_number
-    %a.skip{ :href => 'javascript:void(null)' } skip this page
+    .metrics_container{style: 'float:left; margin-top:15px; margin-left:12px;display:none;'}
+      - @sources.map(&:code).each do |source_code|
+        .source_container{style: 'display:inline;', code: source_code}
+          .source_code{style: 'display:inline;color:white; margin-left: 10px; font-weight:bold;'} #{source_code}: 
+          .source_last_posting_ago{style: 'display:inline;'} loading...
+          .source_num_matches{style: 'display:inline;'}
+      .source_total_container{style: 'display:inline;'}
+        .source_total{style: 'display:inline;color:white; margin-left: 10px; font-weight:bold;'} TOTAL:
+        .source_total_num_matches{style: 'display:inline;'} loading...  
+    /%a.skip{ :href => 'javascript:void(null)' } skip this page
     #header.header
       .mainnav
         .navlink.active#search-link search
         .navlink#favorites-link favorites
+        .navlink#explore-link explore
 
       #sublinks{ style: 'display: none' }
         %span.subnavlink.active#workspace-link workspace
@@ -20,3 +30,4 @@
           %span.subnavlink#datamap-link datamap
 
     = render :partial => 'shared/signinout'
+

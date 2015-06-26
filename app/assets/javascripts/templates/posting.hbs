@@ -4,13 +4,19 @@
 </div>
 {{/if}}
 <div class="content">
-    {{#if price}}
-    <div class="price">${{ price }}</div>
+    {{#if formated_price}}
+    <div class="price">${{ formated_price }}</div>
     {{/if}}
     <div class="heading">{{{ heading }}}</div>
+    <div class="path">
+        {{#if promoted }}
+            <span style='color:orange;'>PROMOTED</span>
+        {{/if}}
+        {{ source_full_name }}
+    </div>
     <div class="path"> {{#if parent_cat_name}} {{parent_cat_name}} > {{/if}}{{ category_name }}</div>
     <div class="path location-path_"></div>
-    <div class="timestamp">{{#if timeago}}{{ timeago }}{{/if}}</div>
+    <div class="timestamp">{{#if timeago}}{{#unless promoted}}{{ timeago }}{{/unless}}{{/if}}</div>
     <div class="utc"> {{ timestamp }}</div>
     {{#if favorited}}
     <div class="favorite favorited">

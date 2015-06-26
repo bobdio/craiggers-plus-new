@@ -1,0 +1,35 @@
+#results  
+  #results_scroller
+    #header_scroller
+      .search_bar
+        .query.wrapper
+          %form#search_form
+            %label
+              #searchbar_query_input
+            %label
+              #search_filters
+        #search_tags
+      #search_button.search_button.header_button
+        .glass_icon.icon_image
+      #save_search_button.header_button
+        .save_search_icon.icon_image
+    #postings_scroller
+      #postings_container
+        .search_metrics
+        #top_progress_bar.progress_bar
+        #accordion.accordion
+        .load_more_results_container
+          #load_more_results Load more results
+        #bottom_progress_bar.progress_bar
+#contact_modal.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+  %form#contact_form.form-horizontal
+    .modal-header
+      %button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+      %h3 Contact
+    .modal-body
+      .email
+        %a#email{ :target => "_self"}
+      .phone
+        %a#phone{ :target => "_self"}
+
+          

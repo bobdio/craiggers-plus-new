@@ -1,0 +1,56 @@
+#sources_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#clear_all.refine_menu_header_button{ :data => "sources_count_holder"}
+			.button_label Clear All
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title Sources
+	#sources_count_holder.count_items_holder
+		#sources_count.items_count
+			%td.sources_count_td
+				#sources_wrapper
+					%table
+#categories_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#clear_all.refine_menu_header_button{ :data => "categories_count_holder"}
+			.button_label Clear All
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title Categories
+	#categories_count_holder.count_items_holder
+		#categories_count.items_count
+			%td.categories_count_td
+				#categories_wrapper
+					%table
+#status_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#clear_all.refine_menu_header_button{ :data => "status_count_holder"}
+			.button_label Clear All
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title Status
+	#status_count_holder.count_items_holder
+		#status_count.items_count
+			%td.sources_count_td
+				#status_wrapper
+					%table
+#price_range_menu.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#clear_all.refine_menu_header_button{ :data => "price_range_holder"}
+			.button_label Clear All
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title Price Range
+	#price_range_holder.count_items_holder
+		.price_range_container
+			.price_range_label
+				%span.from from
+				%span.dollar_label $
+			.price_range
+				%input#min-price-range.min_input{:placeholder => "min"}
+		.price_range_container
+			.price_range_label
+				%span.to to
+				%span.dollar_label $
+			.price_range
+				%input#max-price-range.min_input{:placeholder => "max"}

@@ -1,0 +1,11 @@
+#favorites.page_with_top_menu.top_menu_page
+	#header.global_header
+		#subpage_header_back_button
+			< Back
+		.title
+			Favorites
+	.favorites_metrics
+	.expired_favorites
+	#accordion.accordion
+	.load_more_results_container
+		#load_more_results Load more favorites

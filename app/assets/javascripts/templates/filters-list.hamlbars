@@ -1,6 +1,4 @@
-{{#if items}}
-{{#each items}}
-{{#with this}}
+{{#items}}
 .result
   .selector
     {{#if selected}}
@@ -11,6 +9,4 @@
   .name {{name}}
   .count{ :class => '{{code}}' } {{count}}
   .code {{code}}
-{{/with}}
-{{/each}}
-{{/if}}
+{{/items}}

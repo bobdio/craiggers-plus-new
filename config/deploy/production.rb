@@ -1,8 +1,9 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
+require "whenever/capistrano"
 
 server "174.142.68.176", :web, :app, :db, primary: true
-
+set :whenever_command, "bundle exec whenever"
 set :rails_env, 'production'
 set :application, "jeboom"
 set :deploy_to, "/home/jeboom/#{application}"
@@ -33,6 +34,8 @@ namespace :deploy do
   task :symlink_shared do
     run "ln -nfs #{shared_path}/version.txt #{release_path}/version.txt"
     run "cd #{release_path} && bundle exec rake assets:clean RAILS_ENV=#{rails_env}"
+    run "cd #{release_path} && bundle exec rake reinitiate_sources RAILS_ENV=#{rails_env}"
+    run "cd #{release_path} && bundle exec rake craiggers:generate:categories RAILS_ENV=#{rails_env}"
     #run "echo 'var BASE_URL = \"http://api6.3taps.com\"' > #{release_path}/app/assets/javascripts/base_url.js"
   end
   task :restart do

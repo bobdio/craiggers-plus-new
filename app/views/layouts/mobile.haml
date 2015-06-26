@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %title= current_domain['title']
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=UTF-8' }
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"}
+    %meta{ :name => "apple-mobile-web-app-capable", :content => "yes"}
+    = stylesheet_link_tag    "mobile"
+    = javascript_include_tag "mobile"
+    = csrf_meta_tag
+    %link{:href => "/assets/jeboom-icon.png", :rel => "shortcut icon", :type => "image/vnd.microsoft.icon"}
+  %body
+    #cached
+    #content
+    #unsupported_browser.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+      .modal-header
+        %button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+        %h3 Unsupported browser
+      .modal-body
+        .control-group
+          You are using unsupported browser or private mode of Safari browser. This website is optimized for Google Chrome and Safari browsers. You can continue to use your current browser for browsing website, but for better UX please switch to supported browser and disable private mode of Safari browser.
+        %button#continue_btn.btn.btn-inverse{:type => "button"} Continue
+      = yield

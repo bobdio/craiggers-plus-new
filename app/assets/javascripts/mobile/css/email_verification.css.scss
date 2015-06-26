@@ -1,0 +1,16 @@
+#email_verification {
+	#body {
+		text-align: center;
+		div {
+			margin-top: 10px;
+		}
+
+		#error_messages_container {
+			color : red;
+		}
+
+		#token_input {
+			height: 30px;
+		}
+	}
+}

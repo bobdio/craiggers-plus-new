@@ -2,10 +2,12 @@
   .signin
     -# TODO: move click handlers to js
           
-    %span#sign_up_link.header-link{ :onclick => 'new Craiggers.Views.Dialog("sign_up");' } sign up
+    %span#sign_up_link.header-link{ onclick: 'new Craiggers.Views.Dialog("sign_up");' } sign up
     \|
-    %span#sign_in_link.header-link{ :onclick => 'new Craiggers.Views.Dialog("sign_in");' } sign in
+    %span#sign_in_link.header-link{ onclick: 'new Craiggers.Views.Dialog("sign_in");' } sign in
   .signedin
+    .create_new_posting{ onclick: 'Craiggers.Views.NavBar.prototype.showPostingForm();' }
+      post
     .photo
       %img
     .hoverable
@@ -14,14 +16,17 @@
       .dropdown
         .field.right
           = link_to 'sign out', signout_path
+        .field.right
+          = link_to 'manage postings', 'javascript: Craiggers.Views.NavBar.prototype.showMyPostings();', id: 'manage_postings_link'
         -#.field.right
           -#= link_to 'profile', {:controller => :profile, :action => :index}
         -#.field.right.admin_settings
           -#= link_to 'settings', {:controller => :settings, :action => :index}
-        -#.field
-          -#%label
-            -#%input.safe{ :type => 'checkbox', :checked => 'true' }
-            -#safe search
+        /   
+          .field
+            %label
+              %input.safe{ :type => 'checkbox', :checked => 'true' }
+              safe search
         -#.field.right
           -#= link_to 'help', '/help'
 
