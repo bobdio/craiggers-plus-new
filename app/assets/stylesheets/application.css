@@ -16,9 +16,13 @@
  *= require jquery.autocomplete
  *= require fancybox/jquery.fancybox-1.3.4
  *= require 3taps
+ *= require local_posting
+ *= require tablet
  *= require jquery.ui.core
  *= require jquery.ui.theme
  *= require jquery.ui.datepicker
+ *= require jquery.crop
+ *= require bootstrap
  *
  *= require datamap
  *= require jeboom

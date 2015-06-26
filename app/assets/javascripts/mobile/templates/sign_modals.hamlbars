@@ -1,0 +1,57 @@
+#sign_up_modal.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+	.modal-header
+		%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+		%h3 Sign Up
+	.modal-body.sign_modal
+
+		%form#sign_up_form.form-horizontal
+			.control-group
+				.user_name_container
+					%label.control-label.sign_label{:for => "username"} username
+					.controls.sign_controls
+						%input#username.sign_text_input{:type => "text", :placeholder => "username"}
+				.password_container
+					%label.control-label.sign_label{:for => "password"} password
+					.controls.sign_controls
+						%input#password.sign_text_input{:type => "password", :placeholder => "password"}	
+			.control-group
+				.email_container
+					%label.control-label.sign_label{:for => "email"} email address
+					.controls.sign_controls
+						%input#email.sign_text_input{:type => "text", :placeholder => "email"}
+			.control-group
+				.controls.terms_of_service			
+					%label
+						%input#terms.checkbox.sign_checkbox{:type => "checkbox"} I agree with
+						%a{:href => "/terms", :target => "new"} terms of service
+				.controls.sign_up_controls
+					%label
+						%button#sign_up_button.btn.btn-inverse Sign up
+			#errors_holder
+#sign_in_modal.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+	%form#sign_in_form.form-horizontal
+		.modal-header
+			%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+			%h3 Sign In
+		.modal-body
+			.control-group
+				%label.control-label.sign_label{:for => "username"} username
+				.controls.sign_controls
+					%input#username.sign_text_input{:type => "text", :placeholder => "username"}
+			.control-group
+				%label.control-label.sign_label{:for => "password"} password
+				.controls.sign_controls
+					%input#password.sign_text_input{:type => "password", :placeholder => "password"}
+			.control-group
+				.controls.sign_controls
+					%button.btn.btn-inverse{:type => "submit"} Sign in
+			#errors_holder
+#success_sign_up_dialog.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "myModalLabel", :"aria-hidden" => "true"}
+	.modal-header
+		%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+		%h3 Success
+	.modal-body
+		Thank you for signing up. You can now subscribe to notifications.</br></br>
+		We sent a message to your email address so please make sure to verify your account to receive notifications.</br>
+		.sign_up_dialog_buttons
+			%button#ok_btn.btn.btn-inverse{:type => "button"} Ok

@@ -23,7 +23,7 @@ class TapsConnector
 
     def summary(search, dimension)
       params = "dimension=#{dimension}"
-      params << params_for_search(search)      
+      params << params_for_search(search)
       connect("/summary", params)
     end
 
@@ -47,15 +47,15 @@ class TapsConnector
     end
 
     def categories
-      connect('reference/categories?authToken=c9e6638a4d2db53f3a50200290ae1b65')
+      connect_reference("categories?auth_token=52583033c5aa2786f93ea4d862b74120")
     end
 
     def location_list(level, level2, code)
-      connect_api3("reference/locations?level=#{level}&#{level2}=#{code}&authToken=c9e6638a4d2db53f3a50200290ae1b65")
+      connect_reference("locations?level=#{level}&#{level2}=#{code}&auth_token=52583033c5aa2786f93ea4d862b74120")
     end
 
     def location_details(code)
-      connect("reference/locations/#{code}&authToken=c9e6638a4d2db53f3a50200290ae1b65")
+      connect("locations/#{code}&auth_token=52583033c5aa2786f93ea4d862b74120")
     end
 
     def sources
@@ -101,7 +101,7 @@ class TapsConnector
       params << "&city=#{CGI.escape(search['city'])}" if search['city'].present?
       params
     end
-    
+
 
     def connect_post(path, params = nil)
       p "POST---------------------------------------------- http://www.3taps.net/#{path}?#{params}"
@@ -114,12 +114,14 @@ class TapsConnector
     end
 
     def connect(path, params = nil)
-      address = params.present? ? path + '?' + params : path
+      address = params.present? ? path + '?auth_token=52583033c5aa2786f93ea4d862b74120&' + params : path
       ::Rails.logger.error address
-      p "GET---------------------------------------------- http://search.3taps.com/#{address}"
+      base_url = "http://search.3taps.com"
+      base_url = 'http://search.3taps.com' if Rails.env == 'dev'
+      p "GET---------------------------------------------- #{base_url}#{address}"
       #curl = Curl::Easy.new("http://www.3taps.net/#{address}")
       begin
-        response = RestClient.get("http://search.3taps.com/#{address}")
+        response = RestClient.get("#{base_url}/#{address}")
         #curl.perform
       rescue
         "Some Error with Request."
@@ -128,12 +130,12 @@ class TapsConnector
       response
     end
 
-    def connect_api3(path, params = nil)
+    def connect_reference(path, params = nil)
       address = params.present? ? path + '?' + params : path
       ::Rails.logger.error address
-      p "GET--- http://api3.3taps.com/#{address}"
+      p "GET--- http://reference.3taps.com/#{address}"
       begin
-        response = RestClient.get("http://api3.3taps.com/#{address}")
+        response = RestClient.get("http://reference.3taps.com/#{address}")
       rescue
         "Some Error with Request."
       end

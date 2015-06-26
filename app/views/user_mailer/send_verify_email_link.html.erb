@@ -1,0 +1,7 @@
+<p>Hi <strong><%= @user %></strong>,</p>
+<p>To verify your email, click on this link:
+  <% if @mobile_link %>
+      <%= link_to "verify your email", url_for(:only_path => false, controller: 'mobile', anchor: 'verify_email') %></p>
+      <% else %>
+      <%= link_to "verify your email", url_for(:only_path => false, controller: 'user', action: 'activate_email', secure_hash: @secure_hash) %></p>
+      <% end %>

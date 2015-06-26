@@ -1,0 +1,34 @@
+#top_menu
+  .top_menu_container
+    .buttons_row
+      
+      .favorites.top_menu_button
+        .favorite_star.unfavorite_star
+        .favorite_link
+          %a Favorites
+      .saved_searches.top_menu_button
+        .save_search_icon.icon_image
+        .saved_search
+          %a Saved Searches
+      #log_in.top_menu_button
+        .button_image
+          .contact_button_image.icon_image
+        .button_label
+          Log In
+      #log_out.top_menu_button
+        .button_image
+        .button_label
+          Log Out
+    .buttons_row
+      #list_view_button.top_menu_button.view_button
+        .button_image
+          .list_view_icon.icon_image
+        .button_label
+          List View
+      #photo_view_button.top_menu_button.view_button
+        .button_image
+          .has_image_icon.icon_image
+        .button_label
+          Photo View
+  #top_menu_activation_button
+    .open_button

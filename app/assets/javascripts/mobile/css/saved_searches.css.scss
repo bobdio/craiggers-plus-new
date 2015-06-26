@@ -1,0 +1,41 @@
+#saved_searches {
+
+	i.icon-remove {
+		background-image: url("/assets/glyphicons-halflings.png");
+		pointer-events: none;
+	}
+
+	.saved_searches_container {
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		.saved_search_container {
+			margin-bottom: 10px;
+			border-bottom: 1px solid #cccccc;
+			cursor: pointer;
+
+			.remove {
+				float: right;
+				width: 20px;
+
+				img {
+					width: 20px;
+					pointer-events: none;
+				}
+			}
+
+			.saved_search_name {
+				font-weight: bold;
+				color: black;
+				pointer-events: none;
+			}
+
+			.saved_search_category, .saved_search_location {
+				color: #444141;
+				pointer-events: none;	
+			}
+			
+		}
+	}
+}

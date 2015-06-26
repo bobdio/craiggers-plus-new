@@ -3,7 +3,7 @@ html {
 
 body {
   font-family: sans-serif;
-  font-size: 13px;
+  font-size: 0.813em;
   height: 100%; }
 
 .ac_results_cat {
@@ -15,7 +15,7 @@ body {
     cursor: default;
     display: block;
     font: menu;
-    font-size: 12px;
+    font-size: 0.750em;
     line-height: 16px;
     overflow: hidden; }
     .ac_results_cat ul li:nth-child(odd) {
@@ -39,7 +39,7 @@ body {
     cursor: default;
     display: block;
     font: menu;
-    font-size: 12px;
+    font-size: 0.750em;
     line-height: 16px;
     overflow: hidden; }
     .ac_results_loc ul li:hover {
@@ -74,7 +74,7 @@ a {
 .link {
   color: #0000ee;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 0.688em;
   text-decoration: underline; }
 
 .tip {
@@ -132,13 +132,13 @@ a {
       margin-top: 5px;
       width: 117px; }
   #navbar .skip {
-    padding: 11px 20px;
+    padding: 13px 20px;
     display: none;
     float: left;
     color: white;
     cursor: pointer;
     text-decoration: none;
-    font-size: 13px; }
+    font-size: 1em; }
   #navbar .header {
     color: white;
     height: 38px;
@@ -158,10 +158,10 @@ a {
       background: #dddddd; }
 
 .signinout {
-  font-size: 13px;
+  font-size: 1em;
   color: white;
   text-align: right;
-  width: 160px;
+  width: 225px;
   float: right; }
   .signinout .header-link {
     color: #737373;
@@ -169,7 +169,7 @@ a {
   .signinout a {
     color: #737373; }
   .signinout .signin {
-    margin-top: 12px;
+    padding: 13px 0;
     margin-right: 30px;
     float: left; }
     .signinout .signin #sign_up_link {
@@ -177,6 +177,15 @@ a {
     .signinout .signin #sign_in_link {
       color: white; }
   .signinout .signedin {
+    a { text-decoration: none; }
+    .create_new_posting {
+      color: #666;
+      cursor: pointer;
+      font-size: 1.3em;
+      padding: 8px 10px 9px;
+      float: left;
+      margin-right: 35px;
+    }
     margin-top: 4px;
     display: none; }
     .signinout .signedin .photo {
@@ -202,7 +211,7 @@ a {
       border-top: none;
       top: 38px;
       padding: 6px 0px;
-      margin-left: 40px;
+      right: 10px;
       display: none;
       position: absolute;
       color: #737373; }
@@ -268,7 +277,7 @@ a {
     padding: 10px;
     display: inline-block;
     position: relative;
-    font-size: 13px;
+    font-size: 0.813em;
     font-weight: bold;
     text-align: left; }
     #popup-dialog .content h2 {
@@ -295,7 +304,7 @@ a {
     padding-left: 3px; }
   #popup-dialog label {
     font-weight: normal;
-    font-size: 11px; }
+    font-size: 0.688em; }
   #popup-dialog .forgot {
     font-weight: normal;
     padding-left: 3px; }
@@ -304,6 +313,9 @@ a {
 
 #errors_holder {
   color: red; }
+
+#success_holder {
+  color: green; }
 
 #change_password_request_form .ok {
   display: none; }
@@ -322,7 +334,7 @@ a {
       border-radius: 6px;
       color: white;
       cursor: pointer;
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: bold;
       margin: 0px auto 2px;
       padding: 6px 0;
@@ -360,17 +372,17 @@ a {
     font-weight: bold; }
   #savedsearches .savedsearch .annos {
     color: #999999;
-    font-size: 11px; }
+    font-size: 0.688em; }
   #savedsearches .savedsearch .extras {
     width: 100%;
     color: #999999;
-    font-size: 10px;
+    font-size: 0.625em;
     margin-top: 10px; }
     #savedsearches .savedsearch .extras .notification {
       display: none; }
   #savedsearches .savedsearch .delete {
     color: #333333;
-    font-size: 9px;
+    font-size: 0.563em;
     cursor: pointer;
     float: right; }
   #savedsearches .savedsearch.selected {
@@ -409,7 +421,7 @@ a {
 #posting {
   max-width: 640px; }
   #posting .heading {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 20px; }
   #posting .publicdomain {
@@ -420,7 +432,7 @@ a {
     #posting .publicdomain .image {
       width: 120px; }
     #posting .publicdomain .disclaimer {
-      font-size: 11px; }
+      font-size: 0.688em; }
   #posting .poweredby3taps {
     text-align: center; }
   #posting .annotations {
@@ -428,10 +440,11 @@ a {
     text-transform: lowercase; }
     #posting .annotations .annotations_table {
       width: 100%; }
-    #posting .annotations .price {
+    #detail .price {
       float: right;
-      font-size: 24px;
-      font-weight: bold; }
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 10px; }
     #posting .annotations #rentvalet_div, #posting .annotations #rentvalet_iframe {
       float: right;
       text-align: right; }
@@ -473,7 +486,7 @@ a {
 
 .messageline {
   font-family: serif;
-  font-size: 23px;
+  font-size: 1.438em;
   text-align: center;
   color: #ea520b;
   position: static;
@@ -510,7 +523,7 @@ a {
       #root .root-wrapper .search_form_div .tagline {
         margin-top: 10px;
         font-family: serif;
-        font-size: 23px; }
+        font-size: 1.438em; }
   #root .background {
     background: #dddddd;
     bottom: 0px;
@@ -530,7 +543,7 @@ a {
     #root .footer .version {
       color: white;
       float: right;
-      font-size: 9px;
+      font-size: 0.563em;
       font-style: italic;
       padding-right: 4px;
       padding-top: 11px; }
@@ -540,10 +553,10 @@ a {
       padding-top: 6px; }
     #root .footer .links {
       color: white;
-      font-size: 11px;
+      font-size: 1em;
       padding-left: 10px;
-      padding-top: 11px;
-      padding-bottom: 12px; }
+      padding-top: 8px;
+      padding-bottom: 6px; }
       #root .footer .links .divider {
         display: inline; }
       #root .footer .links a {
@@ -593,7 +606,7 @@ a {
   padding: 6px 6px;
   text-align: center;
   font-family: sans-serif;
-  font-size: 11px;
+  font-size: 0.688em;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -605,7 +618,7 @@ a {
   min-width: 60px; }
 
 #dialog input {
-  font-size: 13px; }
+  font-size: 0.813em; }
 
 #searchcolumn {
   margin-bottom: 10px;
@@ -629,21 +642,21 @@ a {
     margin-top: 10px;
     margin-left: 8px; }
   #searchcolumn .form .buttons {
-    margin-top: 8px;
+    margin-top: 10px;
     padding: 0 10px;
     background: #aaaaaa;
-    height: 75px;
     width: 190px;
     position: relative;
-    left: -10px;
-    text-align: center; }
+    left: -10px; }
     #searchcolumn .form .buttons .button {
       padding: 6px;
       width: 160px;
       display: inline-block;
       font-family: sans-serif;
-      font-size: 11px;
-      text-align: center; }
+      font-size: 0.688em;
+      text-align: center;
+      margin-left: 8%;
+      margin-bottom: 10px; }
       #searchcolumn .form .buttons .button.search {
         margin-top: 8px;
         margin-bottom: 5px; }
@@ -727,16 +740,16 @@ a {
     color: #0000ee;
     cursor: pointer;
     margin-bottom: 2px;
-    padding-bottom: 1px; }
+    padding: 2px 2px 5px 2px; }
     .searchcontainer .category .jumbolist .selectable:hover {
       background: #eeeeee;
       color: purple; }
   .searchcontainer .category .jumbolist .selectable.primary {
     border-bottom: 1px solid #cccccc;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bold;
     margin-right: 0px;
-    padding-bottom: 3px; }
+    padding: 0px 0px 3px 0px }
     .searchcontainer .category .jumbolist .selectable.primary:hover {
       background: white;
       color: purple; }
@@ -750,7 +763,7 @@ a {
       width: 80px; }
 .searchcontainer .geolocate {
   cursor: pointer;
-  font-size: 11px;
+  font-size: 0.688em;
   margin-left: 8px; }
   .searchcontainer .geolocate img {
     float: left;
@@ -822,7 +835,7 @@ a {
     cursor: pointer;
     display: block;
     overflow: auto;
-    padding: 8px 0px;
+    padding: 0;
     position: relative; }
     #postings .posting .thumb {
       margin-right: 3px;
@@ -830,14 +843,16 @@ a {
       width: 60px;
       float: left;
       overflow: hidden;
-      text-align: center; }
+      text-align: center;
+      margin: 8px 0px 24px 0px; }
       #postings .posting .thumb img {
         max-height: 60px; }
     #postings .posting .price {
       float: right;
       margin-left: 10px; }
     #postings .posting .content {
-      margin-left: 63px; }
+      margin-left: 63px;
+      padding: 8px 0px 24px 0px; }
     #postings .posting .heading {
       margin-bottom: 2px;
       padding-right: 20px;
@@ -852,7 +867,7 @@ a {
       overflow: hidden; }
     #postings .posting .path, #postings .posting .timestamp, #postings .posting .favorite .text, #postings .posting .numcomments {
       color: #aaaaaa;
-      font-size: 11px;
+      font-size: 0.688em;
       text-decoration: none; }
     #postings .posting .timestamp, #postings .posting .favorite .text {
       text-transform: lowercase; }
@@ -928,7 +943,7 @@ a {
       display: inline; }
     #postings .numresults .expired {
       color: #999999;
-      font-size: 12px;
+      font-size: 0.750em;
       font-style: italic;
       margin-top: 4px; }
       #postings .numresults .expired .count {
@@ -940,7 +955,7 @@ a {
     border-bottom: 1px solid #cccccc;
     color: #0000ee;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     height: 16px;
     margin-bottom: 10px;
@@ -993,7 +1008,7 @@ a {
   // padding-right:15px;
   padding-bottom: 100%;
   padding-right:100%;
-  min-height: 1px;
+  height: 2000px;
   position: fixed;
  }
 
@@ -1015,18 +1030,18 @@ a {
       border-right: 1px solid #cccccc;
       height: 100%;
       display: none;
-      overflow: auto; }
+      overflow: hidden; }
     #detail .wrapper .close {
       top: -13px;
       right: -13px; }
 
-//#detail.shifted-right {
-//  max-width: 448px;//1470px; // detail width - 150
-//  transition: width 0.2s ease-in-out 0s;
-//}
+  #detail.shifted-right {
+    max-width: 448px;//1470px; // detail width - 150
+    transition: width 0.2s ease-in-out 0s;
+  }
 
 #detail .content, #posting, .tooltip {
-  padding: 2px 20px;
+  margin: 2px 20px;
   position: relative; }
   #detail .content .heading, #posting .heading, .tooltip .heading {
     font-weight: bold;
@@ -1070,7 +1085,7 @@ a {
       width: 100%; }
     #detail .content .annotations .price, #posting .annotations .price, .tooltip .annotations .price {
       float: right;
-      font-size: 24px;
+      font-size: 1.5em;
       font-weight: bold; }
     #detail .content .annotations .annotations_table td{
       vertical-align: top !important;
@@ -1113,6 +1128,16 @@ a {
     border-color: #eeeeee; }
   #detail .content .JSON, #posting .JSON, .tooltip .JSON {
     white-space: pre; }
+  #detail .content .publicdomain_and_powered {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+  }
+  #detail .content .content_without_footer{
+    overflow: auto; 
+    height: 100%;
+  }
   #detail .content .publicdomain, #posting .publicdomain, .tooltip .publicdomain {
     margin-top: 12px;
     margin-bottom: 12px; }
@@ -1121,7 +1146,7 @@ a {
     #detail .content .publicdomain .image, #posting .publicdomain .image, .tooltip .publicdomain .image {
       width: 120px; }
     #detail .content .publicdomain .disclaimer, #posting .publicdomain .disclaimer, .tooltip .publicdomain .disclaimer {
-      font-size: 11px; }
+      font-size: 0.688em; }
   #detail .content .poweredby3taps, #posting .poweredby3taps, .tooltip .poweredby3taps {
     text-align: center; }
   #detail .content .favorite, #posting .favorite, .tooltip .favorite {
@@ -1169,7 +1194,7 @@ a {
       margin-left: 290px;
       padding: 10px;
       min-height: 60px;
-      font-size: 13px; }
+      font-size: 0.813em; }
       #detail .content .user-details-popup .verifications .verifications-header, #posting .user-details-popup .verifications .verifications-header, .tooltip .user-details-popup .verifications .verifications-header {
         background: url(image_path('verified.png')) 0 0 no-repeat;
         margin-bottom: 5px;
@@ -1212,7 +1237,7 @@ a {
       background: #f8e3e3;
       border-bottom: solid 1px white; }
     #detail .content .view-comments .comment-view.reply, #posting .view-comments .comment-view.reply, .tooltip .view-comments .comment-view.reply {
-      font-size: 11px;
+      font-size: 0.688em;
       border-bottom: none; }
     #detail .content .view-comments .comment-view:first-child, #posting .view-comments .comment-view:first-child, .tooltip .view-comments .comment-view:first-child {
       border-top: solid 1px #cccccc; }
@@ -1232,7 +1257,10 @@ a {
     display: block; }
 
 #detail .content {
-  overflow: auto; }
+  overflow: hidden; 
+  height: 100%
+}
+
 
 .tooltip {
   overflow: hidden; }
@@ -1250,17 +1278,20 @@ a {
     max-height: 100px;
     overflow: hidden; }
 
+  #sourcesfilter.filter-dropdown .loader{
+    background: url(image_path('progress.gif')) 50% 50% no-repeat;
+    width:100%;
+    height:100px;
+  }
+
 .posting-image-viewer {
   text-align: center; }
   .posting-image-viewer .frame {
-    background: url(image_path('searching.gif')) 50% 50% no-repeat;
+    /*background: url(image_path('searching.gif')) 50% 50% no-repeat;*/
     border: 1px solid #cccccc;
     margin: 0 auto;
     width: 342px; }
     .posting-image-viewer .frame .main {
-      margin: 1px;
-      max-height: 500px;
-      max-width: 340px;
       vertical-align: middle; }
   .posting-image-viewer .frame.static {
     height: 342px;
@@ -1323,7 +1354,7 @@ a {
       display: none;
       color: #0000ee;
       cursor: pointer;
-      font-size: 11px; }
+      font-size: 0.688em; }
 
 #statusfilter .result, #sourcesfilter .result {
   display: block; }
@@ -1339,7 +1370,7 @@ a {
     color: #0000ee;
     cursor: pointer;
     display: inline;
-    font-size: 11px;
+    font-size: 0.688em;
     text-decoration: underline; }
 
 #radiusfilter {
@@ -1408,7 +1439,7 @@ a {
   display: none; }
 
 #emailpopup .header, .emailpopup .header {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 10px; }
   #emailpopup .header .type, .emailpopup .header .type {
@@ -1427,33 +1458,33 @@ a {
     text-align: left; }
 
 #geolocate-loading-popup {
-  font-size: 20px;
+  font-size: 1.250em;
   text-align: center; }
 
 #searching {
-  font-size: 24px;
+  font-size: 1.5em;
   text-align: center; }
 
 #cancel-running-search {
   margin-top: 8px;
   float: right;
-  font-size: 11px; }
+  font-size: 0.688em; }
 
 #missing {
-  font-size: 20px;
+  font-size: 1.250em;
   text-align: center;
 }
 //#missing-favorites-popup .header {
 //  margin-top: 10px; }
 //  #missing-favorites-popup .header .text {
-//    font-size: 16px;
+//    font-size: 1em;
 //    font-weight: bold;
 //    padding: 4px 4px 0 0; }
 
 #share-popup .header {
   margin-top: 10px; }
   #share-popup .header .text {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     padding: 4px 4px 0 0;
     text-transform: capitalize; }
@@ -1481,7 +1512,7 @@ a {
       width: 300px; }
 #share-popup .messages .sent, #share-popup .messages .notsent {
   display: none;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: bold;
   padding-bottom: 10px;
   text-align: center; }
@@ -1522,7 +1553,7 @@ a {
   //position: absolute;
   cursor: pointer; }
   #drawer-button .label {
-    font-size: 11px;
+    font-size: 0.688em;
     width: 90px;
     position: relative;
     top: 84px;
@@ -1595,21 +1626,21 @@ a {
   color: #0000ee;
   cursor: pointer;
   display: inline;
-  font-size: 11px;
+  font-size: 0.688em;
   text-decoration: underline; }
 
 #neighborfilter {
   display: none; }
   #neighborfilter .sfbay, #neighborfilter .newyork {
     display: none;
-    font-size: 11px; }
+    font-size: 0.688em; }
     #neighborfilter .sfbay .code, #neighborfilter .sfbay .location_3, #neighborfilter .newyork .code, #neighborfilter .newyork .location_3 {
       display: none; }
     #neighborfilter .sfbay label, #neighborfilter .newyork label {
       display: block;
       margin-bottom: 4px;
       color: #0000ee;
-      font-size: 13px;
+      font-size: 0.813em;
       cursor: pointer;
       text-decoration: underline; }
   #neighborfilter .divider {
@@ -1647,7 +1678,8 @@ a {
   width: 420px;
   overflow: hidden;
   a {
-    color: #cc3300;
+    color: #776F6C;
     cursor: pointer;
   }
 }
+

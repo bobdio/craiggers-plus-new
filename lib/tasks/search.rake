@@ -3,24 +3,37 @@ require 'google/api_client'
 namespace :search do
   desc "search update"
   task :update => :environment do
-    SavedSearch.where(send_notifications: true).each do |search|
+    SavedSearch.where(send_notifications: true).where('subscription_id is not null').where("timestamp '#{Time.now.utc}' - updated_at  > interval '1 hour' * interval").each do |search|
       options = ActiveSupport::JSON.decode search.json
+      puts "----- stored search #{search.inspect}"
       params = options['params']
       params['rpp'] = 1
-      params['timestamp'] = options['timestamp'] || (Time.now - 1.hour).to_i
+      params['timestamp'] = search.timestamp_last_posting #|| (Time.now - 1.hour).to_i
       time_now = Time.now.to_i
+      puts "--results #{results.inspect}" if search.id == 272
       next unless results = TapsConnector.search(params, time_now)
       hash = ActiveSupport::JSON.decode results
       if hash['num_matches'] > 0
-        params['rpp'] = hash['num_matches']
+        puts "-----num matches #{hash['num_matches']}"
+        params['rpp'] = 100
         results = TapsConnector.search(params, time_now)
+        search.update_attribute(:timestamp_last_posting, hash['postings'].first['timestamp'])
+        puts "-----last posting #{hash['postings'].first['timestamp']}"
+        next if results.nil?
         hash = ActiveSupport::JSON.decode results
-        options['headings'] = hash['postings'].collect{|posting| posting['heading']}
-        #options['extra']['url'] += "&timestamp=#{options['timestamp']}..#{time_now}"
-        if index = options['extra']['url'].index('timestamp')
+
+        options['headings'] = hash['postings'].collect{|posting| {:heading => posting['heading'], :id => posting['id']}}
+        if options['extra'] && index = options['extra']['url'].index('timestamp')
           options['extra']['url'] = options['extra']['url'][0...index-1]
         end
-        SearchMailer.search_update(search, hash['num_matches'], options).deliver
+        puts "-----send data #{search} ; #{hash['num_matches']}"
+
+        message = "#{hash['num_matches']} new postings match your saved search criteria named #{options['name']}"
+        default_url_options = Rails.application.config.action_mailer.default_url_options
+        url = "#{default_url_options[:host]}/mobile#results/#{search.secret_key}"
+        # url = Rails.application.routes.url_helpers.uniq_key_url(search.uniq_key, host: , port: default_url_options[:port])
+        NotificationAPI.send(search.subscription_id, message, url)
+
         options['timestamp'] = time_now
       end
       json = ActiveSupport::JSON.encode options

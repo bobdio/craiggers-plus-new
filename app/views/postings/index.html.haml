@@ -1,0 +1,43 @@
+#postings_list
+  - if @postings.present?
+    %table{:width=>'90%'}
+      %tr
+        %th id
+        %th body
+        %th category
+        %th status
+        %th location
+        %th created at
+        %th actions
+      - @postings.each do |posting|
+        %tr
+          %td
+            = posting.id
+          %td
+            = link_to_function 'heading: ' + posting.heading, '', class: 'view_local_posting', posting_id: posting.id
+            %br
+            = 'body: ' + posting.body
+            %br
+            = "price: #{posting.price}#{posting.currency}"
+            %br
+            %br
+            = show_annotations(posting.annotations)
+            %br
+          %td
+            = posting.category 
+          %td
+            = posting.status 
+          %td
+            = posting.location.try(:full_name) 
+          %td= time_ago_in_words(posting.created_at)
+          %td
+            = link_to_function 'edit', 'showEditForm(this)', :class => 'edit_posting', :posting_id => posting.id
+            = link_to_function 'delete', '', :class => 'delete_posting', :posting_id => posting.id
+  - else
+    no postings present        
+:javascript
+  function showEditForm(caller){
+    var id = $(caller).attr('posting_id');
+    new Craiggers.Views.PostingEdit(id);
+  }
+  

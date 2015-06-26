@@ -1,0 +1,40 @@
+#refine_search.results_sub_page.page_with_top_menu
+	#header.global_header
+		.header_buttons
+			#cancel_button.header_button
+				.button_label Cancel
+				.icon_image.cancel_icon
+			.buttons_border
+			#search_button.header_button
+				.button_label Refine Search
+				.glass_icon.icon_image
+	.search_filters
+		.search_bar
+			.query.wrapper
+				%form#search_form
+					%input#searchbar_query_input.input_with_clear_button.input{:title => "Search", :placeholder => "Enter keywords"}
+					#clear_search_query_button.clear_input_button
+						%input.btn.btn-inverse{:type => "button", :value => ""}
+						.clear_button_image
+		.location_container
+			.arrow >
+			#location_value
+		.search_options
+			#has_image.search_option
+				.option_icon.has_image_icon.icon_image
+				.slider-frame.on
+					.slider-button
+				.option_name Has Image
+			#title_only.search_option
+				.option_icon.title_only_icon.icon_image
+				.slider-frame.on
+					.slider-button
+				.option_name Title Only
+			#has_price.search_option
+				.option_icon.has_price_icon.icon_image
+				.slider-frame.on
+					.slider-button
+				.option_name Has Price
+		#search_counts
+
+		

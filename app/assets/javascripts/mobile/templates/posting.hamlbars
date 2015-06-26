@@ -1,0 +1,23 @@
+.posting
+	.posting-details{ :id => '{{ id }}'}
+		.posting_header{:data => "{{ id }}"}
+		.gallery_container
+			%div.gallery_holder{ :id => '{{gallery_holder_id}}', :data => '{{ id }}'}
+				#gallery.gallery{ :data => '{{ id }}'}
+			.gallery_dots
+		.posting_footer
+			#contact_button{:data => "{{ id }}"}
+				%a
+					.contact_button_image.icon_image
+			.source_icon_container
+				#source-icon{ :class=> '{{icon_class}}' }
+				.button_angle
+					.button_background
+			.category_container.category_parent
+				.category_name
+				.button_angle
+					.button_background
+			.category_container.sub_category
+				.category_name
+				.button_angle
+					.button_background

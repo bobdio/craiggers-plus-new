@@ -48,8 +48,7 @@ Craiggers.init = function() {
       });
 
       // 3) resize posting details
-      if ((Craiggers.currentPostingDetail) || (Craiggers.currentFavoriteDetail && Craiggers.postingsMode == 'favorites') )
-        new Craiggers.Views.PostingDetail().resize();
+      new Craiggers.Views.PostingDetail().resize();
     });
 
     var detailBlock = $('#detail');
@@ -74,7 +73,7 @@ Craiggers.init = function() {
         if ( _.include([KEY.J, KEY.DOWN], e.keyCode)) posting = $('#postings .posting.mostrecent').next('.posting');
         if ( _.include([KEY.K, KEY.UP], e.keyCode)) posting = $('#postings .posting.mostrecent').prev('.posting');
       }
-      posting.click();
+      posting.find('.content').trigger('mouseover');
 
       if ( posting.offset() ) {
 
@@ -114,20 +113,26 @@ Craiggers.init = function() {
     }
 
     if ( _.include([KEY.H, KEY.LEFT], e.keyCode) ) {
-      var prev = $('.posting-image-viewer .mini.selected').prev('.mini');
-      while ( prev.is('.small') ) {
-        prev = prev.prev('.mini')
-      };
-      prev.click();
+      var prev = $('.posting-image-viewer .mini.selected').prev('.mini')
+      if (prev[0]){
+        prev.click()
+      } else {
+        var last_image = _.last($('.posting-image-viewer .mini'))
+        if (last_image) last_image.click()
+      }
+      
       if ( prev.length && $('#fancybox-content').is(':visible') ) {
         $('.posting-image-viewer .main').click();
       }
     }
     if ( _.include([KEY.L, KEY.RIGHT], e.keyCode) ) {
       var next = $('.posting-image-viewer .mini.selected').next('.mini');
-      while ( next.is('.small') ) {
-        next = next.next('.mini')
-      };
+      if (next[0]){
+        next.click()
+      } else {
+        var first_image = _.first($('.posting-image-viewer .mini'))
+        if (first_image) first_image.click()
+      }
       next.click();
       if ( next.length && $('#fancybox-content').is(':visible') ) {
         $('.posting-image-viewer .main').click();

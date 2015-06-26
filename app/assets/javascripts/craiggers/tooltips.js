@@ -89,20 +89,23 @@ function InitTooltips() {
   };
 
   function showTip(params) {
-    var $target = $(params.target);
-    var $tip = JST['tooltip'](params);
-    $tip.css(params.css);
-    $tip.find('.pointer').css(params.pointerCss);
-    $tip.insertAfter($target);
-    $tip.click(removeTip);
-    $target.click(removeTip);
-    params.callback && params.callback();
-    setTimeout(removeTip, 3000);
-    function removeTip() {
-      $tip.fadeOut(function() {
-        $tip.remove()
-      });
-    };
+    // console.log(params)
+    // console.log(JST['tooltip'])
+    // var $target = $(params.target);
+    // var $tip = JST['tooltip'](params);
+    // console.log($tip)
+    // $tip.css(params.css);
+    // $tip.find('.pointer').css(params.pointerCss);
+    // $tip.insertAfter($target);
+    // $tip.click(removeTip);
+    // $target.click(removeTip);
+    // params.callback && params.callback();
+    // setTimeout(removeTip, 3000);
+    // function removeTip() {
+    //   $tip.fadeOut(function() {
+    //     $tip.remove()
+    //   });
+    // };
   };
 
   function init() {

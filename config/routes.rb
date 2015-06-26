@@ -1,5 +1,9 @@
 CraiggersPlus::Application.routes.draw do
 
+  resources :mobile, only: [:index]
+  
+  resources :spec_runner, only: [:index]
+
   resources :profile do
     collection do
       get 'index'
@@ -13,12 +17,15 @@ CraiggersPlus::Application.routes.draw do
   resources :settings do
     collection do
       get 'index'
-      post 'update'
     end
+    post 'update', on: :member
   end
 
   resources :user do
     collection do
+      get 'verify_email'
+      get 'update_email'
+      get 'update_username'
       get 'sign_up'
       get 'sign_in'
       post 'sign_up'
@@ -35,6 +42,8 @@ CraiggersPlus::Application.routes.draw do
       get 'locations'
       post 'locations'
       get 'update_identities_data'
+      post 'record_user_to_db'
+      get 'activate_email'
     end
   end
 
@@ -46,9 +55,19 @@ CraiggersPlus::Application.routes.draw do
 
     member do
       get 'children'
+      get 'children_for_select'
       get 'parent'
     end
   end
+
+  get '/postings/count' => 'postings#count'
+
+  resources :postings, :except => [:update] do
+    get :show_view, on: :member
+    post :delete, on: :member
+  end
+  get 'postings/postings_api/:id' => 'postings#show_posting_from_postings_api'
+  post 'postings/:id/update' => 'postings#update'
 
   resources :posting do
     collection do
@@ -56,6 +75,8 @@ CraiggersPlus::Application.routes.draw do
       get 'comment'
     end
   end
+
+  post 'send_posting' => 'postings#send_posting'
 
   post '/profile/update'
   post '/settings//update'
@@ -94,6 +115,7 @@ CraiggersPlus::Application.routes.draw do
   match "/terms-of-service" => "static#terms"
   match "/terms" => "static#terms"
   match "/mobile" => "static#mobile"
+  match "/spec_runner" => "satic#spec_runner"
   match "/help" => "static#help"
   match "/faq" => "static#faq"
   match "/privacy" => "static#privacy"
@@ -107,6 +129,7 @@ CraiggersPlus::Application.routes.draw do
   get "/admin/saved_searches/(:sort_by/:direction)" => 'admin#saved_searches', as: :admin_saved_searches
   get "/admin/saved_searches/:id" => "admin#saved_search", as: :admin_saved_search
 
-  get "/:uniq_key" => "search#open_by_uniq_key", as: :uniq_key
+  get "/:uniq_key" => "search#load_search_result", as: :uniq_key
+
   root :to => "posting#index"
 end

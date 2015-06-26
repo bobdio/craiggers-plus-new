@@ -12,14 +12,14 @@
       .viewlist.closed
       %input#category_input.input{ style: 'width:320px; text-transform: capitalize;'}
       .autocomplete
-      .jumbolist
+      .jumbolist.advanced_search
         .container
           = render :partial => "shared/jeboom_jumbocategories"
     .location.wrapper.column{style: 'display:none; margin-bottom: 10px;'}
       .holder
         %label{ :for => 'location_input', style: 'color:black' } All Locations
       .viewlist.closed
-      %input#location_input.input{ :autocomplete => 'off', style: 'width:320px;' }
+      %input#location_input.location_input.input{ :autocomplete => 'off', style: 'width:320px;' }
       .location.autocomplete{style: 'margin-left:10px;'}
     .advanced
       %a advanced search

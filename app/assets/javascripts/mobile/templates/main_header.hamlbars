@@ -1,0 +1,16 @@
+%div#header.main_header.home_page_header
+	.logo
+		JEBOOM!
+	.header_buttons.sign_buttons
+		.sign_in.header_button
+			%a Login
+		.sign_up.header_button
+			%a Sign Up
+	.header_buttons.signed_buttons
+		.user_image
+			%a{:href => "#user_profile"}
+				%img{:src => "{{ image }}"}
+				%span.name {{name}}
+			%span.sign_out
+				%a{:href => "/signout"} sign out 
+	

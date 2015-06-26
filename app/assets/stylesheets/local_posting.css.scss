@@ -1,0 +1,118 @@
+.local_posting_actions {
+  float: right;
+  margin-right: 5px;
+  padding-top: 3px;
+  .delete_posting, .edit_posting, .repost_posting {
+    float: right;
+    padding: 0 5px;
+    cursor: pointer;
+  }
+}
+.posting-manage-popup{
+  overflow-x: hidden;
+  .posting-form-header{
+    font-size: 28px;
+    padding: 12px 0 12px 11px;
+    margin-bottom: 11px;
+    color: #222;
+    border-bottom: 1px solid #DDD;
+  }
+  .posting-form-content{
+    margin: 20px 20px 0px 20px;
+    color: #666;
+    .num-matches{
+      top: 77px;
+      left: 350px;
+      position: absolute;
+    }
+    .ac_results_loc{
+      top: 100px;
+      left: 145px;
+      border: 1px solid #BBB;
+    }
+    .field-block{
+      margin-bottom: 10px;
+      height: 30px;
+      &.body{height:50px;};
+      .posting-field-label{
+        width: 100px;
+        float: left;
+        text-align: right;
+        margin-right: 15px;
+      }
+      input[type=file]{
+        width: 95px;
+      }
+      input[type=text], textarea{
+        &.price_input{width:100px;}
+        width: 350px;
+        margin-bottom: 5px;
+        float: left;
+        margin-top: -5px;
+      }
+      textarea {
+        margin-bottom: 12px;
+      }
+      select{
+        margin-bottom: 5px;
+        float: left;
+        margin-top: -5px;
+      }
+      .currency{
+        #posting_currency{width:100px;}
+        float:left;
+        margin-left: 5px;
+      }
+      #files_upload{
+        width: 250px;
+        margin-bottom: 5px;
+        float: left;
+        margin-top: -5px;
+      }
+    }
+    .uploading{float: left;font-size: 14px;}
+    #uploaded_images_container{
+      .uploaded_image_container{margin: 0px 0px 10px 10px;}
+      margin-left: 115px;
+      float:left;
+    }
+  }
+  .buttons-block{
+    background-color: #f4f4f4;
+    height: 55px;
+    border-top: 1px solid #DDD;
+    padding-left: 133px;
+    float: left;
+    width:620px;
+    button{margin-top:11px;}
+  }
+  .annotations {
+    margin-top: 20px;
+  }
+}
+
+#fancybox-close.manage-postings-close-button {
+  height: 10px;
+  width: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #000000;
+  text-shadow: 0 1px 0 #ffffff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  text-decoration: none;
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  cursor: pointer;
+  background: none;
+  &:hover {
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    cursor: pointer;
+  }
+}
+

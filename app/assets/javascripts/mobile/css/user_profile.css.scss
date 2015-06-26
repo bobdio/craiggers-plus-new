@@ -1,0 +1,45 @@
+#user_profile {
+	position: static;
+	.user_data_container {
+		.user_image {
+			text-align: center;
+		}
+		.item_container {
+			border-bottom: 1px solid #A5A5A5;
+			padding-bottom: 5px;
+			height: 45px;
+			line-height: 45px;
+
+			.item_value {
+				margin-left: 10px;
+			}
+			.arrow {
+				float: right;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.input_items_container {
+	position: relative;
+	margin-top: 10px;
+	margin-right: 45px;
+	margin-left: 5px;
+
+	#clear_location_button {
+		right: -50px;
+	}
+
+	#errors_holder {
+		text-align: center;
+	}
+
+	form {
+		text-align: center;
+
+		#save_button {
+			margin-top: 10px;
+		}
+	}
+}

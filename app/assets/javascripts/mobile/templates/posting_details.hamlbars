@@ -1,0 +1,18 @@
+#posting_details
+	#posting_details_progress_bar.progress_bar
+	.posting_details{ :id => '{{ id }}'}
+		.posting_header
+			
+		.posting_body{:data => "{{ id }}"}
+			%div.gallery_holder{ :id => '{{gallery_holder_id}}', :data => '{{ id }}'}
+				#gallery.gallery{ :data => '{{ id }}'}
+			%div.body_text
+		.posting_footer
+			%div
+				%a{ :href =>"{{ external_url }}", :target => "_blank" } {{external_url}}
+			.timeAgo {{ timeAgo }} ago
+			.category_name {{category}}
+			.location {{location}}
+			.google_map
+			.older_versions
+			

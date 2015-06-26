@@ -1,0 +1,22 @@
+#saved_searches.top_menu_page.page_with_top_menu
+	#header.global_header
+		#subpage_header_back_button
+			< Back
+		.title
+			Saved Searches
+	.saved_searches_container
+	#update_search_dialog.modal.hide.fade{ :tabindex => "-1", :role => "dialog", :"aria-labelledby" => "updateSearchDialog", :"aria-hidden" => "true"}
+		.modal-header
+			%button.close{ :type => "button", :"data-dismiss" => "modal", :"aria-hidden" => "true"} ×
+			%h3 Update Search
+		.modal-body.sign_modal
+			%form#update_search_form
+				.control-group
+					%label.control-label.sign_label{:for => "search_name"} new name:
+					.controls.sign_controls
+						%input#search_name.sign_text_input{:type => "text", :placeholder => "name"}
+				.control-group
+					.controls
+						%button#update_search.btn.btn-inverse{:type => "button"} Update
+						%button#delete_search.btn.btn-inverse{:type => "button"} Delete
+		

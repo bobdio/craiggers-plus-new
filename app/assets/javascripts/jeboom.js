@@ -1,6 +1,3 @@
-var BASE_URL_OLD = 'http://3taps.net'
-var LOCATION_API = '/location/'
-var AUTH_TOKEN = 'authToken=c9e6638a4d2db53f3a50200290ae1b65'
 var interval;
 var favorites_popup_shown = false;
 
@@ -42,30 +39,38 @@ Craiggers.Controller = new (function() {
       '!/search/:location/:category/:source': 'search',
       '!/search/:location/:category/:source/:query': 'search',
       '!/search/:location/:category/:source/:query/*params': 'search',
-      '!/posting/:postkey': 'posting'
+      '!/posting/:postkey': 'posting',
+      '!/explore/:action': 'explore'
     },
+
+    explore: function(action){
+      if ($.inArray(action, ['stream','treemap','datamap'])>-1){
+        var navbar = new Craiggers.Views.NavBar()
+        navbar.showExplore({id: action})
+      } else {
+        window.location = '/#!/'
+      }
+    },
+
     search: function(location, category, source, query, params) {
       if($('#searchbar').is(':visible')) $('#workspace-link').click();
-      new Craiggers.Pages.Search();
 
       // get LAT and LONG when we have location and radius
       if(location) {
         code = Craiggers.Models.Search.prototype.parseLocation(location)['code'];
         if(code != 'all' && params.match(/radius/)) {
-          $.ajax({
-            url: LOCATION_API + code,
-            dataType: 'json',
-            success: function (data) {
-              if( data.success )
-                Craiggers.Search.set({
-                  radius: { lat: data.lat, long: data.long }
-                })
-
-              complete()
-            },
-            error: function(data) {
-              complete()
+          Craiggers.Connection.get_location_by_code_from_local_server(code)
+          .done(function(data){
+            if( data.success ){
+              Craiggers.Search.set({
+                radius: { lat: data.lat, long: data.long },
+                type_of_search: 'new_search'
+              })
             }
+            complete()
+          })
+          .fail(function(data) {
+            complete()
           })
         }
         else complete()
@@ -85,18 +90,57 @@ Craiggers.Controller = new (function() {
   });
 }());
 
-Craiggers.appName = 'jeboom';
 
-Craiggers.Search = new Craiggers.Models.Search();
-Craiggers.Postings = new Craiggers.Collections.Postings;
-Craiggers.Favorites = new Craiggers.Collections.Favorites;
-Craiggers.Locations = new Craiggers.Collections.DynamicLocations;
-Craiggers.Categories = new Craiggers.Collections.ThreeTapsCategories;
-Craiggers.Sources = new Craiggers.Collections.Sources;
-Craiggers.SavedSearches = new Backbone.Collection({ model: Craiggers.Models.Search });
-//PyotrK use this for navigation and other states
-Craiggers.PageState = new Backbone.Model();
-initDatamap();
+function initializeAll(){
+  Craiggers.appName = 'jeboom';
+
+  Craiggers.Search = new Craiggers.Models.Search();
+  Craiggers.Postings = new Craiggers.Collections.Postings;
+  Craiggers.Favorites = new Craiggers.Collections.Favorites;
+  Craiggers.Locations = new Craiggers.Collections.DynamicLocations;
+  Craiggers.Categories = new Craiggers.Collections.ThreeTapsCategories;
+  Craiggers.Sources = new Craiggers.Collections.Sources;
+  Craiggers.SavedSearches = new Backbone.Collection({ model: Craiggers.Models.Search });
+  //PyotrK use this for navigation and other states
+  Craiggers.PageState = new Backbone.Model();
+  Craiggers.LocalPostings = new Craiggers.Collections.LocalPostings();
+  initDatamap();
+  build_metrics();
+}
+
+initializeAll()
+
+function build_metrics(){
+  var metric_requests = []
+  _.each($('.metrics_container .source_container'), function(source_container){
+    var source_code = $(source_container).attr('code')
+    metric_requests.push(
+      Craiggers.Util.get_search_request({source: source_code}).done(function(response){
+        if (response.success){
+          var thousands_of_num_matches = Math.round(response.num_matches/1000)
+          $(source_container).find('.source_num_matches').text(thousands_of_num_matches)
+
+          var last_posting_ago = 0
+          if (response.postings.length > 0){
+            var current_timestamp_in_sec = Math.round(new Date().getTime()/1000)
+            var last_posting_timestamp = _.first(response.postings).timestamp
+            var last_posting_ago = Math.round((current_timestamp_in_sec - last_posting_timestamp) / 60)
+          }
+          $(source_container).find('.source_last_posting_ago').text(last_posting_ago+',')
+        }
+      })
+    )
+  })
+  $.when.apply(null, metric_requests).done(function() {
+    var sum = _.reduce($('.metrics_container .source_num_matches'),
+      function(memo, num_container){
+        return memo + parseInt($(num_container).text());
+      }, 0
+    )
+
+    $('.metrics_container .source_total_container').find('.source_total_num_matches').text(sum)
+  });
+}
 
 // extend underscore a bit
 _.mixin({
@@ -149,6 +193,8 @@ function initDatamap() {
   function locationChanged(datamap, locCode) {
     datamap.showLocation(locCode);
     Craiggers.Search.set({ location: locCode })
+    Craiggers.Search.set(SINGLE_SEARCH_DEFAULT_CONFIG)
+      Craiggers.Search.set({ type_of_search: 'new_search' })
     Craiggers.Search.submit();
   }
 

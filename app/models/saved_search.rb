@@ -28,7 +28,7 @@ class SavedSearch < ActiveRecord::Base
     str = json + Time.now.to_s
 
     (3..31).map do |length|
-      code = Digest::MD5.hexdigest(str)[0..length]
+      code = 's'+Digest::MD5.hexdigest(str)[0..length]
       next if SavedSearch.find_by_uniq_key(code)
       self.uniq_key = code
       break
@@ -44,7 +44,8 @@ class SavedSearch < ActiveRecord::Base
   end
 
   def set_deleted
-    update_attributes( deleted: Time.now, send_notifications: false )
+    NotificationAPI.unsubscribe(subscription_id)
+    update_attributes( deleted: Time.now, send_notifications: false, subscription_id: nil )
   end
 
   def update_by_params(options)

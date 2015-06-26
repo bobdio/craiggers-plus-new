@@ -1,0 +1,122 @@
+:css
+	.field{
+		margin-right: 30px
+	}
+	.field_name{color: red}
+	.block{
+		border-top: 1px solid black;
+		margin-top: 10px;
+	}
+.posting-container
+	.header{style: 'text-align: center;margin-top: 30px; font-size: 20px;'} POSTING DATA
+	- unless @response[:success]
+		.error{style: 'text-align: center;margin-top: 30px; font-size: 18px;color: red;'}= @response[:error]
+	- else
+		- ["annotations", "country", "state", "metro", "region", "county", "city", "locality", "zipcode", "anchor", "lat", "long", "accuracy", "min_lat", "max_lat", "min_long", "max_long"]
+		- posting = @response[:posting]
+		.block
+			%span.field_name id:
+			%span.field= posting[:id]
+			%span.field_name source:
+			%span.field= posting[:source]
+			%span.field_name category:
+			%span.field= posting[:category]
+			%span.field_name category_group:
+			%span.field= posting[:category_group]
+			%span.field_name timestamp:
+			%span.field= posting[:timestamp]
+		.block
+			%span.field_name external_id:
+			%span.field= posting[:external_id]
+			%span.field_name external_url:
+			%span.field= posting[:external_url]
+		.block
+			%span.field_name heading:
+			%span.field= posting[:heading]
+		.block
+			%span.field_name body:
+			%span.field= posting[:body]
+		.block
+			%span.field_name html:
+			%span.field= posting[:html]
+		.block
+			%span.field_name expires:
+			%span.field= posting[:expires]
+			%span.field_name language:
+			%span.field= posting[:language]
+			%span.field_name price:
+			%span.field= posting[:price]
+			%span.field_name currency:
+			%span.field= posting[:currency]
+		.block
+			%span.field_name status:
+			%span.field= posting[:status]
+			%span.field_name flagged:
+			%span.field= posting[:flagged]
+			%span.field_name deleted:
+			%span.field= posting[:deleted]
+			%span.field_name immortal:
+			%span.field= posting[:immortal]
+		.block
+			%span.field_name location:
+			%br
+			%span.field_name country:
+			%span.field= posting[:country]
+			%br
+			%span.field_name state:
+			%span.field= posting[:state]
+			%br
+			%span.field_name metro:
+			%span.field= posting[:metro]
+			%br
+			%span.field_name region:
+			%span.field= posting[:region]
+			%br
+			%span.field_name county:
+			%span.field= posting[:county]
+			%br
+			%span.field_name city:
+			%span.field= posting[:city]
+			%br
+			%span.field_name locality:
+			%span.field= posting[:locality]
+			%br
+			%span.field_name zipcode:
+			%span.field= posting[:zipcode]
+			%br
+			%span.field_name anchor:
+			%span.field= posting[:anchor]
+			%br
+			%span.field_name lat:
+			%span.field= posting[:lat]
+			%br
+			%span.field_name long:
+			%span.field= posting[:long]
+			%br
+			%span.field_name accuracy:
+			%span.field= posting[:accuracy]
+			%br
+			%span.field_name min_lat:
+			%span.field= posting[:min_lat]
+			%br
+			%span.field_name max_lat:
+			%span.field= posting[:max_lat]
+			%br
+			%span.field_name min_long:
+			%span.field= posting[:min_long]
+			%br
+			%span.field_name max_long:
+			%span.field= posting[:max_long]
+		.block
+			%span.field_name images:
+			- if posting[:images].present?
+				- posting[:images].each do |image|
+					%br
+					= image[:full]
+		.block
+			%span.field_name annotations:
+			- if posting[:annotations].present?
+				- posting[:annotations].each do |field, data|
+					%span.field_name= "#{field}:"
+					%span.field= data
+					%br

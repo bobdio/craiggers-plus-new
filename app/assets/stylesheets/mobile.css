@@ -1,0 +1,28 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *
+ *= require mobile/css/global
+ *= require mobile/css/bootstrap.min
+ *= require mobile/css/bootstrap-responsive.min
+ *= require mobile/css/main
+ *= require mobile/css/results
+ *= require mobile/css/posting_details
+ *= require mobile/css/header
+ *= require mobile/css/favorites
+ *= require mobile/css/saved_searches
+ *= require mobile/css/photoswipe
+ *= require mobile/css/android
+ *= require mobile/css/results_sub_page
+ *= require mobile/css/top_menu
+ *= require mobile/css/email_verification
+ *= require mobile/css/user_profile
+ */

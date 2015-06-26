@@ -1,0 +1,86 @@
+#favorites {
+	.expired_favorites {
+		text-align: center;
+	}
+	.back_to_results {
+		margin-left: 20px;
+		line-height: 25px;
+		font-size: 18px;
+		color: white;
+		text-align: center;
+	}
+	.favorites_title {
+		font-weight: bold;
+		margin: 10px;
+	}
+
+	.back {
+		margin-left: 10px;
+		margin-bottom: 10px
+	}
+
+	.favorites_metrics {
+		background-color: #232323;
+		height: 20px;
+		color: white;
+		font-size: 12px;
+		text-align: center;
+		
+	}
+}
+
+#favorites.fixed_header{
+	.favorites_metrics {
+		margin-top: 56px;
+	}
+}
+
+#saved_searches.fixed_header {
+	.saved_searches_container {
+		margin-top: 65px;	
+	}
+}
+
+.top_menu_page {
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	//-webkit-transform: translate(0, 100%);
+
+	#header {
+		background-color: black;
+		border-bottom : 1px solid #393939;
+		z-index: 100;
+
+		.title {
+			position: absolute;
+			color: white;
+			font-size: 20px;
+			width: 100%;
+			text-align: center;
+			display: block;
+		}
+
+		#subpage_header_back_button {
+			background-color: #2e2e2e;
+			width: 70px;
+			height: 53px;
+			border: 1px solid #393939;
+			margin-left: 0px;
+			color: white;
+			text-align: center;
+			float: left;
+			position: absolute;
+			z-index: 1;
+			margin-top: 1px;
+		}
+
+		#subpage_header_back_button:active {
+			background-color: black;
+		}
+	}
+}

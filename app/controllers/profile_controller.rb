@@ -1,6 +1,6 @@
 class ProfileController < ApplicationController
   before_filter :only => [:index, :identify, :unidentify] do
-    redirect_to :root unless current_user.signedin?
+    redirect_to :root unless current_user.signedin
   end
 
   def index

@@ -1,14 +1,14 @@
 class SearchController < ApplicationController
   before_filter :check_mail_params, :only => :mail
-  before_filter :signedin?, only: [:delete, :save, :update]
+  before_filter :signedin, only: [:delete, :save, :update]
 
   def save
-    search = current_user.save_search(params[:json])
-    search.update_attributes(send_notifications: true) if params[:notifications]
+    send_notifications = params[:notifications] || false
+    subscription_id = send_notifications ? NotificationAPI.subscribe(current_user.user_id)['subscription_id'] : nil
 
-    render json: { success: true,
-                   key: search.secret_key,
-                   notifications: search.send_notifications }
+    search = SavedSearch.create(username: current_user.username, json: params[:json], send_notifications: send_notifications, subscription_id: subscription_id, interval: params[:interval])
+
+    render json: { success: true, key: search.secret_key, notifications: search.send_notifications }
   end
 
   def delete
@@ -56,7 +56,7 @@ class SearchController < ApplicationController
     redirect_to :root
   end
 
-  def open_by_uniq_key
+  def load_search
     if search = SavedSearch.find_by_uniq_key(params[:uniq_key])
       search.counter = search.counter + 1
       search.save
@@ -66,5 +66,14 @@ class SearchController < ApplicationController
     else
       redirect_to :root
     end
+  end
+
+  def load_posting
+    redirect_to "#{root_path}#!/search/all/all/all//subnav=workspace-link&nav=search-link&postKey=#{params[:uniq_key]}"
+  end
+
+  def load_search_result
+    load_search and return if params[:uniq_key][0] == 's'
+    load_posting
   end
 end

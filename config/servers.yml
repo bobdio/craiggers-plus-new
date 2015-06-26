@@ -5,3 +5,10 @@ user_api:
   test: 'http://identity.3taps.com'
   production: 'http://identity.3taps.com'
   webappprod: 'http://identity.3taps.com'
+notification_api:
+  dev: 'http://notification.3taps.com'
+  development: 'http://notification.3taps.com'
+  staging: 'http://notification.3taps.com'
+  test: 'http://notification.3taps.com'
+  production: 'http://notification.3taps.com'
+  webappprod: 'http://notification.3taps.com'

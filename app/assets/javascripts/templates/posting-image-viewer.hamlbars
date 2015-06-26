@@ -1,3 +1,6 @@
-.frame.static
-  %img.main
+.frame{style: 'width: auto; border: 3px #999 solid;'}
+  /.cropFrame{style: 'height:250px;  width:450px'}
+  /%img.main
+  /{style: 'height:250px; width:450px;max-height:250px; max-width:450px;'}
 .minis
+.images_for_fancybox{style: 'display:none;'}

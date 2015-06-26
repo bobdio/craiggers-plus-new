@@ -1,0 +1,42 @@
+#user_profile.top_menu_page
+	#header.global_header
+		.title
+			User Profile
+	#body
+		.user_data_container
+			.user_image
+				%img
+			.item_container
+				.arrow >
+				.name.item_value
+			.item_container
+				.arrow >
+				.email.item_value
+#user_name.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title User Name
+	.count_items_holder
+		.input_items_container
+			%form#update_name_form
+				%input#user_name_input_field.input_with_clear_button{:value => "", :placeholder => "Enter new name"}
+				#clear_location_button.clear_input_button
+					%input.btn.btn-inverse{:type => "button", :value => ""}
+					.clear_button_image
+				%input#save_button.btn.btn-inverse{:type => "submit", :value => "Save"}
+			#errors_holder
+#user_email.save_search_menu.refine_search_menu.page_with_top_menu
+	#header.global_header
+		#done_button.refine_menu_header_button
+			.button_label Done
+		.title User Email
+	.count_items_holder
+		.input_items_container
+			%form#update_email_form
+				%input#user_email_input_field.input_with_clear_button{:value => "", :placeholder => "Enter new email"}
+				#clear_location_button.clear_input_button
+					%input.btn.btn-inverse{:type => "button", :value => ""}
+					.clear_button_image
+				%input#save_button.btn.btn-inverse{:type => "submit", :value => "Save"}
+			#errors_holder

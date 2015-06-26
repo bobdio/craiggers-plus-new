@@ -1,4 +1,5 @@
 = form_tag('/user/sign_up', { :id => 'sign_up_form' })
+/ = form_tag('/user/record_user_to_db', { :id => 'record_user_to_db_form' })
 .info{style: "display:none; margin-bottom:1em; font-weight: normal;"}
   Sign up so you can manage your saved searches and notification settings.
 %table
@@ -17,7 +18,7 @@
     %td
       %input#email.textfield{ :name => 'email', :type => 'text' }
     %td
-      = submit_tag 'sign up', { :id => 'submit_sign_up_form' }
+      = submit_tag 'sign up', { :id => 'submit_sign_up_form' } 
   %tr
     %td{ :colspan => '3', :style => 'align:left' }
       %label
@@ -32,3 +33,4 @@
   Already signed up? 
   %span.link{ style: 'font-size: 100%', :onclick => 'new Craiggers.Views.Dialog("must_sign_in");' } Sign in here.
 #errors_holder
+#success_holder

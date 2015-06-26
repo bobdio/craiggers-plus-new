@@ -8,6 +8,7 @@ var Craiggers = {
   init: function() {},
   Favorites: {},
   Util: {},
+  Connection: {},
   visited: {},
   commentRefreshIntervalID: 9999,
   currentPostingDetail: null,// 'POSTKEY',
